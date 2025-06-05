@@ -1,0 +1,742 @@
+//
+//S_laserrec
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:4
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserrec
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserrec
+      USHORT  // Field=s_cfg_laserrec.offset_ph0
+      USHORT  // Field=s_cfg_laserrec.n_cell_delay
+      USHORT  // Field=s_cfg_laserrec.min_rec_move
+      USHORT  // Field=s_cfg_laserrec.max_valid_sample
+      USHORT  // Field=s_cfg_laserrec.sensor_distance
+      USHORT  // Field=s_cfg_laserrec.broken_conductor_value
+      USHORT  // Field=s_cfg_laserrec.max_sample_for_avg
+      USHORT  // Field=s_cfg_laserrec.max_sample_diff
+      USHORT  // Field=s_cfg_laserrec.min_sample
+      USHORT  // Field=s_cfg_laserrec.percent_sample
+        //
+        BEGINSTRUCT // Begin of structure=S_laserrec_norm
+          USHORT  // Field=s_cfg_laserrec.s_laserrec_norm.enable
+          USHORT  // Field=s_cfg_laserrec.s_laserrec_norm.norm_move
+        ENDSTRUCT // End of structure=S_laserrec_norm
+        //
+    ENDSTRUCT // End of structure=S_cfg_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_left.name
+      POINTER  // Field=s_ai_left.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_right.name
+      POINTER  // Field=s_ai_right.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_left.name
+      POINTER  // Field=s_di_left.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_right.name
+      POINTER  // Field=s_di_right.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_left_off.name
+      POINTER  // Field=s_do_left_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_right_off.name
+      POINTER  // Field=s_do_right_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserrec
+      USHORT  // Field=s_wk_laserrec.ep_cell_start
+      USHORT  // Field=s_wk_laserrec.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_item_sample
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_sample_cnt
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_sample_cnt
+          USHORT  // Field=s_wk_laserrec.s_item_sample.sample_cnt
+        ENDSTRUCT // End of structure=S_item_sample
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_left.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_left.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_right.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_right.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_id
+          USHORT  // Field=s_wk_laserrec.s_id_cell.id
+          POINTER  // Field=s_wk_laserrec.s_id_cell.p_idrec
+        ENDSTRUCT // End of structure=S_id
+        //
+    ENDSTRUCT // End of structure=S_wk_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_laserrecstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_laserrecstat.s_status.status
+          ULONG  // Field=s_laserrecstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_laserrecstat
+    //
+ENDSTRUCT // End of structure=S_laserrec
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserrec
+  USHORT,10  // Field=id
+  STRING12,"LASERREC_10"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserrec
+      USHORT,16826  // Field=s_cfg_laserrec.offset_ph0
+      USHORT,7  // Field=s_cfg_laserrec.n_cell_delay
+      USHORT,50  // Field=s_cfg_laserrec.min_rec_move
+      USHORT,1250  // Field=s_cfg_laserrec.max_valid_sample
+      USHORT,380  // Field=s_cfg_laserrec.sensor_distance
+      USHORT,0  // Field=s_cfg_laserrec.broken_conductor_value
+      USHORT,3  // Field=s_cfg_laserrec.max_sample_for_avg
+      USHORT,5  // Field=s_cfg_laserrec.max_sample_diff
+      USHORT,3  // Field=s_cfg_laserrec.min_sample
+      USHORT,70  // Field=s_cfg_laserrec.percent_sample
+        //
+        BEGINSTRUCT // Begin of structure=S_laserrec_norm
+          USHORT,1  // Field=s_cfg_laserrec.s_laserrec_norm.enable
+          USHORT,50  // Field=s_cfg_laserrec.s_laserrec_norm.norm_move
+        ENDSTRUCT // End of structure=S_laserrec_norm
+        //
+    ENDSTRUCT // End of structure=S_cfg_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_LASL_10"  // Field=s_ai_left.name
+      POINTER  // Field=s_ai_left.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_LASR_10"  // Field=s_ai_right.name
+      POINTER  // Field=s_ai_right.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LASL_10"  // Field=s_di_left.name
+      POINTER  // Field=s_di_left.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LASR_10"  // Field=s_di_right.name
+      POINTER  // Field=s_di_right.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_left_off.name
+      POINTER  // Field=s_do_left_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_right_off.name
+      POINTER  // Field=s_do_right_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserrec
+      USHORT  // Field=s_wk_laserrec.ep_cell_start
+      USHORT  // Field=s_wk_laserrec.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_item_sample
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_sample_cnt
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_sample_cnt
+          USHORT  // Field=s_wk_laserrec.s_item_sample.sample_cnt
+        ENDSTRUCT // End of structure=S_item_sample
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_left.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_left.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_right.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_right.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_id
+          USHORT  // Field=s_wk_laserrec.s_id_cell.id
+          POINTER  // Field=s_wk_laserrec.s_id_cell.p_idrec
+        ENDSTRUCT // End of structure=S_id
+        //
+    ENDSTRUCT // End of structure=S_wk_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_laserrecstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_laserrecstat.s_status.status
+          ULONG  // Field=s_laserrecstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_laserrecstat
+    //
+ENDSTRUCT // End of structure=S_laserrec
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserrec
+  USHORT,20  // Field=id
+  STRING12,"LASERREC_20"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserrec
+      USHORT,28  // Field=s_cfg_laserrec.offset_ph0
+      USHORT,7  // Field=s_cfg_laserrec.n_cell_delay
+      USHORT,50  // Field=s_cfg_laserrec.min_rec_move
+      USHORT,1250  // Field=s_cfg_laserrec.max_valid_sample
+      USHORT,380  // Field=s_cfg_laserrec.sensor_distance
+      USHORT,0  // Field=s_cfg_laserrec.broken_conductor_value
+      USHORT,3  // Field=s_cfg_laserrec.max_sample_for_avg
+      USHORT,5  // Field=s_cfg_laserrec.max_sample_diff
+      USHORT,3  // Field=s_cfg_laserrec.min_sample
+      USHORT,70  // Field=s_cfg_laserrec.percent_sample
+        //
+        BEGINSTRUCT // Begin of structure=S_laserrec_norm
+          USHORT,1  // Field=s_cfg_laserrec.s_laserrec_norm.enable
+          USHORT,50  // Field=s_cfg_laserrec.s_laserrec_norm.norm_move
+        ENDSTRUCT // End of structure=S_laserrec_norm
+        //
+    ENDSTRUCT // End of structure=S_cfg_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_LASL_20"  // Field=s_ai_left.name
+      POINTER  // Field=s_ai_left.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_LASR_20"  // Field=s_ai_right.name
+      POINTER  // Field=s_ai_right.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LASL_20"  // Field=s_di_left.name
+      POINTER  // Field=s_di_left.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LASR_20"  // Field=s_di_right.name
+      POINTER  // Field=s_di_right.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_left_off.name
+      POINTER  // Field=s_do_left_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_right_off.name
+      POINTER  // Field=s_do_right_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserrec
+      USHORT  // Field=s_wk_laserrec.ep_cell_start
+      USHORT  // Field=s_wk_laserrec.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_item_sample
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_sample_cnt
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_sample_cnt
+          USHORT  // Field=s_wk_laserrec.s_item_sample.sample_cnt
+        ENDSTRUCT // End of structure=S_item_sample
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_left.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_left.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_right.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_right.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_id
+          USHORT  // Field=s_wk_laserrec.s_id_cell.id
+          POINTER  // Field=s_wk_laserrec.s_id_cell.p_idrec
+        ENDSTRUCT // End of structure=S_id
+        //
+    ENDSTRUCT // End of structure=S_wk_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_laserrecstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_laserrecstat.s_status.status
+          ULONG  // Field=s_laserrecstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_laserrecstat
+    //
+ENDSTRUCT // End of structure=S_laserrec
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserrec
+  USHORT,30  // Field=id
+  STRING12,"LASERREC_30"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserrec
+      USHORT,5437  // Field=s_cfg_laserrec.offset_ph0
+      USHORT,7  // Field=s_cfg_laserrec.n_cell_delay
+      USHORT,50  // Field=s_cfg_laserrec.min_rec_move
+      USHORT,1250  // Field=s_cfg_laserrec.max_valid_sample
+      USHORT,380  // Field=s_cfg_laserrec.sensor_distance
+      USHORT,0  // Field=s_cfg_laserrec.broken_conductor_value
+      USHORT,3  // Field=s_cfg_laserrec.max_sample_for_avg
+      USHORT,5  // Field=s_cfg_laserrec.max_sample_diff
+      USHORT,3  // Field=s_cfg_laserrec.min_sample
+      USHORT,70  // Field=s_cfg_laserrec.percent_sample
+        //
+        BEGINSTRUCT // Begin of structure=S_laserrec_norm
+          USHORT,1  // Field=s_cfg_laserrec.s_laserrec_norm.enable
+          USHORT,50  // Field=s_cfg_laserrec.s_laserrec_norm.norm_move
+        ENDSTRUCT // End of structure=S_laserrec_norm
+        //
+    ENDSTRUCT // End of structure=S_cfg_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_LASL_30"  // Field=s_ai_left.name
+      POINTER  // Field=s_ai_left.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_LASR_30"  // Field=s_ai_right.name
+      POINTER  // Field=s_ai_right.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LASL_30"  // Field=s_di_left.name
+      POINTER  // Field=s_di_left.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LASR_30"  // Field=s_di_right.name
+      POINTER  // Field=s_di_right.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_left_off.name
+      POINTER  // Field=s_do_left_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_right_off.name
+      POINTER  // Field=s_do_right_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserrec
+      USHORT  // Field=s_wk_laserrec.ep_cell_start
+      USHORT  // Field=s_wk_laserrec.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_item_sample
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_sample_cnt
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_sample_cnt
+          USHORT  // Field=s_wk_laserrec.s_item_sample.sample_cnt
+        ENDSTRUCT // End of structure=S_item_sample
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_left.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_left.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_right.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_right.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_id
+          USHORT  // Field=s_wk_laserrec.s_id_cell.id
+          POINTER  // Field=s_wk_laserrec.s_id_cell.p_idrec
+        ENDSTRUCT // End of structure=S_id
+        //
+    ENDSTRUCT // End of structure=S_wk_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_laserrecstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_laserrecstat.s_status.status
+          ULONG  // Field=s_laserrecstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_laserrecstat
+    //
+ENDSTRUCT // End of structure=S_laserrec
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserrec
+  USHORT,40  // Field=id
+  STRING12,"LASERREC_40"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserrec
+      USHORT,11523  // Field=s_cfg_laserrec.offset_ph0
+      USHORT,7  // Field=s_cfg_laserrec.n_cell_delay
+      USHORT,50  // Field=s_cfg_laserrec.min_rec_move
+      USHORT,1250  // Field=s_cfg_laserrec.max_valid_sample
+      USHORT,380  // Field=s_cfg_laserrec.sensor_distance
+      USHORT,0  // Field=s_cfg_laserrec.broken_conductor_value
+      USHORT,3  // Field=s_cfg_laserrec.max_sample_for_avg
+      USHORT,5  // Field=s_cfg_laserrec.max_sample_diff
+      USHORT,3  // Field=s_cfg_laserrec.min_sample
+      USHORT,70  // Field=s_cfg_laserrec.percent_sample
+        //
+        BEGINSTRUCT // Begin of structure=S_laserrec_norm
+          USHORT,1  // Field=s_cfg_laserrec.s_laserrec_norm.enable
+          USHORT,50  // Field=s_cfg_laserrec.s_laserrec_norm.norm_move
+        ENDSTRUCT // End of structure=S_laserrec_norm
+        //
+    ENDSTRUCT // End of structure=S_cfg_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_LASL_40"  // Field=s_ai_left.name
+      POINTER  // Field=s_ai_left.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_LASR_40"  // Field=s_ai_right.name
+      POINTER  // Field=s_ai_right.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LASL_40"  // Field=s_di_left.name
+      POINTER  // Field=s_di_left.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LASR_40"  // Field=s_di_right.name
+      POINTER  // Field=s_di_right.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_left_off.name
+      POINTER  // Field=s_do_left_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_right_off.name
+      POINTER  // Field=s_do_right_off.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserrec
+      USHORT  // Field=s_wk_laserrec.ep_cell_start
+      USHORT  // Field=s_wk_laserrec.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_item_sample
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[0]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[1]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[2]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_min[3]
+          SHORT  // Field=s_wk_laserrec.s_item_sample.left_sample_cnt
+          SHORT  // Field=s_wk_laserrec.s_item_sample.right_sample_cnt
+          USHORT  // Field=s_wk_laserrec.s_item_sample.sample_cnt
+        ENDSTRUCT // End of structure=S_item_sample
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_left.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_left.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_laserrec.s_cnt_right.preset
+          LONG  // Field=s_wk_laserrec.s_cnt_right.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_id
+          USHORT  // Field=s_wk_laserrec.s_id_cell.id
+          POINTER  // Field=s_wk_laserrec.s_id_cell.p_idrec
+        ENDSTRUCT // End of structure=S_id
+        //
+    ENDSTRUCT // End of structure=S_wk_laserrec
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_laserrecstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_laserrecstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_laserrecstat.s_status.status
+          ULONG  // Field=s_laserrecstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_laserrecstat
+    //
+ENDSTRUCT // End of structure=S_laserrec
+//

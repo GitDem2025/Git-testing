@@ -1,0 +1,430 @@
+//
+//S_cbjog
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		  // Field=Id
+  USHORT  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,11  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_11"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_11"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,12  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_12"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_12"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,13  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_13"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_13"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,14  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_14"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_14"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,15  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_15"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_15"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,21  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_21"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_21"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,22  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_22"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_22"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,23  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_23"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_23"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,24  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_24"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_24"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,31  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_31"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_31"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,32  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_32"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_32"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,33  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_33"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_33"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,34  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_34"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_34"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,35  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_35"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_35"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,41  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_41"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_41"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,42  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_42"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_42"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,43  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_43"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_43"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//
+//
+BEGINSTRUCT // Begin of structure=S_cbjog
+	//
+ 	USHORT		,44  // Field=Id
+  USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_CBSTR_44"  // Field=s_di_pbstart.name
+  		POINTER  // Field=s_di_pbstart.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+  //
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_CBON_44"  // Field=s_do_cblamp.name
+  		POINTER  // Field=s_do_cblamp.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+ 	USHORT		  // Field=wk_flag
+	//
+ENDSTRUCT // End of structure=S_cbjog
+//

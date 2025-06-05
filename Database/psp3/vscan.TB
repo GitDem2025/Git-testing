@@ -1,0 +1,72 @@
+//
+//S_vscan
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:4
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_vscan
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_vscan
+      USHORT  // Field=s_cfg_vscan.offset_ph0
+    ENDSTRUCT // End of structure=S_cfg_vscan
+    //
+ENDSTRUCT // End of structure=S_vscan
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_vscan
+  USHORT,1  // Field=id
+  STRING12,"VSCAN_1"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_vscan
+      USHORT,1  // Field=s_cfg_vscan.offset_ph0
+    ENDSTRUCT // End of structure=S_cfg_vscan
+    //
+ENDSTRUCT // End of structure=S_vscan
+//
+//
+BEGINSTRUCT // Begin of structure=S_vscan
+  USHORT,2  // Field=id
+  STRING12,"VSCAN_2"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_vscan
+      USHORT,2  // Field=s_cfg_vscan.offset_ph0
+    ENDSTRUCT // End of structure=S_cfg_vscan
+    //
+ENDSTRUCT // End of structure=S_vscan
+//
+//
+BEGINSTRUCT // Begin of structure=S_vscan
+  USHORT,3  // Field=id
+  STRING12,"VSCAN_3"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_vscan
+      USHORT,3  // Field=s_cfg_vscan.offset_ph0
+    ENDSTRUCT // End of structure=S_cfg_vscan
+    //
+ENDSTRUCT // End of structure=S_vscan
+//
+//
+BEGINSTRUCT // Begin of structure=S_vscan
+  USHORT,4  // Field=id
+  STRING12,"VSCAN_4"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_vscan
+      USHORT,4  // Field=s_cfg_vscan.offset_ph0
+    ENDSTRUCT // End of structure=S_cfg_vscan
+    //
+ENDSTRUCT // End of structure=S_vscan
+//

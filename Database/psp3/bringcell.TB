@@ -1,0 +1,78 @@
+//
+//S_bringcell
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_bringcell
+  USHORT  // Field=Id
+  STRING12  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_bringcell
+   	  USHORT  // Field=s_cfg_bringcell.fast_speed_target
+   	  USHORT  // Field=s_cfg_bringcell.slow_speed_target
+   	  USHORT  // Field=s_cfg_bringcell.bracking_space
+   	  USHORT  // Field=s_cfg_bringcell.close_area
+   	  USHORT  // Field=s_cfg_bringcell.ep_stop
+    ENDSTRUCT // End of structure=S_cfg_bringcell
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_bringcell
+   	  USHORT  // Field=s_wk_bringcell.active
+   	  USHORT  // Field=s_wk_bringcell.use_low_gain
+    ENDSTRUCT // End of structure=S_wk_bringcell
+    //
+ENDSTRUCT // End of structure=S_bringcell
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_bringcell
+  USHORT,1  // Field=Id
+  STRING12,"BRINGCELL_01"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_bringcell
+   	  USHORT,1500  // Field=s_cfg_bringcell.fast_speed_target
+   	  USHORT,400  // Field=s_cfg_bringcell.slow_speed_target
+   	  USHORT,200  // Field=s_cfg_bringcell.bracking_space
+   	  USHORT,200  // Field=s_cfg_bringcell.close_area
+   	  USHORT,436  // Field=s_cfg_bringcell.ep_stop
+    ENDSTRUCT // End of structure=S_cfg_bringcell
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,2  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_bringcell
+   	  USHORT  // Field=s_wk_bringcell.active
+   	  USHORT  // Field=s_wk_bringcell.use_low_gain
+    ENDSTRUCT // End of structure=S_wk_bringcell
+    //
+ENDSTRUCT // End of structure=S_bringcell
+//

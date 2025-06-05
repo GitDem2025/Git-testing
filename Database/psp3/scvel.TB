@@ -1,0 +1,464 @@
+//
+//S_scvel
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scvel
+  USHORT  // Field=id
+  STRING12  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_vel
+      USHORT  // Field=s_cfg_vel.first_auto_vel
+      USHORT  // Field=s_cfg_vel.max_auto_vel
+        //
+        BEGINSTRUCT // Begin of structure=S_full_cell
+          USHORT  // Field=s_cfg_vel.s_full_cell_up[0].percentage
+          USHORT  // Field=s_cfg_vel.s_full_cell_up[0].time
+        ENDSTRUCT // End of structure=S_full_cell
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_full_cell
+          USHORT  // Field=s_cfg_vel.s_full_cell_up[1].percentage
+          USHORT  // Field=s_cfg_vel.s_full_cell_up[1].time
+        ENDSTRUCT // End of structure=S_full_cell
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_full_cell
+          USHORT  // Field=s_cfg_vel.s_full_cell_dw[0].percentage
+          USHORT  // Field=s_cfg_vel.s_full_cell_dw[0].time
+        ENDSTRUCT // End of structure=S_full_cell
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_full_cell
+          USHORT  // Field=s_cfg_vel.s_full_cell_dw[1].percentage
+          USHORT  // Field=s_cfg_vel.s_full_cell_dw[1].time
+        ENDSTRUCT // End of structure=S_full_cell
+        //
+      USHORT  // Field=s_cfg_vel.tab_velocity[0]
+      USHORT  // Field=s_cfg_vel.tab_velocity[1]
+      USHORT  // Field=s_cfg_vel.tab_velocity[2]
+      USHORT  // Field=s_cfg_vel.maintenance_velocity
+      USHORT  // Field=s_cfg_vel.tab_vel_limit[0]
+      USHORT  // Field=s_cfg_vel.tab_vel_limit[1]
+      USHORT  // Field=s_cfg_vel.tab_vel_limit[2]
+      USHORT  // Field=s_cfg_vel.n_average_sample
+      LONG  // Field=s_cfg_vel.max_reference
+      LONG  // Field=s_cfg_vel.k_ratio
+      LONG  // Field=s_cfg_vel.gain
+      LONG  // Field=s_cfg_vel.offset
+      USHORT  // Field=s_cfg_vel.step_adj
+      USHORT  // Field=s_cfg_vel.velok[0]
+      USHORT  // Field=s_cfg_vel.velok[1]
+      USHORT  // Field=s_cfg_vel.velok[2]
+        //
+        BEGINSTRUCT // Begin of structure=S_fast_stop
+          USHORT  // Field=s_cfg_vel.s_fast_stop.freq_hz
+          USHORT  // Field=s_cfg_vel.s_fast_stop.detach_vel[0]
+          USHORT  // Field=s_cfg_vel.s_fast_stop.detach_vel[1]
+          USHORT  // Field=s_cfg_vel.s_fast_stop.detach_vel[2]
+          USHORT  // Field=s_cfg_vel.s_fast_stop.freq_mv
+          USHORT  // Field=s_cfg_vel.s_fast_stop.min_cell_time[0]
+          USHORT  // Field=s_cfg_vel.s_fast_stop.min_cell_time[1]
+          USHORT  // Field=s_cfg_vel.s_fast_stop.min_cell_time[2]
+        ENDSTRUCT // End of structure=S_fast_stop
+        //
+    ENDSTRUCT // End of structure=S_cfg_vel
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_vel_timeout1.base
+      ULONG  // Field=s_tm_vel_timeout1.preset
+      POINTER  // Field=s_tm_vel_timeout1.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_vel_timeout2.base
+      ULONG  // Field=s_tm_vel_timeout2.preset
+      POINTER  // Field=s_tm_vel_timeout2.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_velok.base
+      ULONG  // Field=s_tm_velok.preset
+      POINTER  // Field=s_tm_velok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_fast_stop.base
+      ULONG  // Field=s_tm_fast_stop.preset
+      POINTER  // Field=s_tm_fast_stop.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_vel
+      USHORT  // Field=s_wk_vel.velocity
+      USHORT  // Field=s_wk_vel.vel_limit
+      USHORT  // Field=s_wk_vel.n_velocity
+      USHORT  // Field=s_wk_vel.ep_time
+      USHORT  // Field=s_wk_vel.time_cnt
+      USHORT  // Field=s_wk_vel.idx_sample
+      USHORT  // Field=s_wk_vel.sample_full
+      USHORT  // Field=s_wk_vel.sample_value[0]
+      USHORT  // Field=s_wk_vel.sample_value[1]
+      USHORT  // Field=s_wk_vel.sample_value[2]
+      USHORT  // Field=s_wk_vel.sample_value[3]
+      USHORT  // Field=s_wk_vel.sample_value[4]
+      USHORT  // Field=s_wk_vel.sample_value[5]
+      USHORT  // Field=s_wk_vel.sample_value[6]
+      USHORT  // Field=s_wk_vel.sample_value[7]
+      USHORT  // Field=s_wk_vel.sample_value[8]
+      USHORT  // Field=s_wk_vel.sample_value[9]
+      USHORT  // Field=s_wk_vel.sample_value[10]
+      USHORT  // Field=s_wk_vel.sample_value[11]
+      USHORT  // Field=s_wk_vel.sample_value[12]
+      USHORT  // Field=s_wk_vel.sample_value[13]
+      USHORT  // Field=s_wk_vel.sample_value[14]
+      USHORT  // Field=s_wk_vel.sample_value[15]
+      USHORT  // Field=s_wk_vel.sample_value[16]
+      USHORT  // Field=s_wk_vel.sample_value[17]
+      USHORT  // Field=s_wk_vel.sample_value[18]
+      USHORT  // Field=s_wk_vel.sample_value[19]
+      USHORT  // Field=s_wk_vel.sample_value[20]
+      USHORT  // Field=s_wk_vel.sample_value[21]
+      USHORT  // Field=s_wk_vel.sample_value[22]
+      USHORT  // Field=s_wk_vel.sample_value[23]
+      USHORT  // Field=s_wk_vel.sample_value[24]
+      USHORT  // Field=s_wk_vel.sample_value[25]
+      USHORT  // Field=s_wk_vel.sample_value[26]
+      USHORT  // Field=s_wk_vel.sample_value[27]
+      USHORT  // Field=s_wk_vel.sample_value[28]
+      USHORT  // Field=s_wk_vel.sample_value[29]
+      USHORT  // Field=s_wk_vel.sample_value[30]
+      USHORT  // Field=s_wk_vel.sample_value[31]
+      USHORT  // Field=s_wk_vel.sample_value[32]
+      USHORT  // Field=s_wk_vel.sample_value[33]
+      USHORT  // Field=s_wk_vel.sample_value[34]
+      USHORT  // Field=s_wk_vel.sample_value[35]
+      USHORT  // Field=s_wk_vel.sample_value[36]
+      USHORT  // Field=s_wk_vel.sample_value[37]
+      USHORT  // Field=s_wk_vel.sample_value[38]
+      USHORT  // Field=s_wk_vel.sample_value[39]
+      USHORT  // Field=s_wk_vel.sample_value[40]
+      USHORT  // Field=s_wk_vel.sample_value[41]
+      USHORT  // Field=s_wk_vel.sample_value[42]
+      USHORT  // Field=s_wk_vel.sample_value[43]
+      USHORT  // Field=s_wk_vel.sample_value[44]
+      USHORT  // Field=s_wk_vel.sample_value[45]
+      USHORT  // Field=s_wk_vel.sample_value[46]
+      USHORT  // Field=s_wk_vel.sample_value[47]
+      USHORT  // Field=s_wk_vel.sample_value[48]
+      USHORT  // Field=s_wk_vel.sample_value[49]
+      USHORT  // Field=s_wk_vel.sample_value[50]
+      USHORT  // Field=s_wk_vel.sample_value[51]
+      USHORT  // Field=s_wk_vel.sample_value[52]
+      USHORT  // Field=s_wk_vel.sample_value[53]
+      USHORT  // Field=s_wk_vel.sample_value[54]
+      USHORT  // Field=s_wk_vel.sample_value[55]
+      USHORT  // Field=s_wk_vel.sample_value[56]
+      USHORT  // Field=s_wk_vel.sample_value[57]
+      USHORT  // Field=s_wk_vel.sample_value[58]
+      USHORT  // Field=s_wk_vel.sample_value[59]
+      USHORT  // Field=s_wk_vel.sample_value[60]
+      USHORT  // Field=s_wk_vel.sample_value[61]
+      USHORT  // Field=s_wk_vel.sample_value[62]
+      USHORT  // Field=s_wk_vel.sample_value[63]
+      USHORT  // Field=s_wk_vel.sample_value[64]
+      USHORT  // Field=s_wk_vel.sample_value[65]
+      USHORT  // Field=s_wk_vel.sample_value[66]
+      USHORT  // Field=s_wk_vel.sample_value[67]
+      USHORT  // Field=s_wk_vel.sample_value[68]
+      USHORT  // Field=s_wk_vel.sample_value[69]
+      USHORT  // Field=s_wk_vel.sample_value[70]
+      USHORT  // Field=s_wk_vel.sample_value[71]
+      USHORT  // Field=s_wk_vel.sample_value[72]
+      USHORT  // Field=s_wk_vel.sample_value[73]
+      USHORT  // Field=s_wk_vel.sample_value[74]
+      USHORT  // Field=s_wk_vel.sample_value[75]
+      USHORT  // Field=s_wk_vel.sample_value[76]
+      USHORT  // Field=s_wk_vel.sample_value[77]
+      USHORT  // Field=s_wk_vel.sample_value[78]
+      USHORT  // Field=s_wk_vel.sample_value[79]
+      USHORT  // Field=s_wk_vel.sample_value[80]
+      USHORT  // Field=s_wk_vel.sample_value[81]
+      USHORT  // Field=s_wk_vel.sample_value[82]
+      USHORT  // Field=s_wk_vel.sample_value[83]
+      USHORT  // Field=s_wk_vel.sample_value[84]
+      USHORT  // Field=s_wk_vel.sample_value[85]
+      USHORT  // Field=s_wk_vel.sample_value[86]
+      USHORT  // Field=s_wk_vel.sample_value[87]
+      USHORT  // Field=s_wk_vel.sample_value[88]
+      USHORT  // Field=s_wk_vel.sample_value[89]
+      USHORT  // Field=s_wk_vel.sample_value[90]
+      USHORT  // Field=s_wk_vel.sample_value[91]
+      USHORT  // Field=s_wk_vel.sample_value[92]
+      USHORT  // Field=s_wk_vel.sample_value[93]
+      USHORT  // Field=s_wk_vel.sample_value[94]
+      USHORT  // Field=s_wk_vel.sample_value[95]
+      USHORT  // Field=s_wk_vel.sample_value[96]
+      USHORT  // Field=s_wk_vel.sample_value[97]
+      USHORT  // Field=s_wk_vel.sample_value[98]
+      USHORT  // Field=s_wk_vel.sample_value[99]
+      USHORT  // Field=s_wk_vel.sample_time
+      USHORT  // Field=s_wk_vel.n_sample
+      USHORT  // Field=s_wk_vel.average
+      SHORT  // Field=s_wk_vel.flag_up_dw
+      USHORT  // Field=s_wk_vel.flag_reset_cnt_vel
+    ENDSTRUCT // End of structure=S_wk_vel
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+ENDSTRUCT // End of structure=S_scvel
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scvel
+  USHORT,1  // Field=id
+  STRING12,"VELOCITY"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_vel
+      USHORT,1  // Field=s_cfg_vel.first_auto_vel
+      USHORT,3  // Field=s_cfg_vel.max_auto_vel
+        //
+        BEGINSTRUCT // Begin of structure=S_full_cell
+          USHORT,80  // Field=s_cfg_vel.s_full_cell_up[0].percentage
+          USHORT,2  // Field=s_cfg_vel.s_full_cell_up[0].time
+        ENDSTRUCT // End of structure=S_full_cell
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_full_cell
+          USHORT,80  // Field=s_cfg_vel.s_full_cell_up[1].percentage
+          USHORT,2  // Field=s_cfg_vel.s_full_cell_up[1].time
+        ENDSTRUCT // End of structure=S_full_cell
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_full_cell
+          USHORT,60  // Field=s_cfg_vel.s_full_cell_dw[0].percentage
+          USHORT,4  // Field=s_cfg_vel.s_full_cell_dw[0].time
+        ENDSTRUCT // End of structure=S_full_cell
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_full_cell
+          USHORT,60  // Field=s_cfg_vel.s_full_cell_dw[1].percentage
+          USHORT,4  // Field=s_cfg_vel.s_full_cell_dw[1].time
+        ENDSTRUCT // End of structure=S_full_cell
+        //
+      USHORT,2000  // Field=s_cfg_vel.tab_velocity[0]
+      USHORT,2500  // Field=s_cfg_vel.tab_velocity[1]
+      USHORT,2500  // Field=s_cfg_vel.tab_velocity[2]
+      USHORT,600  // Field=s_cfg_vel.maintenance_velocity
+      USHORT,133  // Field=s_cfg_vel.tab_vel_limit[0]
+      USHORT,166  // Field=s_cfg_vel.tab_vel_limit[1]
+      USHORT,166  // Field=s_cfg_vel.tab_vel_limit[2]
+      USHORT,10  // Field=s_cfg_vel.n_average_sample
+      LONG,40000  // Field=s_cfg_vel.max_reference
+      LONG,9000  // Field=s_cfg_vel.k_ratio
+      LONG,160  // Field=s_cfg_vel.gain
+      LONG,15  // Field=s_cfg_vel.offset
+      USHORT,2800  // Field=s_cfg_vel.step_adj
+      USHORT,10  // Field=s_cfg_vel.velok[0]
+      USHORT,10  // Field=s_cfg_vel.velok[1]
+      USHORT,10  // Field=s_cfg_vel.velok[2]
+        //
+        BEGINSTRUCT // Begin of structure=S_fast_stop
+          USHORT,50  // Field=s_cfg_vel.s_fast_stop.freq_hz
+          USHORT,800  // Field=s_cfg_vel.s_fast_stop.detach_vel[0]
+          USHORT,800  // Field=s_cfg_vel.s_fast_stop.detach_vel[1]
+          USHORT,800  // Field=s_cfg_vel.s_fast_stop.detach_vel[2]
+          USHORT  // Field=s_cfg_vel.s_fast_stop.freq_mv
+          USHORT  // Field=s_cfg_vel.s_fast_stop.min_cell_time[0]
+          USHORT  // Field=s_cfg_vel.s_fast_stop.min_cell_time[1]
+          USHORT  // Field=s_cfg_vel.s_fast_stop.min_cell_time[2]
+        ENDSTRUCT // End of structure=S_fast_stop
+        //
+    ENDSTRUCT // End of structure=S_cfg_vel
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,3  // Field=s_tm_vel_timeout1.base
+      ULONG,30  // Field=s_tm_vel_timeout1.preset
+      POINTER  // Field=s_tm_vel_timeout1.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,3  // Field=s_tm_vel_timeout2.base
+      ULONG,5  // Field=s_tm_vel_timeout2.preset
+      POINTER  // Field=s_tm_vel_timeout2.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,3  // Field=s_tm_velok.base
+      ULONG  // Field=s_tm_velok.preset
+      POINTER  // Field=s_tm_velok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_fast_stop.base
+      ULONG,40  // Field=s_tm_fast_stop.preset
+      POINTER  // Field=s_tm_fast_stop.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_vel
+      USHORT  // Field=s_wk_vel.velocity
+      USHORT  // Field=s_wk_vel.vel_limit
+      USHORT  // Field=s_wk_vel.n_velocity
+      USHORT  // Field=s_wk_vel.ep_time
+      USHORT  // Field=s_wk_vel.time_cnt
+      USHORT  // Field=s_wk_vel.idx_sample
+      USHORT  // Field=s_wk_vel.sample_full
+      USHORT  // Field=s_wk_vel.sample_value[0]
+      USHORT  // Field=s_wk_vel.sample_value[1]
+      USHORT  // Field=s_wk_vel.sample_value[2]
+      USHORT  // Field=s_wk_vel.sample_value[3]
+      USHORT  // Field=s_wk_vel.sample_value[4]
+      USHORT  // Field=s_wk_vel.sample_value[5]
+      USHORT  // Field=s_wk_vel.sample_value[6]
+      USHORT  // Field=s_wk_vel.sample_value[7]
+      USHORT  // Field=s_wk_vel.sample_value[8]
+      USHORT  // Field=s_wk_vel.sample_value[9]
+      USHORT  // Field=s_wk_vel.sample_value[10]
+      USHORT  // Field=s_wk_vel.sample_value[11]
+      USHORT  // Field=s_wk_vel.sample_value[12]
+      USHORT  // Field=s_wk_vel.sample_value[13]
+      USHORT  // Field=s_wk_vel.sample_value[14]
+      USHORT  // Field=s_wk_vel.sample_value[15]
+      USHORT  // Field=s_wk_vel.sample_value[16]
+      USHORT  // Field=s_wk_vel.sample_value[17]
+      USHORT  // Field=s_wk_vel.sample_value[18]
+      USHORT  // Field=s_wk_vel.sample_value[19]
+      USHORT  // Field=s_wk_vel.sample_value[20]
+      USHORT  // Field=s_wk_vel.sample_value[21]
+      USHORT  // Field=s_wk_vel.sample_value[22]
+      USHORT  // Field=s_wk_vel.sample_value[23]
+      USHORT  // Field=s_wk_vel.sample_value[24]
+      USHORT  // Field=s_wk_vel.sample_value[25]
+      USHORT  // Field=s_wk_vel.sample_value[26]
+      USHORT  // Field=s_wk_vel.sample_value[27]
+      USHORT  // Field=s_wk_vel.sample_value[28]
+      USHORT  // Field=s_wk_vel.sample_value[29]
+      USHORT  // Field=s_wk_vel.sample_value[30]
+      USHORT  // Field=s_wk_vel.sample_value[31]
+      USHORT  // Field=s_wk_vel.sample_value[32]
+      USHORT  // Field=s_wk_vel.sample_value[33]
+      USHORT  // Field=s_wk_vel.sample_value[34]
+      USHORT  // Field=s_wk_vel.sample_value[35]
+      USHORT  // Field=s_wk_vel.sample_value[36]
+      USHORT  // Field=s_wk_vel.sample_value[37]
+      USHORT  // Field=s_wk_vel.sample_value[38]
+      USHORT  // Field=s_wk_vel.sample_value[39]
+      USHORT  // Field=s_wk_vel.sample_value[40]
+      USHORT  // Field=s_wk_vel.sample_value[41]
+      USHORT  // Field=s_wk_vel.sample_value[42]
+      USHORT  // Field=s_wk_vel.sample_value[43]
+      USHORT  // Field=s_wk_vel.sample_value[44]
+      USHORT  // Field=s_wk_vel.sample_value[45]
+      USHORT  // Field=s_wk_vel.sample_value[46]
+      USHORT  // Field=s_wk_vel.sample_value[47]
+      USHORT  // Field=s_wk_vel.sample_value[48]
+      USHORT  // Field=s_wk_vel.sample_value[49]
+      USHORT  // Field=s_wk_vel.sample_value[50]
+      USHORT  // Field=s_wk_vel.sample_value[51]
+      USHORT  // Field=s_wk_vel.sample_value[52]
+      USHORT  // Field=s_wk_vel.sample_value[53]
+      USHORT  // Field=s_wk_vel.sample_value[54]
+      USHORT  // Field=s_wk_vel.sample_value[55]
+      USHORT  // Field=s_wk_vel.sample_value[56]
+      USHORT  // Field=s_wk_vel.sample_value[57]
+      USHORT  // Field=s_wk_vel.sample_value[58]
+      USHORT  // Field=s_wk_vel.sample_value[59]
+      USHORT  // Field=s_wk_vel.sample_value[60]
+      USHORT  // Field=s_wk_vel.sample_value[61]
+      USHORT  // Field=s_wk_vel.sample_value[62]
+      USHORT  // Field=s_wk_vel.sample_value[63]
+      USHORT  // Field=s_wk_vel.sample_value[64]
+      USHORT  // Field=s_wk_vel.sample_value[65]
+      USHORT  // Field=s_wk_vel.sample_value[66]
+      USHORT  // Field=s_wk_vel.sample_value[67]
+      USHORT  // Field=s_wk_vel.sample_value[68]
+      USHORT  // Field=s_wk_vel.sample_value[69]
+      USHORT  // Field=s_wk_vel.sample_value[70]
+      USHORT  // Field=s_wk_vel.sample_value[71]
+      USHORT  // Field=s_wk_vel.sample_value[72]
+      USHORT  // Field=s_wk_vel.sample_value[73]
+      USHORT  // Field=s_wk_vel.sample_value[74]
+      USHORT  // Field=s_wk_vel.sample_value[75]
+      USHORT  // Field=s_wk_vel.sample_value[76]
+      USHORT  // Field=s_wk_vel.sample_value[77]
+      USHORT  // Field=s_wk_vel.sample_value[78]
+      USHORT  // Field=s_wk_vel.sample_value[79]
+      USHORT  // Field=s_wk_vel.sample_value[80]
+      USHORT  // Field=s_wk_vel.sample_value[81]
+      USHORT  // Field=s_wk_vel.sample_value[82]
+      USHORT  // Field=s_wk_vel.sample_value[83]
+      USHORT  // Field=s_wk_vel.sample_value[84]
+      USHORT  // Field=s_wk_vel.sample_value[85]
+      USHORT  // Field=s_wk_vel.sample_value[86]
+      USHORT  // Field=s_wk_vel.sample_value[87]
+      USHORT  // Field=s_wk_vel.sample_value[88]
+      USHORT  // Field=s_wk_vel.sample_value[89]
+      USHORT  // Field=s_wk_vel.sample_value[90]
+      USHORT  // Field=s_wk_vel.sample_value[91]
+      USHORT  // Field=s_wk_vel.sample_value[92]
+      USHORT  // Field=s_wk_vel.sample_value[93]
+      USHORT  // Field=s_wk_vel.sample_value[94]
+      USHORT  // Field=s_wk_vel.sample_value[95]
+      USHORT  // Field=s_wk_vel.sample_value[96]
+      USHORT  // Field=s_wk_vel.sample_value[97]
+      USHORT  // Field=s_wk_vel.sample_value[98]
+      USHORT  // Field=s_wk_vel.sample_value[99]
+      USHORT  // Field=s_wk_vel.sample_time
+      USHORT  // Field=s_wk_vel.n_sample
+      USHORT  // Field=s_wk_vel.average
+      SHORT  // Field=s_wk_vel.flag_up_dw
+      USHORT  // Field=s_wk_vel.flag_reset_cnt_vel
+    ENDSTRUCT // End of structure=S_wk_vel
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+ENDSTRUCT // End of structure=S_scvel
+//

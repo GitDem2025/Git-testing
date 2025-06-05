@@ -1,0 +1,33 @@
+Iscgen General Purpose
+Double Deck Sorter
+Induction Station on the second level
+Load parcel without data on a double cell (if possible)
+CHUTEREQ requested on the CB
+Do not load items on LB during initialization
+Do not load items without dimension data
+BIT 6: spare
+Automatic alarm reset with autostart
+Use both transfer counter and PH on the IS belts
+Consider AS busy when at least 2 PHs are obscured
+Do not pulse lamp for double loading
+Handle ALLIGATOR
+Stop in fault IS when the next one is in fault
+BIT 13: spare
+Stop always on OLB
+TBTRACK stretch every parcel
+BIT 16: spare
+Load items on double cell oriented 
+Start automatically IS when sorter is synchro
+BIT 19: spare
+BIT 20: spare
+BIT 21: spare
+BIT 22: spare
+BIT 23: spare
+BIT 24: spare
+BIT 25: spare
+BIT 26: spare
+BIT 27: spare
+BIT 28: spare
+BIT 29: spare
+Enable reverse mode when IS is in JOG
+BIT 31: spare

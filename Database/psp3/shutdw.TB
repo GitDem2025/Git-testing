@@ -1,0 +1,106 @@
+//
+//S_shutdw
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_shutdw
+  USHORT  // Field=time_task
+    //
+    BEGINSTRUCT // Begin of structure=S_cnt
+      LONG  // Field=s_cnt_timeout.preset
+      LONG  // Field=s_cnt_timeout.cnt
+    ENDSTRUCT // End of structure=S_cnt
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT  // Field=s_inoutsh_in[0].port
+      UCHAR  // Field=s_inoutsh_in[0].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT  // Field=s_inoutsh_in[1].port
+      UCHAR  // Field=s_inoutsh_in[1].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT  // Field=s_inoutsh_outon[0].port
+      UCHAR  // Field=s_inoutsh_outon[0].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT  // Field=s_inoutsh_outon[1].port
+      UCHAR  // Field=s_inoutsh_outon[1].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT  // Field=s_inoutsh_outoff[0].port
+      UCHAR  // Field=s_inoutsh_outoff[0].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT  // Field=s_inoutsh_outoff[1].port
+      UCHAR  // Field=s_inoutsh_outoff[1].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+ENDSTRUCT // End of structure=S_shutdw
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_shutdw
+  USHORT,5  // Field=time_task
+    //
+    BEGINSTRUCT // Begin of structure=S_cnt
+      LONG,30  // Field=s_cnt_timeout.preset
+      LONG  // Field=s_cnt_timeout.cnt
+    ENDSTRUCT // End of structure=S_cnt
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT,0x3FE  // Field=s_inoutsh_in[0].port
+      UCHAR,0xF  // Field=s_inoutsh_in[0].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT,0x3FE  // Field=s_inoutsh_in[1].port
+      UCHAR,0x9  // Field=s_inoutsh_in[1].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT,0x3FC  // Field=s_inoutsh_outon[0].port
+      UCHAR,0x1  // Field=s_inoutsh_outon[0].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT,0x0  // Field=s_inoutsh_outon[1].port
+      UCHAR,0x0  // Field=s_inoutsh_outon[1].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT,0x3FC  // Field=s_inoutsh_outoff[0].port
+      UCHAR,0x3  // Field=s_inoutsh_outoff[0].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_inoutsh
+      USHORT,0x0  // Field=s_inoutsh_outoff[1].port
+      UCHAR,0x0  // Field=s_inoutsh_outoff[1].value
+    ENDSTRUCT // End of structure=S_inoutsh
+    //
+ENDSTRUCT // End of structure=S_shutdw
+//

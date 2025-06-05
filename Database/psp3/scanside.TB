@@ -1,0 +1,120 @@
+//
+//S_scanside
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:4
+//
+TABLE
+//
+BEGINSTRUCT // Begin of structure=s_scanside
+ 	USHORT 		  // Field=id
+ 	USHORT		  // Field=enable
+ 	//
+	BEGINSTRUCT // Begin of structure=s_id_phside
+  		USHORT 	  // Field=s_id_phside.id
+  		POINTER  	  // Field=s_id_phside.p_idrec
+	ENDSTRUCT // End of structure=s_id_phside
+	//
+	BEGINSTRUCT // Begin of structure=s_cfg_scanside
+  		USHORT 		  // Field=s_cfg_scanside.side_offset
+  		USHORT 		  // Field=s_cfg_scanside.add_tick
+	ENDSTRUCT	 // End of structure=s_cfg_scanside
+ 	//
+	BEGINSTRUCT // Begin of structure=s_wk_scanside
+  		USHORT		  // Field=s_wk_scanside.current_cell
+  		USHORT  // Field=s_wk_scanside.tick_cnt
+	ENDSTRUCT 	// End of structure=s_wk_scanside
+	//
+ENDSTRUCT // End of structure=s_scanside
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=s_scanside
+ 	USHORT 		,1  // Field=id
+ 	USHORT		,1  // Field=enable
+ 	//
+	BEGINSTRUCT // Begin of structure=s_id_phside
+  		USHORT 	,12  // Field=s_id_phside.id
+  		POINTER  	  // Field=s_id_phside.p_idrec
+	ENDSTRUCT // End of structure=s_id_phside
+	//
+	BEGINSTRUCT // Begin of structure=s_cfg_scanside
+  		USHORT 		,0  // Field=s_cfg_scanside.side_offset
+  		USHORT 		,0  // Field=s_cfg_scanside.add_tick
+	ENDSTRUCT	 // End of structure=s_cfg_scanside
+ 	//
+	BEGINSTRUCT // Begin of structure=s_wk_scanside
+  		USHORT		  // Field=s_wk_scanside.current_cell
+  		USHORT  // Field=s_wk_scanside.tick_cnt
+	ENDSTRUCT 	// End of structure=s_wk_scanside
+	//
+ENDSTRUCT // End of structure=s_scanside
+//
+//
+BEGINSTRUCT // Begin of structure=s_scanside
+ 	USHORT 		,2  // Field=id
+ 	USHORT		,1  // Field=enable
+ 	//
+	BEGINSTRUCT // Begin of structure=s_id_phside
+  		USHORT 	,22  // Field=s_id_phside.id
+  		POINTER  	  // Field=s_id_phside.p_idrec
+	ENDSTRUCT // End of structure=s_id_phside
+	//
+	BEGINSTRUCT // Begin of structure=s_cfg_scanside
+  		USHORT 		,0  // Field=s_cfg_scanside.side_offset
+  		USHORT 		,0  // Field=s_cfg_scanside.add_tick
+	ENDSTRUCT	 // End of structure=s_cfg_scanside
+ 	//
+	BEGINSTRUCT // Begin of structure=s_wk_scanside
+  		USHORT		  // Field=s_wk_scanside.current_cell
+  		USHORT  // Field=s_wk_scanside.tick_cnt
+	ENDSTRUCT 	// End of structure=s_wk_scanside
+	//
+ENDSTRUCT // End of structure=s_scanside
+//
+//
+BEGINSTRUCT // Begin of structure=s_scanside
+ 	USHORT 		,3  // Field=id
+ 	USHORT		,1  // Field=enable
+ 	//
+	BEGINSTRUCT // Begin of structure=s_id_phside
+  		USHORT 	,32  // Field=s_id_phside.id
+  		POINTER  	  // Field=s_id_phside.p_idrec
+	ENDSTRUCT // End of structure=s_id_phside
+	//
+	BEGINSTRUCT // Begin of structure=s_cfg_scanside
+  		USHORT 		,0  // Field=s_cfg_scanside.side_offset
+  		USHORT 		,0  // Field=s_cfg_scanside.add_tick
+	ENDSTRUCT	 // End of structure=s_cfg_scanside
+ 	//
+	BEGINSTRUCT // Begin of structure=s_wk_scanside
+  		USHORT		  // Field=s_wk_scanside.current_cell
+  		USHORT  // Field=s_wk_scanside.tick_cnt
+	ENDSTRUCT 	// End of structure=s_wk_scanside
+	//
+ENDSTRUCT // End of structure=s_scanside
+//
+//
+BEGINSTRUCT // Begin of structure=s_scanside
+ 	USHORT 		,4  // Field=id
+ 	USHORT		,1  // Field=enable
+ 	//
+	BEGINSTRUCT // Begin of structure=s_id_phside
+  		USHORT 	,42  // Field=s_id_phside.id
+  		POINTER  	  // Field=s_id_phside.p_idrec
+	ENDSTRUCT // End of structure=s_id_phside
+	//
+	BEGINSTRUCT // Begin of structure=s_cfg_scanside
+  		USHORT 		,0  // Field=s_cfg_scanside.side_offset
+  		USHORT 		,0  // Field=s_cfg_scanside.add_tick
+	ENDSTRUCT	 // End of structure=s_cfg_scanside
+ 	//
+	BEGINSTRUCT // Begin of structure=s_wk_scanside
+  		USHORT		  // Field=s_wk_scanside.current_cell
+  		USHORT  // Field=s_wk_scanside.tick_cnt
+	ENDSTRUCT 	// End of structure=s_wk_scanside
+	//
+ENDSTRUCT // End of structure=s_scanside
+//

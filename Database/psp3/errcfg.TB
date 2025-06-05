@@ -1,0 +1,916 @@
+//
+//S_errcfg
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:112
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT  // Field=device
+  USHORT  // Field=id_error
+  STRING30  // Field=label
+  USHORT  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,0  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"NO_DEVICE_ID"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,0  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"INVALID_DEVICE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,0  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"NO_DEVICE_GROUP"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,0  // Field=device
+  USHORT,4  // Field=id_error
+  STRING30,"INVALID_COMMAND"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"XB_HORN_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"XB_JOG_STATUS"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"XB_VELCHANGE_NOT_ALLOWED"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,4  // Field=id_error
+  STRING30,"XB_EMERGENCY"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,5  // Field=id_error
+  STRING30,"XB_NOMOVE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,6  // Field=id_error
+  STRING30,"XB_COLOR_ALARM"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,7  // Field=id_error
+  STRING30,"XB_FLAP_AIR_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,8  // Field=id_error
+  STRING30,"XB_MAINTENANCE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"XB_TOO_MANY_RESULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,10  // Field=id_error
+  STRING30,"XB_BMU_COMM_NOK"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,11  // Field=id_error
+  STRING30,"PWR_65V_OVERLOAD"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,12  // Field=id_error
+  STRING30,"PWR_65V_LOW_VOLTAGE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,17  // Field=id_error
+  STRING30,"XB_REJECT_FULL"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,18  // Field=id_error
+  STRING30,"XB_NETWORK_CONNECTION_NOK"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,1  // Field=device
+  USHORT,19  // Field=id_error
+  STRING30,"XB_FLAP_AIR_LOW"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"CELL_CW_TOO_LOW"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"CELL_CCW_TOO_LOW"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"CELL_CW_TOO_HIGH"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,4  // Field=id_error
+  STRING30,"CELL_CCW_TOO_HIGH"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,5  // Field=id_error
+  STRING30,"CELL_CW_ERROR"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,6  // Field=id_error
+  STRING30,"CELL_CCW_ERROR"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,7  // Field=id_error
+  STRING30,"CELL_CW_NO_DATA"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,8  // Field=id_error
+  STRING30,"CELL_CCW_NO_DATA"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"CELL_FAILURE_DECODER"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,10  // Field=id_error
+  STRING30,"CELL_ALWAYS_MOVING"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,11  // Field=id_error
+  STRING30,"CELL_NO_MOVING_OFFL"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,12  // Field=id_error
+  STRING30,"CELL_NO_MOVING_INFRA"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,13  // Field=id_error
+  STRING30,"CELL_NO_MOVING_BADPOS"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,17  // Field=id_error
+  STRING30,"CELL_TO_OFFL_EMPTY"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,18  // Field=id_error
+  STRING30,"CELL_TO_READ_EMPTY"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,19  // Field=id_error
+  STRING30,"CELL_PARCEL_BAD_POSITIONED"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,20  // Field=id_error
+  STRING30,"CELL_PARCEL_BETWEEN_CELL"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,21  // Field=id_error
+  STRING30,"CELL_TOO_HIGH"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,22  // Field=id_error
+  STRING30,"ACKRES_NOTRECEIVED"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,24  // Field=id_error
+  STRING30,"$002$00024$"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,2  // Field=device
+  USHORT,25  // Field=id_error
+  STRING30,"CELL_SAFETY_DEVICE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,3  // Field=device
+  USHORT,17  // Field=id_error
+  STRING30,"TRACKING_PH_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"REC_PH1_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"REC_PH2_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"REC_PH3_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,4  // Field=id_error
+  STRING30,"REC_PH4_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,5  // Field=id_error
+  STRING30,"REC_PH5_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,6  // Field=id_error
+  STRING30,"REC_PH6_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,7  // Field=id_error
+  STRING30,"REC_PH7_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,8  // Field=id_error
+  STRING30,"REC_PH8_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"REC_PH1MGM_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,10  // Field=id_error
+  STRING30,"REC_PHN2_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,11  // Field=id_error
+  STRING30,"REC_PHN3_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,12  // Field=id_error
+  STRING30,"REC_PHN4_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,13  // Field=id_error
+  STRING30,"REC_PHN5_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,14  // Field=id_error
+  STRING30,"REC_PHN6_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,4  // Field=device
+  USHORT,15  // Field=id_error
+  STRING30,"REC_PHN7_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,6  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"CONVERTER_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,7  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"DECODER_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,8  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"PH_LOAD_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,10  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"PH_OFFLVER_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,10  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"TOO_MANY_REJECT_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,11  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"ENCODER_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,11  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"ENCODER_RESET_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,11  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"ENCODER_PH_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,11  // Field=device
+  USHORT,4  // Field=id_error
+  STRING30,"ENCODER_PHRESET_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,12  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"PWR_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,13  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"INVERTER_NOREADY"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,13  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"INVERTER_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,13  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"INVERTER_FAN_NOT_OK"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,14  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"LIM_OVERTEMP"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,14  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"LIM_SAF_DEV"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,20  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"INFRARED_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,20  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"INFRARED_FAULT1"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,20  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"INFRARED_FAULT2"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,21  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"LOADCTRL_PH_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,21  // Field=device
+  USHORT,11  // Field=id_error
+  STRING30,"LOADCTRL_PARCEL_TOO_LONG"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,22  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"LASERREC_LEFT_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,22  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"LASERREC_RIGHT_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,22  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"LASERREC_LEFT_NO_INPUT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,22  // Field=device
+  USHORT,4  // Field=id_error
+  STRING30,"LASERREC_RIGHT_NO_INPUT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,51  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"TVDPWR_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,51  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"TVD_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,51  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"IS_JOG_STATUS"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,51  // Field=device
+  USHORT,4  // Field=id_error
+  STRING30,"IS_EMERGENCY"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,51  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"IS_INIT_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,56  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"AS_FAULT0"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,56  // Field=device
+  USHORT,2  // Field=id_error
+  STRING30,"AS_FAULT1"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,56  // Field=device
+  USHORT,3  // Field=id_error
+  STRING30,"AS_CAL_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,56  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"AS_NOT_SEEN"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,70  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"HSIU_BELT_FAILURE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,70  // Field=device
+  USHORT,10  // Field=id_error
+  STRING30,"HSIU_ITEM_TABLE_ERROR"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,70  // Field=device
+  USHORT,11  // Field=id_error
+  STRING30,"HSIU_LOAD_NOT_POSSIBLE"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,102  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"SCAN_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,102  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"SCAN_TOO_MANY_NOT_READ"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,102  // Field=device
+  USHORT,17  // Field=id_error
+  STRING30,"SCAN_TIMEOUT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,102  // Field=device
+  USHORT,18  // Field=id_error
+  STRING30,"SCAN_CODE_AFTER_TIMEOUT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,102  // Field=device
+  USHORT,19  // Field=id_error
+  STRING30,"SCAN_CODE_NOT_WAITED"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,102  // Field=device
+  USHORT,20  // Field=id_error
+  STRING30,"SCAN_CODE_NOT_READ"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,103  // Field=device
+  USHORT,1  // Field=id_error
+  STRING30,"SCALE_FAULT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,103  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"SCALE_TOO_MANY_NOT_WEIGHTED"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,103  // Field=device
+  USHORT,17  // Field=id_error
+  STRING30,"SCALE_TIMEOUT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,103  // Field=device
+  USHORT,18  // Field=id_error
+  STRING30,"SCALE_WEIGHT_AFTER_TIMEOUT"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,103  // Field=device
+  USHORT,19  // Field=id_error
+  STRING30,"SCALE_WEIGHT_NOT_WAITED"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,103  // Field=device
+  USHORT,20  // Field=id_error
+  STRING30,"SCALE_WEIGHT_NOT_VALID"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,203  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"VELOCITY_NOK"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,204  // Field=device
+  USHORT,9  // Field=id_error
+  STRING30,"CELL_LOADED_NOT_ARRIVED"  // Field=label
+  USHORT,3  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,205  // Field=device
+  USHORT,5  // Field=id_error
+  STRING30,"WRONG_MES_DEST"  // Field=label
+  USHORT,0  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,205  // Field=device
+  USHORT,17  // Field=id_error
+  STRING30,"OFFLVER_FAIL"  // Field=label
+  USHORT,0  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,205  // Field=device
+  USHORT,18  // Field=id_error
+  STRING30,"LOADVER_FAIL"  // Field=label
+  USHORT,0  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,205  // Field=device
+  USHORT,19  // Field=id_error
+  STRING30,"OFFLMGM_FAIL"  // Field=label
+  USHORT,0  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,205  // Field=device
+  USHORT,20  // Field=id_error
+  STRING30,"DISPATCH_FAIL"  // Field=label
+  USHORT,0  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//
+//
+BEGINSTRUCT // Begin of structure=S_errcfg
+  USHORT,205  // Field=device
+  USHORT,21  // Field=id_error
+  STRING30,"CHUTEMGM_FAIL"  // Field=label
+  USHORT,0  // Field=send_type
+ENDSTRUCT // End of structure=S_errcfg
+//

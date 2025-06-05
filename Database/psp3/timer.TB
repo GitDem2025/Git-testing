@@ -1,0 +1,68 @@
+//
+//S_timer_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:5
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_timer_header
+  USHORT  // Field=n_timer
+  POINTER  // Field=ps_timer_head
+  POINTER  // Field=ps_timer_tail
+ENDSTRUCT // End of structure=S_timer_header
+//
+//
+ENDHEADER
+//
+//
+REPEAT:5
+//
+BEGINSTRUCT // Begin of structure=S_timer_header
+  USHORT  // Field=n_timer
+  POINTER  // Field=ps_timer_head
+  POINTER  // Field=ps_timer_tail
+ENDSTRUCT // End of structure=S_timer_header
+//
+ENDREPEAT
+//
+//
+//S_timer
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:9999
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_timer
+  USHORT  // Field=state
+  USHORT  // Field=base
+  USHORT  // Field=value
+  USHORT  // Field=mailbox
+  POINTER  // Field=address
+  POINTER  // Field=previous
+  POINTER  // Field=next
+ENDSTRUCT // End of structure=S_timer
+//
+//
+ENDTABLE
+//
+//
+REPEAT:9999
+//
+BEGINSTRUCT // Begin of structure=S_timer
+  USHORT  // Field=state
+  USHORT  // Field=base
+  USHORT  // Field=value
+  USHORT  // Field=mailbox
+  POINTER  // Field=address
+  POINTER  // Field=previous
+  POINTER  // Field=next
+ENDSTRUCT // End of structure=S_timer
+//
+ENDREPEAT
+//

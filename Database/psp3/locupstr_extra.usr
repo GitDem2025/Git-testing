@@ -1,0 +1,31 @@
+//
+TableName="LOCUPSTR_EXTRA"
+//
+//
+Field="Id",DB_INTEGER
+Field="EM module AKZ",DB_TEXT,12
+Field="(c)Gateway type",DB_LONG
+Field="(b)General purpose",DB_INTEGER
+Field="Board number",DB_INTEGER
+Field="Module address (Node ID)",DB_INTEGER
+Field="SubModule position In",DB_INTEGER
+Field="SubModule position Out",DB_INTEGER
+Field="DI:Life Heartbeat",DB_TEXT,12
+Field="DI:EM Auto Mode Input",DB_TEXT,12
+Field="DI:EM Maint Mode Input",DB_TEXT,12
+Field="DI:EM No Error Input",DB_TEXT,12
+Field="DI:Data ready",DB_TEXT,12
+Field="DI:Priority",DB_TEXT,12
+Field="D0:SLife Heartbeat Echo",DB_TEXT,12
+Field="D0:Sorter in Auto Mode",DB_TEXT,12
+Field="D0:Sorter in Maint Mode",DB_TEXT,12
+Field="D0:Sorter NOT in error",DB_TEXT,12
+Field="D0:Induct first Belt running",DB_TEXT,12
+Field="D0:Induct in Auto Mode",DB_TEXT,12
+Field="D0:Induct in JOG Mode (Not used by EAE)",DB_TEXT,12
+Field="D0:Induct in Alarm Mode (Not used by EAE)",DB_TEXT,12
+Field="D0:Induct AutoReset active (Not used by EAE)",DB_TEXT,12
+Field="D0:Induct Resynch request",DB_TEXT,12
+Field="AO: First belt velocity",DB_TEXT,12
+//
+Index="Id","+Id",yes,yes

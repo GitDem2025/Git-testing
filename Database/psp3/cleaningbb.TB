@@ -1,0 +1,34 @@
+//
+//S_cleaningbb
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_cleaningbb
+ 	USHORT  // Field=id
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_cleaning.name
+      POINTER  // Field=s_di_cleaning.ps_input
+    ENDSTRUCT // End of structure=S_di
+ 	USHORT  // Field=velocity
+    //
+ENDSTRUCT // End of structure=cleaningbb
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_cleaningbb
+ 	USHORT,1  // Field=id
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_BBMAINT"  // Field=s_di_cleaning.name
+      POINTER  // Field=s_di_cleaning.ps_input
+    ENDSTRUCT // End of structure=S_di
+ 	USHORT,700  // Field=velocity
+    //
+ENDSTRUCT // End of structure=cleaningbb
+//

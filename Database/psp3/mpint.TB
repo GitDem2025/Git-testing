@@ -1,0 +1,28 @@
+//
+//S_mpint
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_mpint
+  USHORT  // Field=id
+  USHORT  // Field=gen_purpose
+  USHORT  // Field=debug_function
+  ULONG  // Field=message_number
+ENDSTRUCT // End of structure=S_mpint
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_mpint
+  USHORT,1  // Field=id
+  USHORT,1  // Field=gen_purpose
+  USHORT,5  // Field=debug_function
+  ULONG  // Field=message_number
+ENDSTRUCT // End of structure=S_mpint
+//

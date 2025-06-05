@@ -1,0 +1,2272 @@
+//
+//S_phside
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:28
+//
+TABLE
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		  // Field=id
+    STRING12  // Field=name
+    USHORT		  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		  // Field=s_cfg_phside.offset_ph0
+      USHORT 		  // Field=s_cfg_phside.device
+      USHORT 		  // Field=s_cfg_phside.dev_id_low
+      USHORT 		  // Field=s_cfg_phside.dev_id_up
+      USHORT 		  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,11  // Field=id
+    STRING12,"PHSIDE_11"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_LDBSIDE_10"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,15840  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,10  // Field=s_cfg_phside.device
+      USHORT 		,10  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,3  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,12  // Field=id
+    STRING12,"PHSIDE_12"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_RECSIDE10"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,16823  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,4  // Field=s_cfg_phside.device
+      USHORT 		,10  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,3  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,21  // Field=id
+    STRING12,"PHSIDE_21"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_LDBSIDE_20"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,22504  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,10  // Field=s_cfg_phside.device
+      USHORT 		,20  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,3  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,22  // Field=id
+    STRING12,"PHSIDE_22"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_RECSIDE20"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,25  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,4  // Field=s_cfg_phside.device
+      USHORT 		,20  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,3  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,31  // Field=id
+    STRING12,"PHSIDE_31"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_LDBSIDE_30"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,4158  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,10  // Field=s_cfg_phside.device
+      USHORT 		,30  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,3  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,32  // Field=id
+    STRING12,"PHSIDE_32"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_RECSIDE30"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,5434  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,4  // Field=s_cfg_phside.device
+      USHORT 		,30  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,3  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,41  // Field=id
+    STRING12,"PHSIDE_41"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_LDBSIDE_40"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,10955  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,10  // Field=s_cfg_phside.device
+      USHORT 		,40  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,3  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,42  // Field=id
+    STRING12,"PHSIDE_42"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_RECSIDE40"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11521  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,4  // Field=s_cfg_phside.device
+      USHORT 		,40  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,3  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,51  // Field=id
+    STRING12,"PHSYN_01"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_01"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11522  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,1  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,52  // Field=id
+    STRING12,"PHSYN_02"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_02"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11523  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,2  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,53  // Field=id
+    STRING12,"PHSYN_03"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_03"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11524  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,3  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,54  // Field=id
+    STRING12,"PHSYN_04"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_04"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11525  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,4  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,55  // Field=id
+    STRING12,"PHSYN_05"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_05"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11526  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,5  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,56  // Field=id
+    STRING12,"PHSYN_06"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_06"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11527  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,6  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,57  // Field=id
+    STRING12,"PHSYN_07"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_07"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11528  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,7  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,58  // Field=id
+    STRING12,"PHSYN_08"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_08"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11529  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,8  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,59  // Field=id
+    STRING12,"PHSYN_09"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_09"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11530  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,9  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,60  // Field=id
+    STRING12,"PHSYN_10"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_10"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11531  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,10  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,61  // Field=id
+    STRING12,"PHSYN_11"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_11"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11532  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,11  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,62  // Field=id
+    STRING12,"PHSYN_12"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_12"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11533  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,12  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,63  // Field=id
+    STRING12,"PHSYN_13"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_13"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11534  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,13  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,64  // Field=id
+    STRING12,"PHSYN_14"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_14"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11535  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,14  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,65  // Field=id
+    STRING12,"PHSYN_15"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_15"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11536  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,15  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,66  // Field=id
+    STRING12,"PHSYN_16"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_16"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11537  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,16  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,67  // Field=id
+    STRING12,"PHSYN_17"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_17"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11538  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,17  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,68  // Field=id
+    STRING12,"PHSYN_18"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_18"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11539  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,18  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,69  // Field=id
+    STRING12,"PHSYN_19"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_19"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11540  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,19  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//
+//
+BEGINSTRUCT // Begin of structure=S_phside
+    USHORT 		,70  // Field=id
+    STRING12,"PHSYN_20"  // Field=name
+    USHORT		,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=s_di_phside
+      STRING12 	,"I_PHSYN_20"  // Field=s_di_phside.name
+      POINTER  	  // Field=s_di_phside.ps_input
+    ENDSTRUCT // End of structure=s_di_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_cfg_phside
+      USHORT 		,11541  // Field=s_cfg_phside.offset_ph0
+      USHORT 		,21  // Field=s_cfg_phside.device
+      USHORT 		,20  // Field=s_cfg_phside.dev_id_low
+      USHORT 		,0  // Field=s_cfg_phside.dev_id_up
+      USHORT 		,1  // Field=s_cfg_phside.general_purpose
+    ENDSTRUCT // End of structure=s_cfg_phside
+     //
+    BEGINSTRUCT // Begin of structure=s_wk_phside
+      USHORT 		  // Field=s_wk_phside.ep_start
+      USHORT 		  // Field=s_wk_phside.current_cell
+      USHORT		  // Field=s_wk_phside.off_cnt
+      USHORT		  // Field=s_wk_phside.on_cnt
+      USHORT    	  // Field=s_wk_phside.correction_offset
+      USHORT	 	  // Field=s_wk_phside.relative_offset
+      USHORT		  // Field=s_wk_phside.previous_offset
+      USHORT 		  // Field=s_wk_phside.space_step
+      USHORT   	  // Field=s_wk_phside.flags
+      USHORT   	  // Field=s_wk_phside.belt_cnt
+      USHORT   	  // Field=s_wk_phside.hole_cnt
+    ENDSTRUCT 	// End of structure=s_wk_phside
+    //
+    BEGINSTRUCT // Begin of structure=s_state
+      SHORT 		,0  // Field=s_state.trace         
+      SHORT 		  // Field=s_state.init        
+      LONG  		  // Field=s_state.state          
+      LONG  		  // Field=s_state.previous_state 
+      LONG  		  // Field=s_state.next_state     
+      LONG  		  // Field=s_state.substate       
+      STRING40  // Field=s_state.des_state    
+      STRING40  // Field=s_state.des_prevstate 
+    ENDSTRUCT // End of structure=s_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_phsidestat
+      //
+      BEGINSTRUCT // Begin of structure=S_statis
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_failure.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.n_time
+          ULONG  // Field=s_phsidestat.s_statis.s_counter_disable.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ENDSTRUCT // End of structure=S_statis
+      //
+      //
+      BEGINSTRUCT // Begin of structure=S_status
+        ULONG  // Field=s_phsidestat.s_status.status
+        ULONG  // Field=s_phsidestat.s_status.old_status
+      ENDSTRUCT // End of structure=S_status
+      //
+    ENDSTRUCT // End of structure=S_phsidestat
+    //
+ENDSTRUCT // End of structure=S_phside
+//

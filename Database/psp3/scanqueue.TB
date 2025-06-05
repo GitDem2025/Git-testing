@@ -1,0 +1,632 @@
+//
+//S_scanqueue
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:4
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scanqueue
+  USHORT  // Field=scanner_id
+  USHORT  // Field=n_parc_waiting
+  USHORT  // Field=timeout
+  //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+ENDSTRUCT // End of structure=S_scanqueue
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scanqueue
+  USHORT,1  // Field=scanner_id
+  USHORT,1  // Field=n_parc_waiting
+  USHORT,12  // Field=timeout
+  //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+ENDSTRUCT // End of structure=S_scanqueue
+//
+//
+BEGINSTRUCT // Begin of structure=S_scanqueue
+  USHORT,2  // Field=scanner_id
+  USHORT,1  // Field=n_parc_waiting
+  USHORT,12  // Field=timeout
+  //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+ENDSTRUCT // End of structure=S_scanqueue
+//
+//
+BEGINSTRUCT // Begin of structure=S_scanqueue
+  USHORT,3  // Field=scanner_id
+  USHORT,1  // Field=n_parc_waiting
+  USHORT,12  // Field=timeout
+  //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+ENDSTRUCT // End of structure=S_scanqueue
+//
+//
+BEGINSTRUCT // Begin of structure=S_scanqueue
+  USHORT,4  // Field=scanner_id
+  USHORT,1  // Field=n_parc_waiting
+  USHORT,12  // Field=timeout
+  //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[0].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[1].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[2].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[3].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[4].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[5].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[6].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[7].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[8].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[9].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[10].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[11].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[12].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[13].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[14].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[15].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[16].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[17].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[18].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_scanloop_enable
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].n_cell
+          USHORT  // Field=s_waiting.s_scanloop_enable[19].cnt_timeout
+        ENDSTRUCT // End of structure=S_scanloop_enable
+        //  
+ENDSTRUCT // End of structure=S_scanqueue
+//

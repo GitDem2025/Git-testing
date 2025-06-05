@@ -1,0 +1,156 @@
+//
+//S_safeplc
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_safeplc
+	//
+ 	USHORT		  // Field=id
+ STRING12  // Field=name
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_cfg_safeplc
+  		USHORT		  // Field=s_cfg_safeplc.debug
+	ENDSTRUCT // End of structure=S_cfg_safeplc
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12  // Field=s_di_wd0.name
+  		POINTER  // Field=s_di_wd0.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12  // Field=s_di_wd1.name
+  		POINTER  // Field=s_di_wd1.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12  // Field=s_di_wd2.name
+  		POINTER  // Field=s_di_wd2.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12  // Field=s_di_wd3.name
+  		POINTER  // Field=s_di_wd3.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12  // Field=s_do_xbrun.name
+  		POINTER  // Field=s_do_xbrun.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//	
+	//
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_encoder.base
+      ULONG  // Field=s_tm_encoder.preset
+      POINTER  // Field=s_tm_encoder.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+	//
+	//
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_watchdog.base
+      ULONG  // Field=s_tm_watchdog.preset
+      POINTER  // Field=s_tm_watchdog.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+	//
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_safeplc
+      USHORT  // Field=s_wk_safeplc.xbrun_state
+   	  USHORT  // Field=s_wk_safeplc.plc_conn_state
+      ULONG  // Field=s_wk_safeplc.encoder_ph_backup
+   	  USHORT  // Field=s_wk_safeplc.plc_wd_backup
+    ENDSTRUCT // End of structure=S_wk_safeplc
+	//
+	//
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+	//
+	//
+ENDSTRUCT // End of structure=S_safeplc
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_safeplc
+	//
+ 	USHORT		,1  // Field=id
+ STRING12,"SAFEPLC"  // Field=name
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_cfg_safeplc
+  		USHORT		,5  // Field=s_cfg_safeplc.debug
+	ENDSTRUCT // End of structure=S_cfg_safeplc
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_PLCWD_01"  // Field=s_di_wd0.name
+  		POINTER  // Field=s_di_wd0.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_PLCWD_02"  // Field=s_di_wd1.name
+  		POINTER  // Field=s_di_wd1.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_PLCWD_03"  // Field=s_di_wd2.name
+  		POINTER  // Field=s_di_wd2.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_PLCWD_04"  // Field=s_di_wd3.name
+  		POINTER  // Field=s_di_wd3.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_XBRUNPLC"  // Field=s_do_xbrun.name
+  		POINTER  // Field=s_do_xbrun.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//	
+	//
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_encoder.base
+      ULONG,2  // Field=s_tm_encoder.preset
+      POINTER  // Field=s_tm_encoder.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+	//
+	//
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_watchdog.base
+      ULONG,3  // Field=s_tm_watchdog.preset
+      POINTER  // Field=s_tm_watchdog.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+	//
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_safeplc
+      USHORT  // Field=s_wk_safeplc.xbrun_state
+   	  USHORT  // Field=s_wk_safeplc.plc_conn_state
+      ULONG  // Field=s_wk_safeplc.encoder_ph_backup
+   	  USHORT  // Field=s_wk_safeplc.plc_wd_backup
+    ENDSTRUCT // End of structure=S_wk_safeplc
+	//
+	//
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+	//
+	//
+ENDSTRUCT // End of structure=S_safeplc
+//

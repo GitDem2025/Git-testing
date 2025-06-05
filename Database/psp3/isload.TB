@@ -1,0 +1,1171 @@
+//
+//S_isload
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT  // Field=id
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG  // Field=s_isloadpar[0].starting_length
+      ULONG  // Field=s_isloadpar[0].final_length
+      USHORT  // Field=s_isloadpar[0].is_distance_offset
+      USHORT  // Field=s_isloadpar[0].activation_delay
+      USHORT  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT  // Field=s_isloadpar[0].ramp_up
+      USHORT  // Field=s_isloadpar[0].ramp_dw
+      USHORT  // Field=s_isloadpar[0].ramp_length
+      USHORT  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT  // Field=s_isloadpar[0].slowdw_vel
+      USHORT  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG  // Field=s_isloadpar[1].starting_length
+      ULONG  // Field=s_isloadpar[1].final_length
+      USHORT  // Field=s_isloadpar[1].is_distance_offset
+      USHORT  // Field=s_isloadpar[1].activation_delay
+      USHORT  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT  // Field=s_isloadpar[1].ramp_up
+      USHORT  // Field=s_isloadpar[1].ramp_dw
+      USHORT  // Field=s_isloadpar[1].ramp_length
+      USHORT  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT  // Field=s_isloadpar[1].slowdw_vel
+      USHORT  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG  // Field=s_isloadpar[2].starting_length
+      ULONG  // Field=s_isloadpar[2].final_length
+      USHORT  // Field=s_isloadpar[2].is_distance_offset
+      USHORT  // Field=s_isloadpar[2].activation_delay
+      USHORT  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT  // Field=s_isloadpar[2].ramp_up
+      USHORT  // Field=s_isloadpar[2].ramp_dw
+      USHORT  // Field=s_isloadpar[2].ramp_length
+      USHORT  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT  // Field=s_isloadpar[2].slowdw_vel
+      USHORT  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,11  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,12  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,13  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,14  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,15  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,21  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,22  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,23  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,24  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,31  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,32  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,33  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,34  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,35  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,41  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,42  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,43  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//
+//
+BEGINSTRUCT // Begin of structure=S_isload
+  USHORT,44  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,0  // Field=s_isloadpar[0].starting_length
+      ULONG,400  // Field=s_isloadpar[0].final_length
+      USHORT,0  // Field=s_isloadpar[0].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[0].activation_delay
+      USHORT,0  // Field=s_isloadpar[0].velnomlow_fw
+      USHORT,2400  // Field=s_isloadpar[0].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[0].ramp_up
+      USHORT,0  // Field=s_isloadpar[0].ramp_dw
+      USHORT,0  // Field=s_isloadpar[0].ramp_length
+      USHORT,1  // Field=s_isloadpar[0].slowdw_enabled
+      USHORT,700  // Field=s_isloadpar[0].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[0].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,401  // Field=s_isloadpar[1].starting_length
+      ULONG,700  // Field=s_isloadpar[1].final_length
+      USHORT,0  // Field=s_isloadpar[1].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[1].activation_delay
+      USHORT,0  // Field=s_isloadpar[1].velnomlow_fw
+      USHORT,2500  // Field=s_isloadpar[1].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[1].ramp_up
+      USHORT,0  // Field=s_isloadpar[1].ramp_dw
+      USHORT,0  // Field=s_isloadpar[1].ramp_length
+      USHORT,1  // Field=s_isloadpar[1].slowdw_enabled
+      USHORT,1000  // Field=s_isloadpar[1].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[1].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_isloadpar
+      ULONG,701  // Field=s_isloadpar[2].starting_length
+      ULONG,2000  // Field=s_isloadpar[2].final_length
+      USHORT,0  // Field=s_isloadpar[2].is_distance_offset
+      USHORT,0  // Field=s_isloadpar[2].activation_delay
+      USHORT,0  // Field=s_isloadpar[2].velnomlow_fw
+      USHORT,2200  // Field=s_isloadpar[2].velnomhigh_fw
+      USHORT,5000  // Field=s_isloadpar[2].ramp_up
+      USHORT,0  // Field=s_isloadpar[2].ramp_dw
+      USHORT,0  // Field=s_isloadpar[2].ramp_length
+      USHORT,1  // Field=s_isloadpar[2].slowdw_enabled
+      USHORT,100  // Field=s_isloadpar[2].slowdw_vel
+      USHORT,0  // Field=s_isloadpar[2].slowdw_time
+    ENDSTRUCT // End of structure=S_isloadpar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_isload
+      USHORT  // Field=s_wk_isload.slowdw_mgm
+      USHORT  // Field=s_wk_isload.slowdw_vel
+      USHORT  // Field=s_wk_isload.slowdw_time
+    ENDSTRUCT // End of structure=S_wk_isload
+    //
+ENDSTRUCT // End of structure=S_isload
+//

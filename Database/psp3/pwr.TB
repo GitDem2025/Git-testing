@@ -1,0 +1,2032 @@
+//
+//S_pwr_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:1
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr_header
+  USHORT  // Field=n_max_error
+  USHORT  // Field=n_pwr_failure
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_pwr65V_contact_overload.name
+      POINTER  // Field=s_di_pwr65V_contact_overload.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_pwr65V_low_voltage.name
+      POINTER  // Field=s_di_pwr65V_low_voltage.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+ENDSTRUCT // End of structure=S_pwr_header
+//
+//
+ENDHEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr_header
+  USHORT,7  // Field=n_max_error
+  USHORT  // Field=n_pwr_failure
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_pwr65V_contact_overload.name
+      POINTER  // Field=s_di_pwr65V_contact_overload.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_48VFAIL"  // Field=s_di_pwr65V_low_voltage.name
+      POINTER  // Field=s_di_pwr65V_low_voltage.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+ENDSTRUCT // End of structure=S_pwr_header
+//
+//
+//S_pwr
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:28
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,1  // Field=id
+  STRING12,"PWR_01"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS01_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,2  // Field=id
+  STRING12,"PWR_02"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS02_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,3  // Field=id
+  STRING12,"PWR_03"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS03_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,4  // Field=id
+  STRING12,"PWR_04"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS04_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,5  // Field=id
+  STRING12,"PWR_05"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS05_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,6  // Field=id
+  STRING12,"PWR_06"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS06_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,7  // Field=id
+  STRING12,"PWR_07"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS07_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,8  // Field=id
+  STRING12,"PWR_08"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS08_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,9  // Field=id
+  STRING12,"PWR_09"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS09_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,10  // Field=id
+  STRING12,"PWR_10"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS10_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,11  // Field=id
+  STRING12,"PWR_11"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS11_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,12  // Field=id
+  STRING12,"PWR_12"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS12_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,13  // Field=id
+  STRING12,"PWR_13"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS13_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,14  // Field=id
+  STRING12,"PWR_14"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS14_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,15  // Field=id
+  STRING12,"PWR_15"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS15_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,16  // Field=id
+  STRING12,"PWR_16"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS16_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,17  // Field=id
+  STRING12,"PWR_17"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS17_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,18  // Field=id
+  STRING12,"PWR_18"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS18_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,19  // Field=id
+  STRING12,"PWR_19"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS19_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,20  // Field=id
+  STRING12,"PWR_20"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS20_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,21  // Field=id
+  STRING12,"PWR_21"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS21_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,22  // Field=id
+  STRING12,"PWR_22"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS22_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,23  // Field=id
+  STRING12,"PWR_23"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS23_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,24  // Field=id
+  STRING12,"PWR_24"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS24_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,25  // Field=id
+  STRING12,"PWR_25"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS25_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,26  // Field=id
+  STRING12,"PWR_26"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS26_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,27  // Field=id
+  STRING12,"PWR_27"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS27_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//
+//
+BEGINSTRUCT // Begin of structure=S_pwr
+  USHORT,28  // Field=id
+  STRING12,"PWR_28"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWS28_GD1"  // Field=s_di_fault.name
+      POINTER  // Field=s_di_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_inhibit.name
+      POINTER  // Field=s_do_inhibit.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_pwr
+      USHORT  // Field=s_wk_pwr.status
+    ENDSTRUCT // End of structure=S_wk_pwr
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_pwrstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_pwrstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_pwrstat.s_status.status
+          ULONG  // Field=s_pwrstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_pwrstat
+    //
+ENDSTRUCT // End of structure=S_pwr
+//

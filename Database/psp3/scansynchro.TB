@@ -1,0 +1,256 @@
+//
+//S_scansynchro
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scansynchro
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scansynchro
+      USHORT  // Field=s_cfg_scansynchro.offset_ph0
+      USHORT  // Field=s_cfg_scansynchro.before_after
+      USHORT  // Field=s_cfg_scansynchro.ep_start_reading
+      USHORT  // Field=s_cfg_scansynchro.n_max_noread_err
+      USHORT  // Field=s_cfg_scansynchro.n_max_nomess_err
+      UCHAR  // Field=s_cfg_scansynchro.no_read_char
+      UCHAR  // Field=s_cfg_scansynchro.valid_code_length
+      USHORT  // Field=s_cfg_scansynchro.valid_code_position
+    ENDSTRUCT // End of structure=S_cfg_scansynchro
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ok.name
+      POINTER  // Field=s_di_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_trigger.name
+      POINTER  // Field=s_do_trigger.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cnt
+      LONG  // Field=s_cnt_reading.preset
+      LONG  // Field=s_cnt_reading.cnt
+    ENDSTRUCT // End of structure=S_cnt
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cnt
+      LONG  // Field=s_cnt_cell_to_read.preset
+      LONG  // Field=s_cnt_cell_to_read.cnt
+    ENDSTRUCT // End of structure=S_cnt
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT  // Field=s_driver.type
+      USHORT  // Field=s_driver.id_driver
+      USHORT  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scansynchro
+      USHORT  // Field=s_wk_scansynchro.cell_to_encoder
+      USHORT  // Field=s_wk_scansynchro.mbx_scanrx
+      USHORT  // Field=s_wk_scansynchro.last_cell_read
+      USHORT  // Field=s_wk_scansynchro.cell_read[0]
+      USHORT  // Field=s_wk_scansynchro.cell_read[1]
+      USHORT  // Field=s_wk_scansynchro.cell_read[2]
+      USHORT  // Field=s_wk_scansynchro.cell_read[3]
+      USHORT  // Field=s_wk_scansynchro.cell_read[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_ctrl_error
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_noread_err.error_cnt
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_noread_err.window_cnt
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_noread_err.window_idx
+          STRING100  // Field=s_wk_scansynchro.s_ctrl_noread_err.window
+        ENDSTRUCT // End of structure=S_ctrl_error
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_ctrl_error
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_nomess_err.error_cnt
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_nomess_err.window_cnt
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_nomess_err.window_idx
+          STRING100  // Field=s_wk_scansynchro.s_ctrl_nomess_err.window
+        ENDSTRUCT // End of structure=S_ctrl_error
+        //
+    ENDSTRUCT // End of structure=S_wk_scansynchro
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_scansynchrostat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scansynchrostat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_scansynchrostat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scansynchrostat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_scansynchrostat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_scansynchrostat.s_status.status
+          ULONG  // Field=s_scansynchrostat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_scansynchrostat
+    //
+ENDSTRUCT // End of structure=S_scansynchro
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scansynchro
+  USHORT,1  // Field=id
+  STRING12,"SCANSY_01"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scansynchro
+      USHORT,50  // Field=s_cfg_scansynchro.offset_ph0
+      USHORT,0  // Field=s_cfg_scansynchro.before_after
+      USHORT,2  // Field=s_cfg_scansynchro.ep_start_reading
+      USHORT,0  // Field=s_cfg_scansynchro.n_max_noread_err
+      USHORT,0  // Field=s_cfg_scansynchro.n_max_nomess_err
+      UCHAR,63  // Field=s_cfg_scansynchro.no_read_char
+      UCHAR,4  // Field=s_cfg_scansynchro.valid_code_length
+      USHORT,0  // Field=s_cfg_scansynchro.valid_code_position
+    ENDSTRUCT // End of structure=S_cfg_scansynchro
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_SCRD_CSS01"  // Field=s_di_ok.name
+      POINTER  // Field=s_di_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_CSS01_TRG1"  // Field=s_do_trigger.name
+      POINTER  // Field=s_do_trigger.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cnt
+      LONG,1  // Field=s_cnt_reading.preset
+      LONG  // Field=s_cnt_reading.cnt
+    ENDSTRUCT // End of structure=S_cnt
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cnt
+      LONG  // Field=s_cnt_cell_to_read.preset
+      LONG  // Field=s_cnt_cell_to_read.cnt
+    ENDSTRUCT // End of structure=S_cnt
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,1  // Field=s_driver.type
+      USHORT,99  // Field=s_driver.id_driver
+      USHORT,3  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scansynchro
+      USHORT  // Field=s_wk_scansynchro.cell_to_encoder
+      USHORT  // Field=s_wk_scansynchro.mbx_scanrx
+      USHORT  // Field=s_wk_scansynchro.last_cell_read
+      USHORT  // Field=s_wk_scansynchro.cell_read[0]
+      USHORT  // Field=s_wk_scansynchro.cell_read[1]
+      USHORT  // Field=s_wk_scansynchro.cell_read[2]
+      USHORT  // Field=s_wk_scansynchro.cell_read[3]
+      USHORT  // Field=s_wk_scansynchro.cell_read[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_ctrl_error
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_noread_err.error_cnt
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_noread_err.window_cnt
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_noread_err.window_idx
+          STRING100  // Field=s_wk_scansynchro.s_ctrl_noread_err.window
+        ENDSTRUCT // End of structure=S_ctrl_error
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_ctrl_error
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_nomess_err.error_cnt
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_nomess_err.window_cnt
+          USHORT  // Field=s_wk_scansynchro.s_ctrl_nomess_err.window_idx
+          STRING100  // Field=s_wk_scansynchro.s_ctrl_nomess_err.window
+        ENDSTRUCT // End of structure=S_ctrl_error
+        //
+    ENDSTRUCT // End of structure=S_wk_scansynchro
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_scansynchrostat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scansynchrostat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_scansynchrostat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scansynchrostat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_scansynchrostat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_scansynchrostat.s_status.status
+          ULONG  // Field=s_scansynchrostat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_scansynchrostat
+    //
+ENDSTRUCT // End of structure=S_scansynchro
+//

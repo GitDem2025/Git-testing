@@ -1,0 +1,2764 @@
+//
+//S_mercdev
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:171
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT  // Field=dev
+  USHORT  // Field=dev_id
+  STRING20  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1100  // Field=dev_id
+  STRING20,"M01100"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1101  // Field=dev_id
+  STRING20,"M01101"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1102  // Field=dev_id
+  STRING20,"M01102"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1103  // Field=dev_id
+  STRING20,"M01103"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1104  // Field=dev_id
+  STRING20,"M01104"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1105  // Field=dev_id
+  STRING20,"M01105"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1106  // Field=dev_id
+  STRING20,"M01106"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1107  // Field=dev_id
+  STRING20,"M01107"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1108  // Field=dev_id
+  STRING20,"M01108"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1109  // Field=dev_id
+  STRING20,"M01109"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1110  // Field=dev_id
+  STRING20,"M01110"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1111  // Field=dev_id
+  STRING20,"M01111"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1112  // Field=dev_id
+  STRING20,"M01112"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1113  // Field=dev_id
+  STRING20,"M01113"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1114  // Field=dev_id
+  STRING20,"M01114"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1115  // Field=dev_id
+  STRING20,"M01115"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1116  // Field=dev_id
+  STRING20,"M01116"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1117  // Field=dev_id
+  STRING20,"M01117"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1118  // Field=dev_id
+  STRING20,"M01118"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1119  // Field=dev_id
+  STRING20,"M01119"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1120  // Field=dev_id
+  STRING20,"M01120"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1121  // Field=dev_id
+  STRING20,"M01121"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1122  // Field=dev_id
+  STRING20,"M01122"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1123  // Field=dev_id
+  STRING20,"M01123"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1124  // Field=dev_id
+  STRING20,"M01124"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1125  // Field=dev_id
+  STRING20,"M01125"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1126  // Field=dev_id
+  STRING20,"M01126"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1127  // Field=dev_id
+  STRING20,"M01127"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1128  // Field=dev_id
+  STRING20,"M01128"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1129  // Field=dev_id
+  STRING20,"M01129"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1130  // Field=dev_id
+  STRING20,"M01130"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1131  // Field=dev_id
+  STRING20,"M01131"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1132  // Field=dev_id
+  STRING20,"M01132"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1133  // Field=dev_id
+  STRING20,"M01133"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1134  // Field=dev_id
+  STRING20,"M01134"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1135  // Field=dev_id
+  STRING20,"M01135"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1136  // Field=dev_id
+  STRING20,"M01136"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1200  // Field=dev_id
+  STRING20,"M01200"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1201  // Field=dev_id
+  STRING20,"M01201"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1202  // Field=dev_id
+  STRING20,"M01202"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1203  // Field=dev_id
+  STRING20,"M01203"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1204  // Field=dev_id
+  STRING20,"M01204"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1205  // Field=dev_id
+  STRING20,"M01205"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1206  // Field=dev_id
+  STRING20,"M01206"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1207  // Field=dev_id
+  STRING20,"M01207"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1208  // Field=dev_id
+  STRING20,"M01208"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1209  // Field=dev_id
+  STRING20,"M01209"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1210  // Field=dev_id
+  STRING20,"M01210"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1211  // Field=dev_id
+  STRING20,"M01211"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1212  // Field=dev_id
+  STRING20,"M01212"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1213  // Field=dev_id
+  STRING20,"M01213"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1214  // Field=dev_id
+  STRING20,"M01214"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1215  // Field=dev_id
+  STRING20,"M01215"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1216  // Field=dev_id
+  STRING20,"M01216"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1217  // Field=dev_id
+  STRING20,"M01217"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1218  // Field=dev_id
+  STRING20,"M01218"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1219  // Field=dev_id
+  STRING20,"M01219"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1220  // Field=dev_id
+  STRING20,"M01220"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1221  // Field=dev_id
+  STRING20,"M01221"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1222  // Field=dev_id
+  STRING20,"M01222"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1223  // Field=dev_id
+  STRING20,"M01223"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1224  // Field=dev_id
+  STRING20,"M01224"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1225  // Field=dev_id
+  STRING20,"M01225"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1226  // Field=dev_id
+  STRING20,"M01226"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1227  // Field=dev_id
+  STRING20,"M01227"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1228  // Field=dev_id
+  STRING20,"M01228"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1229  // Field=dev_id
+  STRING20,"M01229"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1230  // Field=dev_id
+  STRING20,"M01230"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1231  // Field=dev_id
+  STRING20,"M01231"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1232  // Field=dev_id
+  STRING20,"M01232"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1233  // Field=dev_id
+  STRING20,"M01233"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1234  // Field=dev_id
+  STRING20,"M01234"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1235  // Field=dev_id
+  STRING20,"M01235"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1300  // Field=dev_id
+  STRING20,"M01300"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1301  // Field=dev_id
+  STRING20,"M01301"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1302  // Field=dev_id
+  STRING20,"M01302"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1303  // Field=dev_id
+  STRING20,"M01303"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1304  // Field=dev_id
+  STRING20,"M01304"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1305  // Field=dev_id
+  STRING20,"M01305"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1306  // Field=dev_id
+  STRING20,"M01306"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1307  // Field=dev_id
+  STRING20,"M01307"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1308  // Field=dev_id
+  STRING20,"M01308"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1309  // Field=dev_id
+  STRING20,"M01309"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1310  // Field=dev_id
+  STRING20,"M01310"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1311  // Field=dev_id
+  STRING20,"M01311"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1312  // Field=dev_id
+  STRING20,"M01312"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1313  // Field=dev_id
+  STRING20,"M01313"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1314  // Field=dev_id
+  STRING20,"M01314"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1315  // Field=dev_id
+  STRING20,"M01315"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1316  // Field=dev_id
+  STRING20,"M01316"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1317  // Field=dev_id
+  STRING20,"M01317"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1318  // Field=dev_id
+  STRING20,"M01318"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1319  // Field=dev_id
+  STRING20,"M01319"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1320  // Field=dev_id
+  STRING20,"M01320"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1321  // Field=dev_id
+  STRING20,"M01321"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1322  // Field=dev_id
+  STRING20,"M01322"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1323  // Field=dev_id
+  STRING20,"M01323"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1324  // Field=dev_id
+  STRING20,"M01324"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1325  // Field=dev_id
+  STRING20,"M01325"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1326  // Field=dev_id
+  STRING20,"M01326"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1327  // Field=dev_id
+  STRING20,"M01327"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1328  // Field=dev_id
+  STRING20,"M01328"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1329  // Field=dev_id
+  STRING20,"M01329"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1330  // Field=dev_id
+  STRING20,"M01330"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1331  // Field=dev_id
+  STRING20,"M01331"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1332  // Field=dev_id
+  STRING20,"M01332"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1333  // Field=dev_id
+  STRING20,"M01333"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1334  // Field=dev_id
+  STRING20,"M01334"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1335  // Field=dev_id
+  STRING20,"M01335"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1336  // Field=dev_id
+  STRING20,"M01336"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1337  // Field=dev_id
+  STRING20,"M01337"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1400  // Field=dev_id
+  STRING20,"M01400"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1401  // Field=dev_id
+  STRING20,"M01401"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1402  // Field=dev_id
+  STRING20,"M01402"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1403  // Field=dev_id
+  STRING20,"M01403"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1404  // Field=dev_id
+  STRING20,"M01404"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1405  // Field=dev_id
+  STRING20,"M01405"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1406  // Field=dev_id
+  STRING20,"M01406"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1407  // Field=dev_id
+  STRING20,"M01407"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1408  // Field=dev_id
+  STRING20,"M01408"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1409  // Field=dev_id
+  STRING20,"M01409"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1410  // Field=dev_id
+  STRING20,"M01410"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1411  // Field=dev_id
+  STRING20,"M01411"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1412  // Field=dev_id
+  STRING20,"M01412"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1413  // Field=dev_id
+  STRING20,"M01413"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1414  // Field=dev_id
+  STRING20,"M01414"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1415  // Field=dev_id
+  STRING20,"M01415"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1416  // Field=dev_id
+  STRING20,"M01416"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1417  // Field=dev_id
+  STRING20,"M01417"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1418  // Field=dev_id
+  STRING20,"M01418"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1419  // Field=dev_id
+  STRING20,"M01419"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1420  // Field=dev_id
+  STRING20,"M01420"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1421  // Field=dev_id
+  STRING20,"M01421"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1422  // Field=dev_id
+  STRING20,"M01422"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1423  // Field=dev_id
+  STRING20,"M01423"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1424  // Field=dev_id
+  STRING20,"M01424"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1425  // Field=dev_id
+  STRING20,"M01425"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1426  // Field=dev_id
+  STRING20,"M01426"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1427  // Field=dev_id
+  STRING20,"M01427"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1428  // Field=dev_id
+  STRING20,"M01428"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1429  // Field=dev_id
+  STRING20,"M01429"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1430  // Field=dev_id
+  STRING20,"M01430"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1431  // Field=dev_id
+  STRING20,"M01431"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1432  // Field=dev_id
+  STRING20,"M01432"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,3  // Field=dev
+  USHORT,1433  // Field=dev_id
+  STRING20,"M01433"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,1  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,10  // Field=dev
+  USHORT,10  // Field=dev_id
+  STRING20,"S01aa>S01ab"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,10  // Field=dev
+  USHORT,20  // Field=dev_id
+  STRING20,"S01ab>S01ac"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,10  // Field=dev
+  USHORT,30  // Field=dev_id
+  STRING20,"S01ac>S01ad"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,10  // Field=dev
+  USHORT,40  // Field=dev_id
+  STRING20,"S01ad>S01aa"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,11  // Field=dev_id
+  STRING20,"IS11"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,12  // Field=dev_id
+  STRING20,"IS12"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,13  // Field=dev_id
+  STRING20,"IS13"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,14  // Field=dev_id
+  STRING20,"IS14"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,15  // Field=dev_id
+  STRING20,"IS15"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,21  // Field=dev_id
+  STRING20,"IS21"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,22  // Field=dev_id
+  STRING20,"IS22"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,23  // Field=dev_id
+  STRING20,"IS23"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,24  // Field=dev_id
+  STRING20,"IS24"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,31  // Field=dev_id
+  STRING20,"IS31"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,32  // Field=dev_id
+  STRING20,"IS32"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,33  // Field=dev_id
+  STRING20,"IS33"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,34  // Field=dev_id
+  STRING20,"IS34"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,35  // Field=dev_id
+  STRING20,"IS35"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,41  // Field=dev_id
+  STRING20,"IS41"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,42  // Field=dev_id
+  STRING20,"IS42"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,43  // Field=dev_id
+  STRING20,"IS43"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,51  // Field=dev
+  USHORT,44  // Field=dev_id
+  STRING20,"IS44"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,102  // Field=dev
+  USHORT,1  // Field=dev_id
+  STRING20,"S01aa"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,102  // Field=dev
+  USHORT,2  // Field=dev_id
+  STRING20,"S01ab"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,102  // Field=dev
+  USHORT,3  // Field=dev_id
+  STRING20,"S01ac"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercdev
+  USHORT,102  // Field=dev
+  USHORT,4  // Field=dev_id
+  STRING20,"S01ad"  // Field=merc_device_name
+  ULONG  // Field=status
+  USHORT,0  // Field=send_status
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_resend.base
+      ULONG  // Field=s_tm_resend.preset
+      POINTER  // Field=s_tm_resend.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_mercdev
+//

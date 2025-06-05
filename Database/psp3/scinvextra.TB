@@ -1,0 +1,2994 @@
+//
+//S_scinvextra
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:41
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT  // Field=id
+  STRING12  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT  // Field=s_cfg_scinvextra.type
+      USHORT  // Field=s_cfg_scinvextra.board_id
+   	  USHORT  // Field=s_cfg_scinvextra.module_id
+   	  USHORT  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,1  // Field=id
+  STRING12,"INV_01"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,2  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_01"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_01"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_01"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_01"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_01"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,2  // Field=id
+  STRING12,"INV_02"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,2  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_02"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_02"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_02"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_02"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_02"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,3  // Field=id
+  STRING12,"INV_03"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,2  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_03"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_03"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_03"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_03"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_03"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,4  // Field=id
+  STRING12,"INV_04"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_04"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_04"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_04"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_04"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_04"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,5  // Field=id
+  STRING12,"INV_05"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_05"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_05"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_05"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_05"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_05"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,6  // Field=id
+  STRING12,"INV_06"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_06"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_06"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_06"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_06"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_06"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,7  // Field=id
+  STRING12,"INV_07"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,6  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_07"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_07"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_07"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_07"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_07"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,8  // Field=id
+  STRING12,"INV_08"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,6  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_08"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_08"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_08"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_08"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_08"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,9  // Field=id
+  STRING12,"INV_09"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,6  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_09"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_09"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_09"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_09"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_09"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,10  // Field=id
+  STRING12,"INV_10"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,8  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_10"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_10"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_10"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_10"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_10"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,11  // Field=id
+  STRING12,"INV_11"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,8  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_11"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_11"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_11"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_11"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_11"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,12  // Field=id
+  STRING12,"INV_12"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,8  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_12"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_12"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_12"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_12"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_12"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,13  // Field=id
+  STRING12,"INV_13"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,10  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,5  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_13"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_13"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_13"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_13"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_13"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,14  // Field=id
+  STRING12,"INV_14"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,10  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,5  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_14"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_14"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_14"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_14"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_14"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,15  // Field=id
+  STRING12,"INV_15"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,12  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,6  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_15"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_15"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_15"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_15"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_15"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,16  // Field=id
+  STRING12,"INV_16"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,12  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,6  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_16"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_16"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_16"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_16"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_16"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,17  // Field=id
+  STRING12,"INV_17"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,12  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,6  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_17"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_17"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_17"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_17"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_17"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,18  // Field=id
+  STRING12,"INV_18"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,14  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,7  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_18"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_18"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_18"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_18"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_18"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,19  // Field=id
+  STRING12,"INV_19"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,14  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,7  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_19"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_19"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_19"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_19"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_19"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,20  // Field=id
+  STRING12,"INV_20"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,14  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,7  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_20"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_20"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_20"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_20"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_20"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,21  // Field=id
+  STRING12,"INV_21"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,16  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,8  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_21"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_21"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_21"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_21"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_21"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,22  // Field=id
+  STRING12,"INV_22"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,16  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,8  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_22"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_22"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_22"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_22"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_22"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,23  // Field=id
+  STRING12,"INV_23"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,16  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,8  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_23"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_23"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_23"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_23"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_23"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,24  // Field=id
+  STRING12,"INV_24"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,18  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,9  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_24"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_24"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_24"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_24"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_24"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,25  // Field=id
+  STRING12,"INV_25"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,18  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,9  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_25"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_25"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_25"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_25"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_25"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,26  // Field=id
+  STRING12,"INV_26"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,18  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,9  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_26"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_26"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_26"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_26"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_26"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,27  // Field=id
+  STRING12,"INV_27"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,20  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,10  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_27"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_27"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_27"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_27"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_27"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,28  // Field=id
+  STRING12,"INV_28"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,20  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,10  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_28"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_28"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_28"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_28"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_28"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,29  // Field=id
+  STRING12,"INV_29"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,20  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,10  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_29"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_29"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_29"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_29"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_29"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,30  // Field=id
+  STRING12,"INV_30"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,22  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,11  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_30"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_30"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_30"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_30"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_30"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,31  // Field=id
+  STRING12,"INV_31"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,22  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,11  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_31"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_31"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_31"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_31"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_31"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,32  // Field=id
+  STRING12,"INV_32"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,22  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,11  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_32"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_32"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_32"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_32"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_32"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,33  // Field=id
+  STRING12,"INV_33"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,24  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,12  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_33"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_33"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_33"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_33"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_33"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,34  // Field=id
+  STRING12,"INV_34"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,24  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,12  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_34"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_34"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_34"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_34"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_34"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,35  // Field=id
+  STRING12,"INV_35"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,24  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,12  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_35"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_35"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_35"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_35"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_35"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,36  // Field=id
+  STRING12,"INV_36"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,26  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,13  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_36"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_36"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_36"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_36"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_36"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,37  // Field=id
+  STRING12,"INV_37"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,26  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,13  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_37"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_37"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_37"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_37"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_37"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,38  // Field=id
+  STRING12,"INV_38"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,26  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,13  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_38"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_38"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_38"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_38"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_38"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,39  // Field=id
+  STRING12,"INV_39"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,28  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,1  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,14  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_39"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_39"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_39"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_39"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_39"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,40  // Field=id
+  STRING12,"INV_40"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,28  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,4  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,14  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_40"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_40"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_40"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_40"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_40"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//
+//
+BEGINSTRUCT // Begin of structure=S_scinvextra
+  USHORT,41  // Field=id
+  STRING12,"INV_41"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_scinvextra
+      USHORT,1  // Field=s_cfg_scinvextra.type
+      USHORT,3  // Field=s_cfg_scinvextra.board_id
+   	  USHORT,28  // Field=s_cfg_scinvextra.module_id
+   	  USHORT,7  // Field=s_cfg_scinvextra.status_word_subm_id
+   	  USHORT,0  // Field=s_cfg_scinvextra.diag_info_subm_id
+    ENDSTRUCT // End of structure=S_cfg_scinvextra
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,14  // Field=s_id_sigdev_invcab.id
+      POINTER  // Field=s_id_sigdev_invcab.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  STRING12,"I_INVBRK_41"  // Field=s_di_brake.name
+  		POINTER  // Field=s_di_brake.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//	
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+  STRING12,"O_INVENB1_41"  // Field=s_do_invenable.name
+  		POINTER  // Field=s_do_invenable.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+   STRING12,"O_INVRES_41"  // Field=s_do_invreset.name
+   		POINTER  // Field=s_do_invreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+   STRING12,"A_INVREF_41"  // Field=s_ao_invref.name
+   	POINTER  // Field=s_ao_invref.ps_analog
+	ENDSTRUCT // End of structure=S_ao	
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12,"AI_INVCUR_41"  // Field=s_ai_output_curr.name
+      POINTER  // Field=s_ai_output_curr.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_ai
+      STRING12  // Field=s_ai_act_speed.name
+      POINTER  // Field=s_ai_act_speed.ps_ainput
+    ENDSTRUCT // End of structure=S_ai
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_scinvextra
+      USHORT  // Field=s_wk_scinvextra.valid
+      POINTER  // Field=s_wk_scinvextra.ps_input_source
+   	  USHORT  // Field=s_wk_scinvextra.status_word_offset
+   	  USHORT  // Field=s_wk_scinvextra.diag_info_offset
+   STRING16  // Field=s_wk_boschmtr.status_word_raw 
+   STRING16  // Field=s_wk_boschmtr.diag_info_raw
+   	  USHORT  // Field=s_wk_scinvextra.n_lsm_controlled
+   	  USHORT  // Field=s_wk_scinvextra.current_reference_value
+   	  USHORT  // Field=s_wk_scinvextra.unit_status
+   	  USHORT  // Field=s_wk_scinvextra.unit_failure	  
+    ENDSTRUCT // End of structure=S_wk_scinvextra
+    //	
+ENDSTRUCT // End of structure=S_scinvextra
+//

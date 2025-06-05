@@ -1,0 +1,75 @@
+//
+//S_cdcdiag
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:2
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_cdcdiag
+  USHORT  // Field=Id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_cdcdiag
+   	  USHORT  // Field=s_cfg_cdcdiag.offset_ph0
+   	  USHORT  // Field=s_cfg_cdcdiag.debug_function
+   	  USHORT  // Field=s_cfg_cdcdiag.statistic_type
+    ENDSTRUCT // End of structure=S_cfg_cdcdiag
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_cdcdiag
+   	  USHORT  // Field=s_wk_cdcdiag.ep_start_reading
+   	  USHORT  // Field=s_wk_cdcdiag.cell
+   	  USHORT  // Field=s_wk_cdcdiag.statistic_msg
+    ENDSTRUCT // End of structure=S_wk_cdcdiag
+    //
+ENDSTRUCT // End of structure=S_cdcdiag
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_cdcdiag
+  USHORT,1  // Field=Id
+  STRING12,"CDCDIAG_M_01"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_cdcdiag
+   	  USHORT,5500  // Field=s_cfg_cdcdiag.offset_ph0
+   	  USHORT,0  // Field=s_cfg_cdcdiag.debug_function
+   	  USHORT,10  // Field=s_cfg_cdcdiag.statistic_type
+    ENDSTRUCT // End of structure=S_cfg_cdcdiag
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_cdcdiag
+   	  USHORT  // Field=s_wk_cdcdiag.ep_start_reading
+   	  USHORT  // Field=s_wk_cdcdiag.cell
+   	  USHORT  // Field=s_wk_cdcdiag.statistic_msg
+    ENDSTRUCT // End of structure=S_wk_cdcdiag
+    //
+ENDSTRUCT // End of structure=S_cdcdiag
+//
+//
+BEGINSTRUCT // Begin of structure=S_cdcdiag
+  USHORT,2  // Field=Id
+  STRING12,"CDCDIAG_M_01"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_cdcdiag
+   	  USHORT,5540  // Field=s_cfg_cdcdiag.offset_ph0
+   	  USHORT,0  // Field=s_cfg_cdcdiag.debug_function
+   	  USHORT,0  // Field=s_cfg_cdcdiag.statistic_type
+    ENDSTRUCT // End of structure=S_cfg_cdcdiag
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_cdcdiag
+   	  USHORT  // Field=s_wk_cdcdiag.ep_start_reading
+   	  USHORT  // Field=s_wk_cdcdiag.cell
+   	  USHORT  // Field=s_wk_cdcdiag.statistic_msg
+    ENDSTRUCT // End of structure=S_wk_cdcdiag
+    //
+ENDSTRUCT // End of structure=S_cdcdiag
+//

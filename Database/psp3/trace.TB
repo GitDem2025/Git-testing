@@ -1,0 +1,60 @@
+//
+//S_trace_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:1
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_trace_header
+  ULONG  // Field=n_write
+  ULONG  // Field=n_read
+  POINTER  // Field=p_write
+  POINTER  // Field=p_read
+  USHORT  // Field=trace_region
+ENDSTRUCT // End of structure=S_trace_header
+//
+//
+ENDHEADER
+//
+//
+REPEAT:1
+//
+BEGINSTRUCT // Begin of structure=S_trace_header
+  ULONG  // Field=n_write
+  ULONG  // Field=n_read
+  POINTER  // Field=p_write
+  POINTER  // Field=p_read
+  USHORT  // Field=trace_region
+ENDSTRUCT // End of structure=S_trace_header
+//
+ENDREPEAT
+//
+//
+//S_trace
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:9900
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_trace
+  STRING256  // Field=trace_buffer
+ENDSTRUCT // End of structure=S_trace
+//
+//
+ENDTABLE
+//
+//
+REPEAT:9900
+//
+BEGINSTRUCT // Begin of structure=S_trace
+  STRING256  // Field=trace_buffer
+ENDSTRUCT // End of structure=S_trace
+//
+ENDREPEAT
+//

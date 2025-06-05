@@ -1,0 +1,26 @@
+//
+//S_mercint
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercint
+  USHORT  // Field=id
+  USHORT  // Field=gen_purpose
+  USHORT  // Field=debug_function
+ENDSTRUCT // End of structure=S_mercint
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_mercint
+  USHORT,1  // Field=id
+  USHORT,7  // Field=gen_purpose
+  USHORT,5  // Field=debug_function
+ENDSTRUCT // End of structure=S_mercint
+//

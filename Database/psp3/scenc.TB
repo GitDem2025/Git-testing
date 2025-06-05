@@ -1,0 +1,516 @@
+//
+//S_scenc_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:1
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_scenc_header
+  USHORT  // Field=encoder_number
+  USHORT  // Field=encoders_offset_ep
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_stdby_sel.name
+      POINTER  // Field=s_di_stdby_sel.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_master_enc.name
+      POINTER  // Field=s_do_master_enc.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_stdby_enc.name
+      POINTER  // Field=s_do_stdby_enc.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=fault_master
+  USHORT  // Field=fault_stdby
+  USHORT  // Field=flag_stdby_sel
+ENDSTRUCT // End of structure=S_scenc_header
+//
+//
+ENDHEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_scenc_header
+  USHORT,1  // Field=encoder_number
+  USHORT,0  // Field=encoders_offset_ep
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_stdby_sel.name
+      POINTER  // Field=s_di_stdby_sel.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_master_enc.name
+      POINTER  // Field=s_do_master_enc.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_stdby_enc.name
+      POINTER  // Field=s_do_stdby_enc.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=fault_master
+  USHORT  // Field=fault_stdby
+  USHORT  // Field=flag_stdby_sel
+ENDSTRUCT // End of structure=S_scenc_header
+//
+//
+//S_scenc
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scenc
+  USHORT  // Field=id
+  STRING12  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_enc
+      USHORT  // Field=s_cfg_enc.resolution
+      USHORT  // Field=s_cfg_enc.ep_of_ph0
+      USHORT  // Field=s_cfg_enc.max_error
+      USHORT  // Field=s_cfg_enc.max_error_ph
+      USHORT  // Field=s_cfg_enc.encoder_timeout[0]
+      USHORT  // Field=s_cfg_enc.encoder_timeout[1]
+      USHORT  // Field=s_cfg_enc.encoder_timeout[2]
+    ENDSTRUCT // End of structure=S_cfg_enc
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_reset[0].name
+      POINTER  // Field=s_di_reset[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_reset[1].name
+      POINTER  // Field=s_di_reset[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[0].name
+      POINTER  // Field=s_di_encph[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[1].name
+      POINTER  // Field=s_di_encph[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[2].name
+      POINTER  // Field=s_di_encph[2].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[3].name
+      POINTER  // Field=s_di_encph[3].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[4].name
+      POINTER  // Field=s_di_encph[4].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[5].name
+      POINTER  // Field=s_di_encph[5].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[6].name
+      POINTER  // Field=s_di_encph[6].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[7].name
+      POINTER  // Field=s_di_encph[7].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[8].name
+      POINTER  // Field=s_di_encph[8].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[9].name
+      POINTER  // Field=s_di_encph[9].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[10].name
+      POINTER  // Field=s_di_encph[10].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[11].name
+      POINTER  // Field=s_di_encph[11].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[12].name
+      POINTER  // Field=s_di_encph[12].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[13].name
+      POINTER  // Field=s_di_encph[13].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[14].name
+      POINTER  // Field=s_di_encph[14].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[15].name
+      POINTER  // Field=s_di_encph[15].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[16].name
+      POINTER  // Field=s_di_encph[16].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[17].name
+      POINTER  // Field=s_di_encph[17].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[18].name
+      POINTER  // Field=s_di_encph[18].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_encph[19].name
+      POINTER  // Field=s_di_encph[19].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_encoder.base
+      ULONG  // Field=s_tm_encoder.preset
+      POINTER  // Field=s_tm_encoder.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_enc
+      USHORT  // Field=s_wk_enc.absolute_ep
+      USHORT  // Field=s_wk_enc.relative_ep
+      USHORT  // Field=s_wk_enc.diff_ep
+      USHORT  // Field=s_wk_enc.encoder_cell
+      USHORT  // Field=s_wk_enc.cnt_error
+      USHORT  // Field=s_wk_enc.cnt_error_ph[0]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[1]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[2]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[3]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[4]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[5]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[6]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[7]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[8]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[9]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[10]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[11]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[12]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[13]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[14]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[15]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[16]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[17]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[18]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[19]
+      USHORT  // Field=s_wk_enc.cnt_ep_gap
+      ULONG  // Field=s_wk_enc.cnt_laps
+    ENDSTRUCT // End of structure=S_wk_enc
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_scencstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scencstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_scencstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scencstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_scencstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_scencstat.s_status.status
+          ULONG  // Field=s_scencstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_scencstat
+    //
+ENDSTRUCT // End of structure=S_scenc
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scenc
+  USHORT,1  // Field=id
+  STRING12,"ENCODER"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_enc
+      USHORT,50  // Field=s_cfg_enc.resolution
+      USHORT,6  // Field=s_cfg_enc.ep_of_ph0
+      USHORT,2  // Field=s_cfg_enc.max_error
+      USHORT,3  // Field=s_cfg_enc.max_error_ph
+      USHORT,6  // Field=s_cfg_enc.encoder_timeout[0]
+      USHORT,6  // Field=s_cfg_enc.encoder_timeout[1]
+      USHORT,6  // Field=s_cfg_enc.encoder_timeout[2]
+    ENDSTRUCT // End of structure=S_cfg_enc
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCRES1_01"  // Field=s_di_reset[0].name
+      POINTER  // Field=s_di_reset[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCRES1_02"  // Field=s_di_reset[1].name
+      POINTER  // Field=s_di_reset[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_01"  // Field=s_di_encph[0].name
+      POINTER  // Field=s_di_encph[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_02"  // Field=s_di_encph[1].name
+      POINTER  // Field=s_di_encph[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_03"  // Field=s_di_encph[2].name
+      POINTER  // Field=s_di_encph[2].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_04"  // Field=s_di_encph[3].name
+      POINTER  // Field=s_di_encph[3].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_05"  // Field=s_di_encph[4].name
+      POINTER  // Field=s_di_encph[4].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_06"  // Field=s_di_encph[5].name
+      POINTER  // Field=s_di_encph[5].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_07"  // Field=s_di_encph[6].name
+      POINTER  // Field=s_di_encph[6].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_08"  // Field=s_di_encph[7].name
+      POINTER  // Field=s_di_encph[7].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_09"  // Field=s_di_encph[8].name
+      POINTER  // Field=s_di_encph[8].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_10"  // Field=s_di_encph[9].name
+      POINTER  // Field=s_di_encph[9].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_11"  // Field=s_di_encph[10].name
+      POINTER  // Field=s_di_encph[10].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_12"  // Field=s_di_encph[11].name
+      POINTER  // Field=s_di_encph[11].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_13"  // Field=s_di_encph[12].name
+      POINTER  // Field=s_di_encph[12].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_14"  // Field=s_di_encph[13].name
+      POINTER  // Field=s_di_encph[13].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_15"  // Field=s_di_encph[14].name
+      POINTER  // Field=s_di_encph[14].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_16"  // Field=s_di_encph[15].name
+      POINTER  // Field=s_di_encph[15].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_17"  // Field=s_di_encph[16].name
+      POINTER  // Field=s_di_encph[16].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_18"  // Field=s_di_encph[17].name
+      POINTER  // Field=s_di_encph[17].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_19"  // Field=s_di_encph[18].name
+      POINTER  // Field=s_di_encph[18].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ENCPH1_20"  // Field=s_di_encph[19].name
+      POINTER  // Field=s_di_encph[19].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_encoder.base
+      ULONG  // Field=s_tm_encoder.preset
+      POINTER  // Field=s_tm_encoder.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_enc
+      USHORT  // Field=s_wk_enc.absolute_ep
+      USHORT  // Field=s_wk_enc.relative_ep
+      USHORT  // Field=s_wk_enc.diff_ep
+      USHORT  // Field=s_wk_enc.encoder_cell
+      USHORT  // Field=s_wk_enc.cnt_error
+      USHORT  // Field=s_wk_enc.cnt_error_ph[0]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[1]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[2]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[3]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[4]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[5]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[6]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[7]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[8]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[9]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[10]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[11]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[12]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[13]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[14]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[15]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[16]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[17]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[18]
+      USHORT  // Field=s_wk_enc.cnt_error_ph[19]
+      USHORT  // Field=s_wk_enc.cnt_ep_gap
+      ULONG  // Field=s_wk_enc.cnt_laps
+    ENDSTRUCT // End of structure=S_wk_enc
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_scencstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scencstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_scencstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scencstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_scencstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_scencstat.s_status.status
+          ULONG  // Field=s_scencstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_scencstat
+    //
+ENDSTRUCT // End of structure=S_scenc
+//

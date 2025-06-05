@@ -1,0 +1,28 @@
+//
+//S_ccureset
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_ccureset
+  //
+  USHORT  // Field=max_try_for_ccu
+  USHORT  // Field=max_reset_for_ccu
+//
+ENDSTRUCT // End of structure=S_ccureset
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_ccureset
+  //
+  USHORT,30  // Field=max_try_for_ccu
+  USHORT,2  // Field=max_reset_for_ccu
+//
+ENDSTRUCT // End of structure=S_ccureset
+//

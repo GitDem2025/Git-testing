@@ -1,0 +1,1399 @@
+//
+//S_isreverse
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT  // Field=id
+ STRING12  // Field=name
+ 	USHORT  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT  // Field=flashing_time_full
+     USHORT  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,11  // Field=id
+ STRING12,"CHREV_11"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_1104"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_1104"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_1103"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_11"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,12  // Field=id
+ STRING12,"CHREV_12"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_1204"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_1204"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_1203"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_12"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,13  // Field=id
+ STRING12,"CHREV_13"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_1304"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_1304"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_1303"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_13"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,14  // Field=id
+ STRING12,"CHREV_14"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_1404"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_1404"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_1403"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_14"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,15  // Field=id
+ STRING12,"CHREV_15"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_1504"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_1504"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_1503"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_15"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,21  // Field=id
+ STRING12,"CHREV_21"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_2104"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_2104"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_2103"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_21"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,22  // Field=id
+ STRING12,"CHREV_22"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_2204"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_2204"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_2203"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_22"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,23  // Field=id
+ STRING12,"CHREV_23"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_2304"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_2304"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_2303"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_23"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,24  // Field=id
+ STRING12,"CHREV_24"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_2404"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_2404"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_2403"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_24"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,31  // Field=id
+ STRING12,"CHREV_31"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_3104"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_3104"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_3103"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_31"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,32  // Field=id
+ STRING12,"CHREV_32"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_3204"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_3204"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_3203"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_32"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,33  // Field=id
+ STRING12,"CHREV_33"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_3304"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_3304"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_3303"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_33"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,34  // Field=id
+ STRING12,"CHREV_34"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_3404"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_3404"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_3403"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_34"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,35  // Field=id
+ STRING12,"CHREV_35"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_3504"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_3504"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_3503"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_35"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,41  // Field=id
+ STRING12,"CHREV_41"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_4104"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_4104"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_4103"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_41"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,42  // Field=id
+ STRING12,"CHREV_42"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_4204"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_4204"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_4203"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_42"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,43  // Field=id
+ STRING12,"CHREV_43"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_4304"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_4304"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_4303"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_43"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//
+//
+BEGINSTRUCT // Begin of structure=S_isreverse
+ 	USHORT,44  // Field=id
+ STRING12,"CHREV_44"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_isreverse
+     USHORT,0  // Field=flashing_time_full
+     USHORT,0  // Field=flashing_time_hf
+    ENDSTRUCT // End of structure=S_cfg_isreverse
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ischutepresent.name
+      POINTER  // Field=s_di_ischutepresent.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+   BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B11_4404"  // Field=s_di_ischutefull.name
+      POINTER  // Field=s_di_ischutefull.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B12_4404"  // Field=s_di_ischutehf.name
+      POINTER  // Field=s_di_ischutehf.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_B13_4403"  // Field=s_di_phobtob.name
+      POINTER  // Field=s_di_phobtob.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutepresent.name
+      POINTER  // Field=s_do_ischutepresent.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_RJCTLMP_44"  // Field=s_do_ischutefull.name
+      POINTER  // Field=s_do_ischutefull.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ischutehf.name
+      POINTER  // Field=s_do_ischutehf.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_isreverse
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_isreverse
+	//
+ENDSTRUCT // End of structure=S_isreverse
+//

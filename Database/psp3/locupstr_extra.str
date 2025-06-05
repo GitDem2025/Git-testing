@@ -1,0 +1,172 @@
+//
+//S_locupstr_extra
+//
+TABLE_TYPE: 0
+//
+MAXTABLE
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr_extra
+	//
+	USHORT  // Field=id
+	CHAR[12] // Field=name
+	USHORT  // Field=typeRequired
+	USHORT 	// Field=general_purpose
+	USHORT  // Field=progressiveNumber
+	USHORT  // Field=progressiveNumberReceived
+	USHORT  // Field=codeReceived
+	USHORT  // Field=n_sequence_error
+	USHORT  // Field=synch_phase
+	USHORT   // Field=nBoard
+	USHORT   // Field=nModuleId
+	USHORT   // Field=nSubModuleIdIn
+	USHORT   // Field=nSubModuleIdOut
+	//
+	BEGINSTRUCT // Begin of structure=S_id_iomodul
+        USHORT   // Field=s_id_iomodul.id
+        POINTER  // Field=s_id_iomodul.p_idrec
+	ENDSTRUCT // End of structure=S_id_iomodul
+ 	//
+	//
+	BEGINSTRUCT // Begin of structure=s_id_iosubmIn
+        USHORT   // Field=s_id_iosubmIn.id
+        POINTER  // Field=s_id_iosubmIn.p_idrec
+	ENDSTRUCT // End of structure=s_id_iosubmIn
+ 	//
+	//
+	BEGINSTRUCT // Begin of structure=s_id_iosubmOut
+        USHORT   // Field=s_id_iosubmOut.id
+        POINTER  // Field=s_id_iosubmOut.p_idrec
+	ENDSTRUCT // End of structure=s_id_iosubmOut
+ 	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+		CHAR[12]  // Field=s_di_gen_d2S_hb.name
+		POINTER  // Field=s_di_gen_d2S_hb.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+		CHAR[12]  // Field=s_di_gen_d2S_auto.name
+		POINTER  // Field=s_di_gen_d2S_auto.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+		CHAR[12]  // Field=s_di_gen_d2S_maint.name
+		POINTER  // Field=s_di_gen_d2S_maint.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+		CHAR[12]  // Field=s_di_gen_d2S_noerr.name
+		POINTER  // Field=s_di_gen_d2S_err.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+		CHAR[12]  // Field=s_di_dataready.name
+		POINTER  // Field=s_di_dataready.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+		CHAR[12]  // Field=s_di_priority.name
+		POINTER  // Field=s_di_priority.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_gen_d2S_hbecho.name
+		POINTER  // Field=s_do_gen_d2S_hbecho.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_gen_d2S_auto.name
+		POINTER  // Field=s_do_gen_d2S_auto.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_gen_d2S_maint.name
+		POINTER  // Field=s_do_gen_d2S_maint.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_gen_d2S_noerr.name
+		POINTER  // Field=s_do_gen_d2S_noerr.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_beltrun.name
+		POINTER  // Field=s_do_beltrun.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_isauto.name
+		POINTER  // Field=s_do_isauto.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_isjog.name
+		POINTER  // Field=s_do_isjog.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_iserr.name
+		POINTER  // Field=s_do_iserr.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_autoreset.name
+		POINTER  // Field=s_do_iautoreset.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+		CHAR[12]  // Field=s_do_plc_reset_req.name
+		POINTER  // Field=s_do_plc_reset_req.ps_output
+	ENDSTRUCT // End of structure=S_do
+	//
+	//
+	  BEGINSTRUCT // Begin of structure=S_ao
+		CHAR[12] // Field=s_ao_beltspeed.name
+		POINTER // Field=s_ao_beltspeed.ps_aoutput
+	  ENDSTRUCT // End of structure=S_ao
+	//
+	BEGINSTRUCT // Begin of structure=S_parc_ext
+	  USHORT // Field=s_parc_ext.valid
+	  CHAR[11] // Field=s_parc_ext.parcid_SC
+	  CHAR[11] // Field=s_parc_ext.parcid_dMFS
+	  USHORT // Field=s_parc_ext.priority_algo
+	  USHORT // Field=s_parc_ext.dest_index
+	  USHORT // Field=s_parc_ext.n_destination
+	  USHORT // Field=s_parc_ext.destination[0]
+	  USHORT // Field=s_parc_ext.destination[1]
+	  USHORT // Field=s_parc_ext.destination[2]
+	  USHORT // Field=s_parc_ext.destination[3]
+	  USHORT // Field=s_parc_ext.destination[4]
+	  USHORT // Field=s_parc_ext.destination[5]
+	  USHORT // Field=s_parc_ext.destination[6]
+	  USHORT // Field=s_parc_ext.destination[7]
+	  USHORT // Field=s_parc_ext.destination[8]
+	  USHORT // Field=s_parc_ext.destination[9]
+	  USHORT // Field=s_parc_ext.device
+	  USHORT // Field=s_parc_ext.dev_id
+	  USHORT // Field=s_parc_ext.prio_redest
+	  ULONG // Field=s_parc_ext.event_time
+	  ULONG // Field=s_parc_ext.event_time_ms
+	  UCHAR // Field=s_parc_ext.request_type
+	  UCHAR // Field=s_parc_ext.sort_dest_from_MFR
+	ENDSTRUCT // End of structure=S_parc_ext
+  	//  
+ENDSTRUCT // End of structure=S_locupstr_extra
+//
+ENDTABLE
+//

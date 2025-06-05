@@ -1,0 +1,32 @@
+Locupstr_extra general purpose flag
+NORMAL_DEBUG
+DETAIL_DEBUG
+Spare Flag1
+Spare Flag2
+Spare Flag3
+Spare Flag4
+Spare Flag5
+Spare Flag6
+Spare Flag7
+Spare Flag8
+Spare Flag9
+Spare Flag10
+Spare Flag11
+Spare Flag12
+Spare Flag13
+Spare Flag14
+Spare Flag15
+Spare Flag16
+Spare Flag17
+Spare Flag18
+Spare Flag19
+Spare Flag20
+Spare Flag21
+Spare Flag22
+Spare Flag23
+Spare Flag24
+Spare Flag25
+Spare Flag26
+Spare Flag27
+Spare Flag28
+Spare Flag29

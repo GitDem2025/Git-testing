@@ -1,0 +1,327 @@
+//
+//S_n_recnew
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:4
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_n_recnew
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_recnew.id
+      POINTER  // Field=s_id_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_n_recnew
+      SHORT  // Field=s_cfg_n_recnew.short_move
+      SHORT  // Field=s_cfg_n_recnew.long_move
+    ENDSTRUCT // End of structure=S_cfg_n_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_n_recnew
+      USHORT  // Field=s_wk_n_recnew.ccw_direction
+      USHORT  // Field=s_wk_n_recnew.cw_direction
+      USHORT  // Field=s_wk_n_recnew.ep_cell_start
+      USHORT  // Field=s_wk_n_recnew.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_wk_n_recnew
+    //
+ENDSTRUCT // End of structure=S_n_recnew
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_n_recnew
+  USHORT,10  // Field=id
+  STRING12,"NORM_REC_10"  // Field=name
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,10  // Field=s_id_recnew.id
+      POINTER  // Field=s_id_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_n_recnew
+      SHORT,50  // Field=s_cfg_n_recnew.short_move
+      SHORT,100  // Field=s_cfg_n_recnew.long_move
+    ENDSTRUCT // End of structure=S_cfg_n_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_n_recnew
+      USHORT  // Field=s_wk_n_recnew.ccw_direction
+      USHORT  // Field=s_wk_n_recnew.cw_direction
+      USHORT  // Field=s_wk_n_recnew.ep_cell_start
+      USHORT  // Field=s_wk_n_recnew.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_wk_n_recnew
+    //
+ENDSTRUCT // End of structure=S_n_recnew
+//
+//
+BEGINSTRUCT // Begin of structure=S_n_recnew
+  USHORT,20  // Field=id
+  STRING12,"NORM_REC_20"  // Field=name
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,20  // Field=s_id_recnew.id
+      POINTER  // Field=s_id_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_n_recnew
+      SHORT,50  // Field=s_cfg_n_recnew.short_move
+      SHORT,100  // Field=s_cfg_n_recnew.long_move
+    ENDSTRUCT // End of structure=S_cfg_n_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_n_recnew
+      USHORT  // Field=s_wk_n_recnew.ccw_direction
+      USHORT  // Field=s_wk_n_recnew.cw_direction
+      USHORT  // Field=s_wk_n_recnew.ep_cell_start
+      USHORT  // Field=s_wk_n_recnew.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_wk_n_recnew
+    //
+ENDSTRUCT // End of structure=S_n_recnew
+//
+//
+BEGINSTRUCT // Begin of structure=S_n_recnew
+  USHORT,30  // Field=id
+  STRING12,"NORM_REC_30"  // Field=name
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,30  // Field=s_id_recnew.id
+      POINTER  // Field=s_id_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_n_recnew
+      SHORT,50  // Field=s_cfg_n_recnew.short_move
+      SHORT,100  // Field=s_cfg_n_recnew.long_move
+    ENDSTRUCT // End of structure=S_cfg_n_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_n_recnew
+      USHORT  // Field=s_wk_n_recnew.ccw_direction
+      USHORT  // Field=s_wk_n_recnew.cw_direction
+      USHORT  // Field=s_wk_n_recnew.ep_cell_start
+      USHORT  // Field=s_wk_n_recnew.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_wk_n_recnew
+    //
+ENDSTRUCT // End of structure=S_n_recnew
+//
+//
+BEGINSTRUCT // Begin of structure=S_n_recnew
+  USHORT,40  // Field=id
+  STRING12,"NORM_REC_40"  // Field=name
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,40  // Field=s_id_recnew.id
+      POINTER  // Field=s_id_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_n_recnew
+      SHORT,50  // Field=s_cfg_n_recnew.short_move
+      SHORT,100  // Field=s_cfg_n_recnew.long_move
+    ENDSTRUCT // End of structure=S_cfg_n_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_n_recnew
+      USHORT  // Field=s_wk_n_recnew.ccw_direction
+      USHORT  // Field=s_wk_n_recnew.cw_direction
+      USHORT  // Field=s_wk_n_recnew.ep_cell_start
+      USHORT  // Field=s_wk_n_recnew.ep_cell_stop
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn4.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn5.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn6.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.preset
+          LONG  // Field=s_wk_n_recnew.s_cnt_phn7.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_wk_n_recnew
+    //
+ENDSTRUCT // End of structure=S_n_recnew
+//

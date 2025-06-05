@@ -1,0 +1,72 @@
+//
+//S_cmd
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:4
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_cmd
+  USHORT  // Field=id
+  USHORT  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_cmd.name
+      POINTER  // Field=s_di_cmd.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+ENDSTRUCT // End of structure=S_cmd
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_cmd
+  USHORT,1  // Field=id
+  USHORT,1  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PLCSTOP"  // Field=s_di_cmd.name
+      POINTER  // Field=s_di_cmd.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+ENDSTRUCT // End of structure=S_cmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_cmd
+  USHORT,2  // Field=id
+  USHORT,2  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_XBRESET"  // Field=s_di_cmd.name
+      POINTER  // Field=s_di_cmd.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+ENDSTRUCT // End of structure=S_cmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_cmd
+  USHORT,3  // Field=id
+  USHORT,0  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_XBSTART"  // Field=s_di_cmd.name
+      POINTER  // Field=s_di_cmd.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+ENDSTRUCT // End of structure=S_cmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_cmd
+  USHORT,4  // Field=id
+  USHORT,1  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_XBSTOP"  // Field=s_di_cmd.name
+      POINTER  // Field=s_di_cmd.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+ENDSTRUCT // End of structure=S_cmd
+//

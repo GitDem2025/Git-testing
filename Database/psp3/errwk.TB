@@ -1,0 +1,74 @@
+//
+//S_errwk_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:1
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_errwk_header
+  USHORT  // Field=n_errwk_write
+  USHORT  // Field=n_errwk_wrterr_read
+  USHORT  // Field=n_errwk_supserr_read
+  POINTER  // Field=ps_errwk_write
+  POINTER  // Field=ps_errwk_wrterr_read
+  POINTER  // Field=ps_errwk_supserr_read
+ENDSTRUCT // End of structure=S_errwk_header
+//
+//
+ENDHEADER
+//
+//
+REPEAT:1
+//
+BEGINSTRUCT // Begin of structure=S_errwk_header
+  USHORT  // Field=n_errwk_write
+  USHORT  // Field=n_errwk_wrterr_read
+  USHORT  // Field=n_errwk_supserr_read
+  POINTER  // Field=ps_errwk_write
+  POINTER  // Field=ps_errwk_wrterr_read
+  POINTER  // Field=ps_errwk_supserr_read
+ENDSTRUCT // End of structure=S_errwk_header
+//
+ENDREPEAT
+//
+//
+//S_errwk
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:999
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_errwk
+  USHORT  // Field=type
+  USHORT  // Field=subcode
+  USHORT  // Field=device
+  USHORT  // Field=id_device
+  USHORT  // Field=id_error
+  ULONG  // Field=time
+  USHORT  // Field=send_type
+ENDSTRUCT // End of structure=S_errwk
+//
+//
+ENDTABLE
+//
+//
+REPEAT:999
+//
+BEGINSTRUCT // Begin of structure=S_errwk
+  USHORT  // Field=type
+  USHORT  // Field=subcode
+  USHORT  // Field=device
+  USHORT  // Field=id_device
+  USHORT  // Field=id_error
+  ULONG  // Field=time
+  USHORT  // Field=send_type
+ENDSTRUCT // End of structure=S_errwk
+//
+ENDREPEAT
+//

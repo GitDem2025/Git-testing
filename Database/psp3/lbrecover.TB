@@ -1,0 +1,1000 @@
+//
+//S_lbrecover
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT  // Field=id
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,11  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,12  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,13  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,14  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,15  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,21  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,22  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,23  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,24  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,31  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,32  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,33  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,34  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,35  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,41  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,42  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,43  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//
+//
+BEGINSTRUCT // Begin of structure=S_lbrecover
+  USHORT,44  // Field=id
+  USHORT,0  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_lbrecover
+      USHORT  // Field=s_cfg_lbrecover.vloading[0]
+      USHORT  // Field=s_cfg_lbrecover.vloading[1]
+      USHORT  // Field=s_cfg_lbrecover.vloading[2]
+      USHORT  // Field=s_cfg_lbrecover.tloading[0]
+      USHORT  // Field=s_cfg_lbrecover.tloading[1]
+      USHORT  // Field=s_cfg_lbrecover.tloading[2]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[0]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[1]
+      USHORT,560  // Field=s_cfg_lbrecover.tloading_ph3[2]
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp1_max
+      USHORT,5000  // Field=s_cfg_lbrecover.ramp2_max
+      USHORT,1200  // Field=s_cfg_lbrecover.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_lbrecover
+      USHORT  // Field=s_wk_lbrecover.vloading
+      USHORT  // Field=s_wk_lbrecover.tloading
+      USHORT  // Field=s_wk_lbrecover.tloading_ph3
+      USHORT  // Field=s_wk_lbrecover.ramp1
+      USHORT  // Field=s_wk_lbrecover.ramp2
+      USHORT  // Field=s_wk_lbrecover.vint
+      LONG  // Field=s_wk_lbrecover.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_lbrecover
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_lbrecover_phase
+      ULONG  // Field=s_lbrecover_phase.state
+      ULONG  // Field=s_lbrecover_phase.n_active
+      USHORT  // Field=s_lbrecover_phase.flag_ph3
+      USHORT  // Field=s_lbrecover_phase.flag_ph4
+      ULONG  // Field=s_lbrecover_phase.parcel_width
+      ULONG  // Field=s_lbrecover_phase.parcel_length
+      ULONG  // Field=s_lbrecover_phase.parcel_position
+      USHORT  // Field=s_lbrecover_phase.parcel_weight
+    ENDSTRUCT // End of structure=S_lbrecover_phase
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_hold.base
+      ULONG  // Field=s_tm_hold.preset
+      POINTER  // Field=s_tm_hold.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_lbrecover
+//

@@ -1,0 +1,347 @@
+//
+//S_clock_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:1
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock_header
+  ULONG  // Field=alarm
+  ULONG  // Field=semaphore
+  USHORT  // Field=task
+  USHORT  // Field=wk_offset
+  ULONG  // Field=time_total
+  USHORT  // Field=KTR
+  USHORT  // Field=TickRmx
+ENDSTRUCT // End of structure=S_clock_header
+//
+//
+ENDHEADER
+//
+//
+REPEAT:1
+//
+BEGINSTRUCT // Begin of structure=S_clock_header
+  ULONG  // Field=alarm
+  ULONG  // Field=semaphore
+  USHORT  // Field=task
+  USHORT  // Field=wk_offset
+  ULONG  // Field=time_total
+  USHORT  // Field=KTR
+  USHORT  // Field=TickRmx
+ENDSTRUCT // End of structure=S_clock_header
+//
+ENDREPEAT
+//
+//
+//S_clock
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:26
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT  // Field=time_base
+  USHORT  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_BSLNMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,90  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_CCMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,80  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_CHOKEMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,70  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_CRBMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,70  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_ENCMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,60  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_INVMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,80  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_IODRV"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,10  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_IOMGMPNI"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,10  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_IOMGMPNO"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,0  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_LASERMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,70  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_LOADMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,60  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_LOADVER"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,60  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_OFFLMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,0  // Field=time_base
+  USHORT,0  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_OFFLVER"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,60  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_PH1MGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,60  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_PHSIDE"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,50  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_RECENT"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,70  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_RECNEW"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,0  // Field=time_base
+  USHORT,40  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_SCANSYMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,70  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_SCLMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,60  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_SFPLCMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,90  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_TIMMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,0  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_UPSTR"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,60  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_VELCOM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,30  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_VELMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,100  // Field=time_base
+  USHORT,60  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//
+//
+BEGINSTRUCT // Begin of structure=S_clock
+  STRING16,"SEM_VSCANMGM"  // Field=name_semaphore
+  ULONG  // Field=semaphore
+  USHORT,0  // Field=time_base
+  USHORT,10  // Field=offset
+  USHORT  // Field=wk_time_base
+  ULONG  // Field=send_total
+  ULONG  // Field=send_ok
+ENDSTRUCT // End of structure=S_clock
+//

@@ -1,0 +1,238 @@
+//
+//S_netups
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_netups
+  USHORT  // Field=id
+  STRING12  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_netups
+      STRING16  // Field=s_cfg_netups.IpAddress
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_SNMP
+          USHORT  // Field=s_cfg_netups.s_cfg_SNMP.Version
+          STRING16  // Field=s_cfg_netups.s_cfg_SNMP.Community
+        ENDSTRUCT // End of structure=S_cfg_SNMP
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_oid
+          STRING128  // Field=s_cfg_netups.s_cfg_oid_OutputStatus.Oid
+          USHORT  // Field=s_cfg_netups.s_cfg_oid_OutputStatus.Value
+        ENDSTRUCT // End of structure=S_cfg_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_oid
+          STRING128  // Field=s_cfg_netups.s_cfg_oid_BatteryStatus.Oid
+          USHORT  // Field=s_cfg_netups.s_cfg_oid_BatteryStatus.Value
+        ENDSTRUCT // End of structure=S_cfg_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_oid
+          STRING128  // Field=s_cfg_netups.s_cfg_oid_ShutoffCommand.Oid
+          USHORT  // Field=s_cfg_netups.s_cfg_oid_ShutoffCommand.Value
+        ENDSTRUCT // End of structure=S_cfg_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_oid
+          STRING128  // Field=s_cfg_netups.s_cfg_oid_ShutoffDelayConfig.Oid
+          USHORT  // Field=s_cfg_netups.s_cfg_oid_ShutoffDelayConfig.Value
+        ENDSTRUCT // End of structure=S_cfg_oid
+        //
+      USHORT  // Field=s_cfg_netups.debug_function
+      USHORT  // Field=s_cfg_netups.general_purpose
+    ENDSTRUCT // End of structure=S_cfg_netups
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_netups
+      USHORT  // Field=s_wk_netups.RequestId
+      USHORT  // Field=s_wk_netups.BatteryDown
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_SNMP
+          USHORT  // Field=s_wk_netups.s_wk_SNMP.VersionLength
+          STRING10  // Field=s_wk_netups.s_wk_SNMP.Version
+          USHORT  // Field=s_wk_netups.s_wk_SNMP.CommunityLength
+          STRING16  // Field=s_wk_netups.s_wk_SNMP.Community
+          USHORT  // Field=s_wk_netups.s_wk_SNMP.RequestIdLength
+          STRING10  // Field=s_wk_netups.s_wk_SNMP.RequestId
+        ENDSTRUCT // End of structure=S_wk_SNMP
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_OutputStatus.OidLength
+          STRING128  // Field=s_wk_netups.s_wk_oid_OutputStatus.Oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_OutputStatus.ValueLength
+          STRING10  // Field=s_wk_netups.s_wk_oid_OutputStatus.Value
+        ENDSTRUCT // End of structure=S_wk_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_BatteryStatus.OidLength
+          STRING128  // Field=s_wk_netups.s_wk_oid_BatteryStatus.Oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_BatteryStatus.ValueLength
+          STRING10  // Field=s_wk_netups.s_wk_oid_BatteryStatus.Value
+        ENDSTRUCT // End of structure=S_wk_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_ShutoffCommand.OidLength
+          STRING128  // Field=s_wk_netups.s_wk_oid_ShutoffCommand.Oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_ShutoffCommand.ValueLength
+          STRING10  // Field=s_wk_netups.s_wk_oid_ShutoffCommand.Value
+        ENDSTRUCT // End of structure=S_wk_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_ShutoffDelayConfig.OidLength
+          STRING128  // Field=s_wk_netups.s_wk_oid_ShutoffDelayConfig.Oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_ShutoffDelayConfig.ValueLength
+          STRING10  // Field=s_wk_netups.s_wk_oid_ShutoffDelayConfig.Value
+        ENDSTRUCT // End of structure=S_wk_oid
+        //
+      USHORT  // Field=s_wk_netups.state
+    ENDSTRUCT // End of structure=S_wk_netups
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_output_status.base
+      ULONG  // Field=s_tm_output_status.preset
+      POINTER  // Field=s_tm_output_status.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_battery_status.base
+      ULONG  // Field=s_tm_battery_status.preset
+      POINTER  // Field=s_tm_battery_status.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_shutdown.base
+      ULONG  // Field=s_tm_shutdown.preset
+      POINTER  // Field=s_tm_shutdown.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_netups
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_netups
+  USHORT,1  // Field=id
+  STRING12,"SC_UPS"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_netups
+      STRING16,"192.168.42.5"  // Field=s_cfg_netups.IpAddress
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_SNMP
+          USHORT,1  // Field=s_cfg_netups.s_cfg_SNMP.Version
+          STRING16,"private"  // Field=s_cfg_netups.s_cfg_SNMP.Community
+        ENDSTRUCT // End of structure=S_cfg_SNMP
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_oid
+          STRING128,"1.3.6.1.2.1.33.1.4.1.0"  // Field=s_cfg_netups.s_cfg_oid_OutputStatus.Oid
+          USHORT,3  // Field=s_cfg_netups.s_cfg_oid_OutputStatus.Value
+        ENDSTRUCT // End of structure=S_cfg_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_oid
+          STRING128,"1.3.6.1.2.1.33.1.2.1.0"  // Field=s_cfg_netups.s_cfg_oid_BatteryStatus.Oid
+          USHORT,2  // Field=s_cfg_netups.s_cfg_oid_BatteryStatus.Value
+        ENDSTRUCT // End of structure=S_cfg_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_oid
+          STRING128,"1.3.6.1.2.1.33.1.8.2.0"  // Field=s_cfg_netups.s_cfg_oid_ShutoffCommand.Oid
+          USHORT,2  // Field=s_cfg_netups.s_cfg_oid_ShutoffCommand.Value
+        ENDSTRUCT // End of structure=S_cfg_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cfg_oid
+          STRING128,"1.3.6.1.2.1.33.1.8.1.0"  // Field=s_cfg_netups.s_cfg_oid_ShutoffDelayConfig.Oid
+          USHORT,45  // Field=s_cfg_netups.s_cfg_oid_ShutoffDelayConfig.Value
+        ENDSTRUCT // End of structure=S_cfg_oid
+        //
+      USHORT,1  // Field=s_cfg_netups.debug_function
+      USHORT,11  // Field=s_cfg_netups.general_purpose
+    ENDSTRUCT // End of structure=S_cfg_netups
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_netups
+      USHORT  // Field=s_wk_netups.RequestId
+      USHORT  // Field=s_wk_netups.BatteryDown
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_SNMP
+          USHORT  // Field=s_wk_netups.s_wk_SNMP.VersionLength
+          STRING10  // Field=s_wk_netups.s_wk_SNMP.Version
+          USHORT  // Field=s_wk_netups.s_wk_SNMP.CommunityLength
+          STRING16  // Field=s_wk_netups.s_wk_SNMP.Community
+          USHORT  // Field=s_wk_netups.s_wk_SNMP.RequestIdLength
+          STRING10  // Field=s_wk_netups.s_wk_SNMP.RequestId
+        ENDSTRUCT // End of structure=S_wk_SNMP
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_OutputStatus.OidLength
+          STRING128  // Field=s_wk_netups.s_wk_oid_OutputStatus.Oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_OutputStatus.ValueLength
+          STRING10  // Field=s_wk_netups.s_wk_oid_OutputStatus.Value
+        ENDSTRUCT // End of structure=S_wk_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_BatteryStatus.OidLength
+          STRING128  // Field=s_wk_netups.s_wk_oid_BatteryStatus.Oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_BatteryStatus.ValueLength
+          STRING10  // Field=s_wk_netups.s_wk_oid_BatteryStatus.Value
+        ENDSTRUCT // End of structure=S_wk_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_ShutoffCommand.OidLength
+          STRING128  // Field=s_wk_netups.s_wk_oid_ShutoffCommand.Oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_ShutoffCommand.ValueLength
+          STRING10  // Field=s_wk_netups.s_wk_oid_ShutoffCommand.Value
+        ENDSTRUCT // End of structure=S_wk_oid
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_wk_oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_ShutoffDelayConfig.OidLength
+          STRING128  // Field=s_wk_netups.s_wk_oid_ShutoffDelayConfig.Oid
+          USHORT  // Field=s_wk_netups.s_wk_oid_ShutoffDelayConfig.ValueLength
+          STRING10  // Field=s_wk_netups.s_wk_oid_ShutoffDelayConfig.Value
+        ENDSTRUCT // End of structure=S_wk_oid
+        //
+      USHORT  // Field=s_wk_netups.state
+    ENDSTRUCT // End of structure=S_wk_netups
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_output_status.base
+      ULONG,10  // Field=s_tm_output_status.preset
+      POINTER  // Field=s_tm_output_status.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_battery_status.base
+      ULONG,10  // Field=s_tm_battery_status.preset
+      POINTER  // Field=s_tm_battery_status.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_shutdown.base
+      ULONG,300  // Field=s_tm_shutdown.preset
+      POINTER  // Field=s_tm_shutdown.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_netups
+//

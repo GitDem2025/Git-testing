@@ -1,0 +1,22 @@
+Iscgen Debug Function
+ISCMGM flag
+CBMGM flag
+BBMGM flag
+SBMGM flag
+LBMGM flag
+ASMGM flag
+BB SCANNER  flag
+BB SCALE flag
+OBMGM flag
+SCANNER Management flag
+UPSTREAM flag
+CBMGM detail flag
+BBMGM detail flag
+SBMGM detail flag
+LBMGM detail flag
+ASMGM detail flag
+BB SCANNER detail flag
+BB SCALE detail flag
+OBMGM detail flag
+TBMGM flag
+TBMGM detail flag

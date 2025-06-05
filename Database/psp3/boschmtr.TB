@@ -1,0 +1,4413 @@
+//
+//S_boschmtr
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:162
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT  // Field=s_cfg_boschmtr.board_id
+   	  USHORT  // Field=s_cfg_boschmtr.module_id
+   	  USHORT  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT  // Field=s_cfg_boschmtr.status_length
+   	  USHORT  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1101  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1102  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,3  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1103  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1104  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,5  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1105  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,6  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1106  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,7  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1107  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,8  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1108  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,9  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1109  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,10  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1201  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,13  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1202  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,14  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1203  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,15  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1204  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,16  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1205  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,17  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1206  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,18  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1207  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,19  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1208  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,20  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1209  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,21  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1301  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,24  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1302  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,25  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1303  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,26  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1304  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,27  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1305  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,28  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1306  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,29  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1307  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,30  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1308  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,31  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1309  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,32  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1401  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,35  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1402  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,36  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1403  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,37  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1404  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,38  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1405  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,39  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1406  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,40  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1407  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,41  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1408  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,42  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1409  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,43  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1501  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,46  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1502  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,47  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1503  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,48  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1504  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,49  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1505  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,50  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1506  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,51  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1507  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,52  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1508  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,53  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,1509  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,54  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2101  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,57  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2102  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,58  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2103  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,59  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2104  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,60  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2105  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,61  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2106  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,62  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2107  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,63  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2108  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,64  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2109  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,65  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2201  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,68  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2202  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,69  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2203  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,70  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2204  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,71  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2205  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,72  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2206  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,73  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2207  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,74  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2208  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,75  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2209  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,76  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2301  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,79  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2302  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,80  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2303  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,81  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2304  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,82  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2305  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,83  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2306  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,84  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2307  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,85  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2308  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,86  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2309  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,87  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2401  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,90  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2402  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,91  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2403  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,92  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2404  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,93  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2405  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,94  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2406  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,95  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2407  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,96  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2408  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,97  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,2409  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,1  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,98  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3101  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3102  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,3  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3103  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3104  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,5  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3105  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,6  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3106  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,7  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3107  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,8  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3108  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,9  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3109  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,10  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3201  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,13  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3202  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,14  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3203  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,15  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3204  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,16  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3205  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,17  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3206  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,18  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3207  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,19  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3208  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,20  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3209  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,21  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3301  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,24  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3302  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,25  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3303  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,26  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3304  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,27  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3305  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,28  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3306  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,29  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3307  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,30  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3308  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,31  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3309  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,32  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3401  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,35  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3402  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,36  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3403  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,37  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3404  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,38  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3405  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,39  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3406  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,40  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3407  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,41  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3408  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,42  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3409  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,43  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3501  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,46  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3502  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,47  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3503  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,48  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3504  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,49  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3505  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,50  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3506  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,51  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3507  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,52  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3508  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,53  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,3509  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,54  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4101  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,57  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4102  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,58  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4103  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,59  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4104  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,60  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4105  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,61  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4106  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,62  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4107  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,63  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4108  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,64  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4109  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,65  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4201  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,68  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4202  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,69  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4203  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,70  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4204  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,71  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4205  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,72  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4206  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,73  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4207  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,74  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4208  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,75  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4209  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,76  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4301  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,79  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4302  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,80  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4303  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,81  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4304  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,82  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4305  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,83  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4306  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,84  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4307  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,85  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4308  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,86  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4309  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,87  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4401  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,90  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4402  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,91  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4403  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,92  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4404  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,93  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4405  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,94  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4406  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,95  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4407  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,96  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4408  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,97  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//
+//
+BEGINSTRUCT // Begin of structure=S_boschmtr
+  USHORT,4409  // Field=id
+	//
+    BEGINSTRUCT // Begin of structure=S_cfg_boschmtr
+      USHORT,2  // Field=s_cfg_boschmtr.board_id
+   	  USHORT,98  // Field=s_cfg_boschmtr.module_id
+   	  USHORT,1  // Field=s_cfg_boschmtr.status_subm_id
+   	  USHORT,2  // Field=s_cfg_boschmtr.status_length
+   	  USHORT,5  // Field=s_cfg_boschmtr.diag_subm_id
+   	  USHORT,4  // Field=s_cfg_boschmtr.diag_length
+    ENDSTRUCT // End of structure=S_cfg_boschmtr
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_wk_boschmtr
+      USHORT  // Field=s_wk_boschmtr.valid
+   	  POINTER  // Field=s_wk_boschmtr.ps_input_source
+   	  USHORT  // Field=s_wk_boschmtr.belt_type
+   	  USHORT  // Field=s_wk_boschmtr.is_id
+   	  USHORT  // Field=s_wk_boschmtr.status_offset
+   	  USHORT  // Field=s_wk_boschmtr.diag_offset
+   STRING16  // Field=s_wk_boschmtr.motor_status_word
+   STRING16  // Field=s_wk_boschmtr.motor_diag
+    ENDSTRUCT // End of structure=S_wk_boschmtr
+    //
+ENDSTRUCT // End of structure=S_boschmtr
+//

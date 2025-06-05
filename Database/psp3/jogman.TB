@@ -1,0 +1,66 @@
+//
+//S_jogman
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_jogman
+ 	USHORT  // Field=id
+ STRING12  // Field=name
+ 	USHORT  // Field=enable	
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_jogman
+      USHORT  // Field=s_cfg_jogman.horn_timer_preset
+      USHORT  // Field=s_cfg_jogman.default_ref_value
+      USHORT  // Field=s_cfg_jogman.max_ref_value
+    ENDSTRUCT // End of structure=S_cfg_jogman
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_horn.base
+      ULONG  // Field=s_tm_horn.preset
+      POINTER  // Field=s_tm_horn.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_jogman
+      USHORT  // Field=s_wk_jogman.velnomhigh_fw
+      USHORT  // Field=s_wk_jogman.velnomlow_fw
+    ENDSTRUCT // End of structure=S_wk_jogman
+	//
+ENDSTRUCT // End of structure=S_jogman
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_jogman
+ 	USHORT,1  // Field=id
+ STRING12,"JOGMAN_01"  // Field=name
+ 	USHORT  // Field=enable	
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_jogman
+      USHORT,5  // Field=s_cfg_jogman.horn_timer_preset
+      USHORT,1000  // Field=s_cfg_jogman.default_ref_value
+      USHORT,5000  // Field=s_cfg_jogman.max_ref_value
+    ENDSTRUCT // End of structure=S_cfg_jogman
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_horn.base
+      ULONG  // Field=s_tm_horn.preset
+      POINTER  // Field=s_tm_horn.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_jogman
+      USHORT  // Field=s_wk_jogman.velnomhigh_fw
+      USHORT  // Field=s_wk_jogman.velnomlow_fw
+    ENDSTRUCT // End of structure=S_wk_jogman
+	//
+ENDSTRUCT // End of structure=S_jogman
+//

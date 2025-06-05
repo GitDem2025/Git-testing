@@ -1,0 +1,658 @@
+//
+//S_locupstr
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,11  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_11"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_11"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,12  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_12"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_12"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,13  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_13"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_13"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,14  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_14"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_14"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,15  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_15"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_15"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,21  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_21"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_21"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_400"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,22  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_22"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_22"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_400"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,23  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_23"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_23"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_400"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,24  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_24"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_24"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_400"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,31  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_31"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_31"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,32  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_32"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_32"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,33  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_33"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_33"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,34  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_34"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_34"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,35  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_35"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_35"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_210"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,41  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_41"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_41"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_400"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,42  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_42"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_42"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_400"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,43  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_43"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_43"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_400"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_locupstr
+	//
+ 	USHORT,44  // Field=id
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_UPSTROK_44"  // Field=s_di_upstr_run.name
+  		POINTER  // Field=s_di_upstr_run.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_ISWKUP_44"  // Field=s_di_upstr_start_req.name
+  		POINTER  // Field=s_di_upstr_start_req.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_XBOKUPST"  // Field=s_di_sorting_enabled.name
+  		POINTER  // Field=s_di_sorting_enabled.ps_output
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_di
+  		STRING12,"I_PLCOK_400"  // Field=s_di_upstr_plc_conn.name
+  		POINTER  // Field=s_di_upstr_plc_conn.ps_input
+	ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_ao
+  		STRING12  // Field=s_ao_beltspeed.name
+  		POINTER  // Field=s_ao_beltspeed.ps_output
+	ENDSTRUCT // End of structure=S_ao
+	//
+ENDSTRUCT // End of structure=S_locupstr
+//

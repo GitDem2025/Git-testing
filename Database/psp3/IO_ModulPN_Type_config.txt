@@ -1,0 +1,74 @@
+//
+//IOModulPN table: Module Type Configuration
+//
+// Module configuration data
+// M=IN,OUT,IOLINK
+//	 IN Producer/Consumer Input
+//	 OUT Producer/Consumer Output
+//	 IOLINK number of IO-Link submodule
+//
+// Submodule configuration data
+// S=|N,ID,OD,IP,OP|  
+//
+//  N=  Number of consecutive submodule with the same configuration
+//  ID= Input size in the data space (process data)
+//  OD= Output size in the data space (process data)
+//	IP= Producer/Consumer Input size
+//	OP= Producer/Consumer Output size
+//
+//
+Type=ET200S_PN M=4,4,0
+Type=ET200SP_PN M=4,4,0
+Type=ET200ECO16DI_PN 
+Type=ET200ECO8DIO_PN M=4,4,0 S=|1,1,1,2,2|
+Type=ET200ECO8DO_PN 
+Type=ET200ECO8DI_PN M=4,4,0 S=|1,1,0,1,1|
+//
+Type=WAGO_750_375 M=4,4,0
+//
+Type=BALLUFF_BNI0092_R M=4,4,2 S=|2,2,0,1,1|2,0,0,1,1|2,1,0,1,1|2,0,1,1,1|1,1,0,1,1|
+Type=BALLUFF_BNI0092_E M=4,4,3 S=|3,1,0,1,1|1,0,0,1,1|2,0,1,1,1|1,1,0,1,1|
+Type=BALLUFF_BNI0092_IS2 M=4,4,2 S=|2,2,2,2,2|2,0,0,1,1|2,0,1,1,1|1,1,0,1,1|
+Type=BALLUFF_BNI0092_IS3 M=4,4,3 S=|3,2,2,2,2|1,0,0,1,1|2,0,1,1,1|1,1,0,1,1|
+Type=BALLUFF_BNI0092_16DI_4DO M=4,4,2 S=|2,1,0,1,1|2,0,0,1,1|2,0,1,1,1|1,1,0,1,1|
+Type=BALLUFF_BNI0092_24DI_2DO M=4,4,3 S=|3,1,0,1,1|1,0,0,1,1|2,0,1,1,1|1,1,0,1,1|
+Type=BALLUFF_BNI0092_32DI M=4,4,4 S=|4,1,0,1,1|1,1,0,1,1|
+Type=BALLUFF_BNI0092_R_SIDE M=4,4,2 S=|2,2,0,1,1|2,0,0,1,1|2,1,0,1,1|1,1,0,1,1|
+Type=BALLUFF_BNI0092_IS1 M=4,4,1 S=|1,2,2,2,2|3,0,0,1,1|2,0,1,1,1|1,1,0,1,1|
+//
+Type=BOSCH_INDRADRIVE_MI M=6,7,0 S=|1,2,2,0,0|1,0,1,0,0|1,2,2,0,0|1,2,1,0,0|1,4,2,2,1|
+Type=BOSCH_INDRADRIVE_HSC01 M=6,7,0
+Type=BOSCH_INDRADRIVE_MI_EXT M=6,7,0 S=|1,2,2,0,0|1,0,1,0,0|1,2,2,0,0|1,2,1,0,0|1,4,2,0,0|1,1,0,0,0|1,2,0,0,0|1,1,0,0,0|1,2,0,0,0|1,2,0,2,1|
+//
+Type=SEW_DFE32B_1_INV M=5,5,0 S=|2,2,2,0,0|1,2,2,2,2|
+Type=SEW_DFE32B_2_INV M=5,5,0 S=|2,2,2,0,0|1,2,2,2,2|2,2,2,0,0|1,2,2,2,2|
+Type=SEW_DFE32B_3_INV M=5,5,0 S=|2,2,2,0,0|1,2,2,2,2|2,2,2,0,0|1,2,2,2,2|2,2,2,0,0|1,2,2,2,2|
+Type=SEW_DFE32B M=5,5,0 
+//
+Type=NT_151_RE_RE M=4,5,0 
+Type=NT_151_RE_RE_64B_I+64B_O M=4,5,0 S=|63,1,1,0,0|1,1,1,2,1|1,4,0,1,1|
+Type=NT_100_RE_DP M=4,5,0 
+Type=NT_100_RE_DP_64B_I+64B_O M=4,5,0 S=|60,1,1,0,0|1,4,4,2,1|
+//
+Type=SIEMENS_PN_PN M=4,5,0
+Type=SIEMENS_PN_PN_64B_I+64B_O M=4,5,0 S=|64,1,1,0,0|1,1,0,2,1|
+//
+Type=MLG_2_PRONET M=4,4,0 S=|1,0,0,1,1|1,4,0,1,1|2,2,0,1,1|1,0,1,1,1|
+Type=SENTRON_PAC3200 M=4,4,0 S=|1,112,2,2,2|3,4,0,1,1|
+Type=MLG_2_PRONET_64 M=4,4,0 S=|1,0,0,1,1|2,4,0,1,1|2,2,0,1,1|1,0,1,1,1|
+//
+Type=ASI_IFM_AC_1402 M=4,4,0 S=|15,1,1,0,0|1,1,1,2,2|15,1,1,0,0|1,1,1,2,2|15,1,1,0,0|1,1,1,2,2|15,1,1,0,0|1,1,1,2,2|
+Type=ASI_BWU_3844_3122 M=4,4,0 S=|15,1,1,0,0|1,1,1,2,2|15,1,1,0,0|1,1,1,2,2|15,1,1,0,0|1,1,1,2,2|15,1,1,0,0|1,1,1,2,2|2,2,0,1,1|4,8,0,1,1|
+//
+Type=MURR_55132_R M=5,5,2 S=|1,2,2,2,2|3,2,0,1,1|
+Type=MURR_55132_E M=5,5,3 S=|1,2,2,2,2|1,2,0,1,1|3,2,2,2,2|
+//
+Type=MURR_55172_R M=5,5,2 S=|1,2,2,2,2|3,2,0,1,1|
+Type=MURR_55172_E M=5,5,3 S=|1,2,2,2,2|1,2,0,1,1|3,2,2,2,2|
+//
+Type=BELDEN_LION_X_R M=4,4,2 S=|1,2,2,2,2|1,2,0,0,0|1,1,0,1,1|1,2,0,0,0|1,1,0,1,1|4,1,0,1,1|2,0,1,1,1|
+Type=BELDEN_LION_X_E M=4,4,3 S=|1,2,2,2,2|1,4,4,0,0|1,1,0,2,2|1,4,4,0,0|1,1,0,2,2|1,4,4,0,0|1,1,0,2,2|3,1,0,1,1|2,0,1,1,1|
+Type=BELDEN_LION_X_AS M=4,4,1 S=|1,2,2,2,2|2,2,2,0,0|14,2,0,0,0|1,1,0,2,2|1,0,7,7,7|
+//
+Type=BALLUFF_BNI00HL_R M=4,4,2 S=|1,1,1,2,2|1,2,0,1,1|1,1,0,0,0|1,2,0,1,1|1,1,0,0,0|4,1,0,1,1|2,0,1,1,1|1,1,1,1,1|
+Type=BALLUFF_BNI00HL_E M=4,4,3 S=|1,1,1,2,2|1,1,0,1,1|1,1,0,0,0|1,1,0,1,1|1,1,0,0,0|1,1,0,1,1|1,1,0,0,0|3,1,0,1,1|2,0,1,1,1|1,1,1,1,1|

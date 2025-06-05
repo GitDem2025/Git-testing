@@ -1,0 +1,236 @@
+//
+//S_testlamp
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:13
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_BSCRUN"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_CSTOP"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_LMPMAINMSC"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_LMPMAINSP1"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_LMPMAINSP2"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_LMPMAINSP3"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_MSCALARM"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_SCRUN"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_SPC1ALARM"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_SPC2ALARM"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_SPC3ALARM"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_XBPWRRUN"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//
+//
+BEGINSTRUCT // Begin of structure=S_testlamp
+  //
+    BEGINSTRUCT // Begin of structure=S_do
+       STRING12,"O_XBRUN"  // Field=s_do_lamp.name
+       	POINTER  // Field=s_do_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+  //
+	//	
+    BEGINSTRUCT // Begin of structure=S_di
+       STRING12,"I_VLAMPTEST"  // Field=s_di_pb.name
+       	POINTER  // Field=s_di_pb.ps_input
+    ENDSTRUCT // End of structure=S_di
+  //
+ENDSTRUCT // End of structure=S_testlamp
+//

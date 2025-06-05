@@ -1,0 +1,32 @@
+Scgen General Purpose
+Write the ALARM.LG file on disk
+Write the PARCEL.LG  (=result) file on disk
+Start Sorter only if the DISPATCH connection is good
+Start Sorter only if the SUPERVISOR connection is good
+Start Sorter only if the ERROR connection is good
+Set Offloadinw warning on mission set (from XB6.1SP1) 
+Fast stop requested after EMERGENCY
+Fast stop requested after normal STOP request
+The parcel result are send in sequency to the DISPATCH 
+RUN signal set when Sorter is running/synchro (=yes/no)
+Flap test at each new Sorter start
+Fast flap test
+Send CHUTEREQ to Dispatch in case of tracking error
+Sorter with variable cell pitch
+No chute request on loading (only from VSCANMGM)
+Sorter disabled at the Start-Up (controlled by the SUPS)
+Logical mission for FOOTPRINT management
+Avoid Load near a not usable Carrier
+Homing request at each new start-up
+Physical mission management on the OFFLVER station
+Unsolicited CHUTEANSW allowed
+Blind reservation on OFFLVER station
+Physical recirculation management on OFFLVER station
+Spare 23
+Spare 24
+Enable flush of the scanner queue after a timeout
+Enable delete offloading mission only in case of flap configured
+Don't request scanner reading in case of NODATA item
+Enable carrier in fault AUTO_RESET
+Send parcel result in front of the chute
+Disable CCU check startup

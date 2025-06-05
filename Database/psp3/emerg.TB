@@ -1,0 +1,1938 @@
+//
+//S_emerg
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:106
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,1  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGGEN"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,2  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_IS_REP_SW"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,3  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMG_FIRE"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,4  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGMSC"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,5  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGSPC1"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,6  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGSPC2"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,7  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGSPC3"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,8  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGSD"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,9  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LSMFB_MSC"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,10  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LSMFB_SPC1"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,11  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LSMFB_SPC2"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,12  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_LSMFB_SPC3"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,13  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWSFB_MSC"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,14  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWSFB_SPC1"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,15  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWSFB_SPC2"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,16  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWSFB_SPC3"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,17  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWC1_PB"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,18  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_PWC4_PB"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,19  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGJOG1"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,20  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGJOG4"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,21  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_11"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,22  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_12"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,23  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_13"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,24  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_14"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,25  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_15"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,26  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_21"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,27  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_22"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,28  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_23"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,29  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_24"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,30  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_31"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,31  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_32"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,32  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_33"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,33  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_34"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,34  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_35"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,35  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_41"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,36  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_42"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,37  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_43"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,38  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGIS_44"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,39  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGEXT1"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,40  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGEXT2"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,41  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGEXT3"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,42  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGEXT4"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,43  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_11"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,44  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_12"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,45  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_13"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,46  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_14"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,47  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_15"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,48  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_21"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,49  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_22"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,50  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_23"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,51  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_24"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,52  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_31"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,53  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_32"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,54  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_33"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,55  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_34"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,56  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_35"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,57  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_41"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,58  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_42"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,59  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_43"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,60  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISIGOP_44"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,61  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_SPIGOP_11"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,62  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_SPIGOP_21"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,63  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_SPIGOP_31"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,64  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_SPIGOP_41"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,65  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_SPIGOP_42"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,66  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_MAIGOP_11"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,67  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_MAIGOP_21"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,68  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_MAIGOP_31"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,69  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_MAIGOP_41"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,70  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB03A"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,71  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB03B"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,72  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB03C"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,73  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB03E"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,74  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB03F"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,75  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB04A"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,76  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB04B"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,77  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB04C"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,78  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB04D"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,79  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB04E"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,80  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB04F"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,81  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB05A"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,82  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB05B"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,83  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB05C"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,84  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB05D"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,85  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB05E"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,86  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB05G"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,87  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB11A"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,88  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB11B"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,89  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB11C"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,90  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB11E"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,91  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB11F"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,92  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB11G"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,93  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB12A"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,94  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB12B"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,95  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB12C"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,96  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB12D"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,97  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB12E"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,98  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB12G"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,99  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB12I"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,100  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB12J"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,101  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB13A"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,102  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB13C"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,103  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB13E"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,104  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB13F"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,105  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB13G"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//
+//
+BEGINSTRUCT // Begin of structure=S_emerg
+  USHORT,106  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGPB13I"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emerg.name
+      POINTER  // Field=s_do_emerg.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+  USHORT  // Field=active
+ENDSTRUCT // End of structure=S_emerg
+//

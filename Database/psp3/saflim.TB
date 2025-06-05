@@ -1,0 +1,3112 @@
+//
+//S_saflim
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:123
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,11  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13953  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,12  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13953  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,13  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13953  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,21  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,14447  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,22  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,14447  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,23  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,14447  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,31  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,15071  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,32  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,15071  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,33  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,15071  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,41  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,15796  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,42  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,15796  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,43  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,15796  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,51  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16074  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,52  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16074  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,53  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16074  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,61  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16333  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,62  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16333  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,63  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16333  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,71  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16930  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,72  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16930  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,73  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,16930  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,81  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,17384  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,82  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,17384  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,83  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,17384  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,91  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,18314  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,92  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,18314  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,93  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,18314  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,101  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,18573  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,102  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,18573  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,103  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,18573  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,111  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19078  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,112  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19078  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,113  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19078  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,121  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19442  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,122  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19442  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,123  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19442  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,131  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19898  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,132  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19898  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,133  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,19898  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,141  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,80  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,142  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,80  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,143  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,80  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,151  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,152  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,153  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,161  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,980  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,162  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,980  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,163  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,980  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,171  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,1834  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,172  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,1834  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,173  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,1834  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,181  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2310  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,182  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2310  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,183  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2310  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,191  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2678  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,192  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2678  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,193  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2678  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,201  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2976  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,202  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2976  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,203  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,2976  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,211  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,3788  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,212  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,3788  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,213  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,3788  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,221  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,4638  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,222  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,4638  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,223  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,4638  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,231  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,5273  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,232  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,5273  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,233  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,5273  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,241  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6094  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,242  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6094  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,243  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6094  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,251  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6492  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,252  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6492  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,253  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6492  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,261  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6936  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,262  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6936  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,263  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,6936  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,271  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,7534  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,272  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,7534  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,273  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,7534  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,281  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,7866  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,282  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,7866  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,283  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,7866  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,291  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,8230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,292  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,8230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,293  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,8230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,301  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9007  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,302  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9007  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,303  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9007  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,311  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9466  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,312  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9466  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,313  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9466  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,321  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,322  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,323  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,9830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,331  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,10230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,332  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,10230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,333  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,10230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,341  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,10630  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,342  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,10630  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,343  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,10630  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,351  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11030  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,352  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11030  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,353  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11030  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,361  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11430  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,362  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11430  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,363  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11430  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,371  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,372  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,373  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,11830  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,381  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,12230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,382  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,12230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,383  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,12230  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,391  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,12630  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,392  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,12630  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,393  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,12630  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,401  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13030  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,402  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13030  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,403  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13030  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,411  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13430  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,412  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13430  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//
+//
+BEGINSTRUCT // Begin of structure=S_saflim
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,413  // Field=s_id_lim.id
+      POINTER  // Field=s_id_lim.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	BEGINSTRUCT // Begin of structure=S_cfg_saflim
+    USHORT,13430  // Field=s_cfg_saflim.safetydev_offset_ph0
+	ENDSTRUCT // End of structure=S_cfg_saflim
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_saflim
+    ULONG  // Field=s_wk_saflim.value
+    USHORT  // Field=s_wl_saflim.active_safety
+    ULONG  // Field=s_wk_saflim.genpar[0]
+    ULONG  // Field=s_wk_saflim.genpar[1]
+    ULONG  // Field=s_wk_saflim.genpar[2]
+    ULONG  // Field=s_wk_saflim.genpar[3]
+    ULONG  // Field=s_wk_saflim.genpar[4]
+	ENDSTRUCT // End of structure=S_wk_saflim
+	//
+ENDSTRUCT // End of structure=S_saflim
+//

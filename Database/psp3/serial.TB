@@ -1,0 +1,46 @@
+//
+//S_serial
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_serial
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=timeout
+  USHORT  // Field=baud_rate
+  USHORT  // Field=connection_flags
+  USHORT  // Field=terminal_flags
+  USHORT  // Field=link_parameter
+  USHORT  // Field=iors_mbx
+  USHORT  // Field=write_connection
+  USHORT  // Field=read_connection
+  USHORT  // Field=connection_type
+  USHORT  // Field=write_status
+  USHORT  // Field=read_status
+ENDSTRUCT // End of structure=S_serial
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_serial
+  USHORT,51  // Field=id
+  STRING12,"COM1"  // Field=name
+  USHORT,1  // Field=timeout
+  USHORT,19200  // Field=baud_rate
+  USHORT,0x2FF  // Field=connection_flags
+  USHORT,0x111  // Field=terminal_flags
+  USHORT,0x0  // Field=link_parameter
+  USHORT  // Field=iors_mbx
+  USHORT  // Field=write_connection
+  USHORT  // Field=read_connection
+  USHORT  // Field=connection_type
+  USHORT  // Field=write_status
+  USHORT  // Field=read_status
+ENDSTRUCT // End of structure=S_serial
+//

@@ -1,0 +1,88 @@
+//
+//S_ctrlstop
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_ctrlstop
+ 	USHORT  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ctrlstop
+      USHORT  // Field=s_cfg_ctrlstop.flash_time_stop_active
+      ULONG  // Field=s_cfg_ctrlstop.ctrlstop_preset[0]
+      ULONG  // Field=s_cfg_ctrlstop.ctrlstop_preset[1]
+   	  ULONG  // Field=s_cfg_ctrlstop.ctrlstop_preset[2]
+    ENDSTRUCT // End of structure=S_cfg_ctrlstop
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_cycle_stop.name
+      POINTER  // Field=s_di_cycle_stop.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//	
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_stop_active.name
+      POINTER  // Field=s_do_stop_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+	//	
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_disable_upstr.name
+      POINTER  // Field=s_do_disable_upstr.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_cycle_stop.base
+      ULONG  // Field=s_tm_cycle_stop.preset
+      POINTER  // Field=s_tm_cycle_stop.ps_timer
+    ENDSTRUCT // End of structure=S_tm	
+    //
+ENDSTRUCT // End of structure=S_ctrlstop
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_ctrlstop
+ 	USHORT,1  // Field=id
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ctrlstop
+      USHORT,500  // Field=s_cfg_ctrlstop.flash_time_stop_active
+      ULONG,450  // Field=s_cfg_ctrlstop.ctrlstop_preset[0]
+      ULONG,450  // Field=s_cfg_ctrlstop.ctrlstop_preset[1]
+   	  ULONG,450  // Field=s_cfg_ctrlstop.ctrlstop_preset[2]
+    ENDSTRUCT // End of structure=S_cfg_ctrlstop
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_CSTOP"  // Field=s_di_cycle_stop.name
+      POINTER  // Field=s_di_cycle_stop.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//	
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_CSTOP"  // Field=s_do_stop_active.name
+      POINTER  // Field=s_do_stop_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+	//	
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_XBOKUPST"  // Field=s_do_disable_upstr.name
+      POINTER  // Field=s_do_disable_upstr.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_cycle_stop.base
+      ULONG  // Field=s_tm_cycle_stop.preset
+      POINTER  // Field=s_tm_cycle_stop.ps_timer
+    ENDSTRUCT // End of structure=S_tm	
+    //
+ENDSTRUCT // End of structure=S_ctrlstop
+//

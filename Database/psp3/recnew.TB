@@ -1,0 +1,2222 @@
+//
+//S_recnew
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:4
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_recnew
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_recnew
+      USHORT  // Field=s_cfg_recnew.offset_ph0
+      USHORT  // Field=s_cfg_recnew.n_cell_delay
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[0].starting_weight
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[0].max_weight
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[0].starting_correction
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[0].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[1].starting_weight
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[1].max_weight
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[1].starting_correction
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[1].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[2].starting_weight
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[2].max_weight
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[2].starting_correction
+          ULONG  // Field=s_cfg_recnew.s_weight_correction[2].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+    ENDSTRUCT // End of structure=S_cfg_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phor.name
+      POINTER  // Field=s_di_phor.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[0].name
+      POINTER  // Field=s_di_ph_rec[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[1].name
+      POINTER  // Field=s_di_ph_rec[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[2].name
+      POINTER  // Field=s_di_ph_rec[2].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[3].name
+      POINTER  // Field=s_di_ph_rec[3].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[4].name
+      POINTER  // Field=s_di_ph_rec[4].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[5].name
+      POINTER  // Field=s_di_ph_rec[5].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[6].name
+      POINTER  // Field=s_di_ph_rec[6].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[7].name
+      POINTER  // Field=s_di_ph_rec[7].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[8].name
+      POINTER  // Field=s_di_ph_rec[8].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[9].name
+      POINTER  // Field=s_di_ph_rec[9].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn4.name
+      POINTER  // Field=s_di_phn4.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn5.name
+      POINTER  // Field=s_di_phn5.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn6.name
+      POINTER  // Field=s_di_phn6.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn7.name
+      POINTER  // Field=s_di_phn7.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_n_recnew.id
+      POINTER  // Field=s_id_n_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_x_recnew.id
+      POINTER  // Field=s_id_x_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_ph1_recnew.id
+      POINTER  // Field=s_id_ph1_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_recnew
+      USHORT  // Field=s_wk_recnew.idx
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+      ULONG  // Field=s_wk_recnew.n_cell_full[0]
+      ULONG  // Field=s_wk_recnew.n_cell_full[1]
+      ULONG  // Field=s_wk_recnew.n_cell_full[2]
+      ULONG  // Field=s_wk_recnew.n_cell_full[3]
+      ULONG  // Field=s_wk_recnew.n_cell_full[4]
+      ULONG  // Field=s_wk_recnew.n_cell_full[5]
+      ULONG  // Field=s_wk_recnew.n_cell_full[6]
+      ULONG  // Field=s_wk_recnew.n_cell_full[7]
+      ULONG  // Field=s_wk_recnew.n_cell_full[8]
+      ULONG  // Field=s_wk_recnew.n_cell_full[9]
+      ULONG  // Field=s_wk_recnew.n_cell_full[10]
+      ULONG  // Field=s_wk_recnew.n_cell_full[11]
+      ULONG  // Field=s_wk_recnew.n_cell_full[12]
+      ULONG  // Field=s_wk_recnew.n_cell_full[13]
+      ULONG  // Field=s_wk_recnew.n_cell_full[14]
+      ULONG  // Field=s_wk_recnew.n_cell_full[15]
+      ULONG  // Field=s_wk_recnew.n_cell_full[16]
+      ULONG  // Field=s_wk_recnew.n_cell_full[17]
+      ULONG  // Field=s_wk_recnew.n_cell_full[18]
+      ULONG  // Field=s_wk_recnew.n_cell_full[19]
+      ULONG  // Field=s_wk_recnew.n_cell_full[20]
+      ULONG  // Field=s_wk_recnew.n_cell_full[21]
+      ULONG  // Field=s_wk_recnew.n_cell_full[22]
+      ULONG  // Field=s_wk_recnew.n_cell_full[23]
+      ULONG  // Field=s_wk_recnew.n_cell_full[24]
+      ULONG  // Field=s_wk_recnew.n_cell_full[25]
+      ULONG  // Field=s_wk_recnew.n_cell_full[26]
+      ULONG  // Field=s_wk_recnew.n_cell_full[27]
+      ULONG  // Field=s_wk_recnew.n_cell_full[28]
+      ULONG  // Field=s_wk_recnew.n_cell_full[29]
+      ULONG  // Field=s_wk_recnew.n_cell_full[30]
+      ULONG  // Field=s_wk_recnew.n_cell_full[31]
+      ULONG  // Field=s_wk_recnew.n_cell_full[32]
+      ULONG  // Field=s_wk_recnew.n_cell_full[33]
+      ULONG  // Field=s_wk_recnew.n_cell_full[34]
+      ULONG  // Field=s_wk_recnew.n_cell_full[35]
+      ULONG  // Field=s_wk_recnew.n_cell_full[36]
+      ULONG  // Field=s_wk_recnew.n_cell_full[37]
+      ULONG  // Field=s_wk_recnew.n_cell_full[38]
+      ULONG  // Field=s_wk_recnew.n_cell_full[39]
+      ULONG  // Field=s_wk_recnew.n_cell_full[40]
+      ULONG  // Field=s_wk_recnew.n_cell_full[41]
+      ULONG  // Field=s_wk_recnew.n_cell_full[42]
+      ULONG  // Field=s_wk_recnew.n_cell_full[43]
+      ULONG  // Field=s_wk_recnew.n_cell_full[44]
+      ULONG  // Field=s_wk_recnew.n_cell_full[45]
+      ULONG  // Field=s_wk_recnew.n_cell_full[46]
+      ULONG  // Field=s_wk_recnew.n_cell_full[47]
+      ULONG  // Field=s_wk_recnew.n_cell_full[48]
+      ULONG  // Field=s_wk_recnew.n_cell_full[49]
+      ULONG  // Field=s_wk_recnew.n_cell_full[50]
+      ULONG  // Field=s_wk_recnew.n_cell_full[51]
+      ULONG  // Field=s_wk_recnew.n_cell_full[52]
+      ULONG  // Field=s_wk_recnew.n_cell_full[53]
+      ULONG  // Field=s_wk_recnew.n_cell_full[54]
+      ULONG  // Field=s_wk_recnew.n_cell_full[55]
+      ULONG  // Field=s_wk_recnew.n_cell_full[56]
+      ULONG  // Field=s_wk_recnew.n_cell_full[57]
+      ULONG  // Field=s_wk_recnew.n_cell_full[58]
+      ULONG  // Field=s_wk_recnew.n_cell_full[59]
+      ULONG  // Field=s_wk_recnew.n_cell_full[60]
+      ULONG  // Field=s_wk_recnew.n_cell_full[61]
+      ULONG  // Field=s_wk_recnew.n_cell_full[62]
+      ULONG  // Field=s_wk_recnew.n_cell_full[63]
+      ULONG  // Field=s_wk_recnew.n_cell_full[64]
+      ULONG  // Field=s_wk_recnew.n_cell_full[65]
+      ULONG  // Field=s_wk_recnew.n_cell_full[66]
+      ULONG  // Field=s_wk_recnew.n_cell_full[67]
+      ULONG  // Field=s_wk_recnew.n_cell_full[68]
+      ULONG  // Field=s_wk_recnew.n_cell_full[69]
+      ULONG  // Field=s_wk_recnew.n_cell_full[70]
+      ULONG  // Field=s_wk_recnew.n_cell_full[71]
+      ULONG  // Field=s_wk_recnew.n_cell_full[72]
+      ULONG  // Field=s_wk_recnew.n_cell_full[73]
+      ULONG  // Field=s_wk_recnew.n_cell_full[74]
+      ULONG  // Field=s_wk_recnew.n_cell_full[75]
+      ULONG  // Field=s_wk_recnew.n_cell_full[76]
+      ULONG  // Field=s_wk_recnew.n_cell_full[77]
+      ULONG  // Field=s_wk_recnew.n_cell_full[78]
+      ULONG  // Field=s_wk_recnew.n_cell_full[79]
+      ULONG  // Field=s_wk_recnew.n_cell_full[80]
+      ULONG  // Field=s_wk_recnew.n_cell_full[81]
+      ULONG  // Field=s_wk_recnew.n_cell_full[82]
+      ULONG  // Field=s_wk_recnew.n_cell_full[83]
+      ULONG  // Field=s_wk_recnew.n_cell_full[84]
+      ULONG  // Field=s_wk_recnew.n_cell_full[85]
+      ULONG  // Field=s_wk_recnew.n_cell_full[86]
+      ULONG  // Field=s_wk_recnew.n_cell_full[87]
+      ULONG  // Field=s_wk_recnew.n_cell_full[88]
+      ULONG  // Field=s_wk_recnew.n_cell_full[89]
+      ULONG  // Field=s_wk_recnew.n_cell_full[90]
+      ULONG  // Field=s_wk_recnew.n_cell_full[91]
+      ULONG  // Field=s_wk_recnew.n_cell_full[92]
+      ULONG  // Field=s_wk_recnew.n_cell_full[93]
+      ULONG  // Field=s_wk_recnew.n_cell_full[94]
+      ULONG  // Field=s_wk_recnew.n_cell_full[95]
+      ULONG  // Field=s_wk_recnew.n_cell_full[96]
+      ULONG  // Field=s_wk_recnew.n_cell_full[97]
+      ULONG  // Field=s_wk_recnew.n_cell_full[98]
+      ULONG  // Field=s_wk_recnew.n_cell_full[99]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[0]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[1]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[2]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[3]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[4]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[5]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[6]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[7]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[8]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[9]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[10]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[11]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[12]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[13]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[14]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[15]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[16]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[17]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[18]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[19]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[20]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[21]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[22]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[23]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[24]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[25]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[26]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[27]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[28]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[29]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[30]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[31]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[32]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[33]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[34]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[35]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[36]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[37]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[38]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[39]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[40]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[41]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[42]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[43]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[44]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[45]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[46]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[47]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[48]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[49]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[50]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[51]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[52]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[53]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[54]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[55]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[56]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[57]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[58]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[59]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[60]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[61]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[62]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[63]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[64]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[65]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[66]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[67]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[68]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[69]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[70]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[71]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[72]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[73]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[74]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[75]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[76]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[77]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[78]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[79]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[80]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[81]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[82]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[83]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[84]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[85]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[86]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[87]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[88]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[89]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[90]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[91]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[92]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[93]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[94]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[95]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[96]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[97]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[98]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[99]
+      ULONG  // Field=s_wk_recnew.n_cell_full_total
+      ULONG  // Field=s_wk_recnew.n_cell_empty_total
+      USHORT  // Field=s_wk_recnew.percentage_up
+      USHORT  // Field=s_wk_recnew.percentage_dw
+    ENDSTRUCT // End of structure=S_wk_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_recnewstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_status.status
+          ULONG  // Field=s_recnewstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_n_status.status
+          ULONG  // Field=s_recnewstat.s_n_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_x_status.status
+          ULONG  // Field=s_recnewstat.s_x_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_recnewstat
+    //
+ENDSTRUCT // End of structure=S_recnew
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_recnew
+  USHORT,10  // Field=id
+  STRING12,"RECENT_ST_10"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_recnew
+      USHORT,16823  // Field=s_cfg_recnew.offset_ph0
+      USHORT,2  // Field=s_cfg_recnew.n_cell_delay
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+    ENDSTRUCT // End of structure=S_cfg_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_RECPH1_10"  // Field=s_di_phor.name
+      POINTER  // Field=s_di_phor.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[0].name
+      POINTER  // Field=s_di_ph_rec[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[1].name
+      POINTER  // Field=s_di_ph_rec[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[2].name
+      POINTER  // Field=s_di_ph_rec[2].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[3].name
+      POINTER  // Field=s_di_ph_rec[3].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[4].name
+      POINTER  // Field=s_di_ph_rec[4].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[5].name
+      POINTER  // Field=s_di_ph_rec[5].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[6].name
+      POINTER  // Field=s_di_ph_rec[6].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[7].name
+      POINTER  // Field=s_di_ph_rec[7].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[8].name
+      POINTER  // Field=s_di_ph_rec[8].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[9].name
+      POINTER  // Field=s_di_ph_rec[9].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn4.name
+      POINTER  // Field=s_di_phn4.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn5.name
+      POINTER  // Field=s_di_phn5.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn6.name
+      POINTER  // Field=s_di_phn6.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn7.name
+      POINTER  // Field=s_di_phn7.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,10  // Field=s_id_n_recnew.id
+      POINTER  // Field=s_id_n_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,10  // Field=s_id_x_recnew.id
+      POINTER  // Field=s_id_x_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,10  // Field=s_id_ph1_recnew.id
+      POINTER  // Field=s_id_ph1_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_recnew
+      USHORT  // Field=s_wk_recnew.idx
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+      ULONG  // Field=s_wk_recnew.n_cell_full[0]
+      ULONG  // Field=s_wk_recnew.n_cell_full[1]
+      ULONG  // Field=s_wk_recnew.n_cell_full[2]
+      ULONG  // Field=s_wk_recnew.n_cell_full[3]
+      ULONG  // Field=s_wk_recnew.n_cell_full[4]
+      ULONG  // Field=s_wk_recnew.n_cell_full[5]
+      ULONG  // Field=s_wk_recnew.n_cell_full[6]
+      ULONG  // Field=s_wk_recnew.n_cell_full[7]
+      ULONG  // Field=s_wk_recnew.n_cell_full[8]
+      ULONG  // Field=s_wk_recnew.n_cell_full[9]
+      ULONG  // Field=s_wk_recnew.n_cell_full[10]
+      ULONG  // Field=s_wk_recnew.n_cell_full[11]
+      ULONG  // Field=s_wk_recnew.n_cell_full[12]
+      ULONG  // Field=s_wk_recnew.n_cell_full[13]
+      ULONG  // Field=s_wk_recnew.n_cell_full[14]
+      ULONG  // Field=s_wk_recnew.n_cell_full[15]
+      ULONG  // Field=s_wk_recnew.n_cell_full[16]
+      ULONG  // Field=s_wk_recnew.n_cell_full[17]
+      ULONG  // Field=s_wk_recnew.n_cell_full[18]
+      ULONG  // Field=s_wk_recnew.n_cell_full[19]
+      ULONG  // Field=s_wk_recnew.n_cell_full[20]
+      ULONG  // Field=s_wk_recnew.n_cell_full[21]
+      ULONG  // Field=s_wk_recnew.n_cell_full[22]
+      ULONG  // Field=s_wk_recnew.n_cell_full[23]
+      ULONG  // Field=s_wk_recnew.n_cell_full[24]
+      ULONG  // Field=s_wk_recnew.n_cell_full[25]
+      ULONG  // Field=s_wk_recnew.n_cell_full[26]
+      ULONG  // Field=s_wk_recnew.n_cell_full[27]
+      ULONG  // Field=s_wk_recnew.n_cell_full[28]
+      ULONG  // Field=s_wk_recnew.n_cell_full[29]
+      ULONG  // Field=s_wk_recnew.n_cell_full[30]
+      ULONG  // Field=s_wk_recnew.n_cell_full[31]
+      ULONG  // Field=s_wk_recnew.n_cell_full[32]
+      ULONG  // Field=s_wk_recnew.n_cell_full[33]
+      ULONG  // Field=s_wk_recnew.n_cell_full[34]
+      ULONG  // Field=s_wk_recnew.n_cell_full[35]
+      ULONG  // Field=s_wk_recnew.n_cell_full[36]
+      ULONG  // Field=s_wk_recnew.n_cell_full[37]
+      ULONG  // Field=s_wk_recnew.n_cell_full[38]
+      ULONG  // Field=s_wk_recnew.n_cell_full[39]
+      ULONG  // Field=s_wk_recnew.n_cell_full[40]
+      ULONG  // Field=s_wk_recnew.n_cell_full[41]
+      ULONG  // Field=s_wk_recnew.n_cell_full[42]
+      ULONG  // Field=s_wk_recnew.n_cell_full[43]
+      ULONG  // Field=s_wk_recnew.n_cell_full[44]
+      ULONG  // Field=s_wk_recnew.n_cell_full[45]
+      ULONG  // Field=s_wk_recnew.n_cell_full[46]
+      ULONG  // Field=s_wk_recnew.n_cell_full[47]
+      ULONG  // Field=s_wk_recnew.n_cell_full[48]
+      ULONG  // Field=s_wk_recnew.n_cell_full[49]
+      ULONG  // Field=s_wk_recnew.n_cell_full[50]
+      ULONG  // Field=s_wk_recnew.n_cell_full[51]
+      ULONG  // Field=s_wk_recnew.n_cell_full[52]
+      ULONG  // Field=s_wk_recnew.n_cell_full[53]
+      ULONG  // Field=s_wk_recnew.n_cell_full[54]
+      ULONG  // Field=s_wk_recnew.n_cell_full[55]
+      ULONG  // Field=s_wk_recnew.n_cell_full[56]
+      ULONG  // Field=s_wk_recnew.n_cell_full[57]
+      ULONG  // Field=s_wk_recnew.n_cell_full[58]
+      ULONG  // Field=s_wk_recnew.n_cell_full[59]
+      ULONG  // Field=s_wk_recnew.n_cell_full[60]
+      ULONG  // Field=s_wk_recnew.n_cell_full[61]
+      ULONG  // Field=s_wk_recnew.n_cell_full[62]
+      ULONG  // Field=s_wk_recnew.n_cell_full[63]
+      ULONG  // Field=s_wk_recnew.n_cell_full[64]
+      ULONG  // Field=s_wk_recnew.n_cell_full[65]
+      ULONG  // Field=s_wk_recnew.n_cell_full[66]
+      ULONG  // Field=s_wk_recnew.n_cell_full[67]
+      ULONG  // Field=s_wk_recnew.n_cell_full[68]
+      ULONG  // Field=s_wk_recnew.n_cell_full[69]
+      ULONG  // Field=s_wk_recnew.n_cell_full[70]
+      ULONG  // Field=s_wk_recnew.n_cell_full[71]
+      ULONG  // Field=s_wk_recnew.n_cell_full[72]
+      ULONG  // Field=s_wk_recnew.n_cell_full[73]
+      ULONG  // Field=s_wk_recnew.n_cell_full[74]
+      ULONG  // Field=s_wk_recnew.n_cell_full[75]
+      ULONG  // Field=s_wk_recnew.n_cell_full[76]
+      ULONG  // Field=s_wk_recnew.n_cell_full[77]
+      ULONG  // Field=s_wk_recnew.n_cell_full[78]
+      ULONG  // Field=s_wk_recnew.n_cell_full[79]
+      ULONG  // Field=s_wk_recnew.n_cell_full[80]
+      ULONG  // Field=s_wk_recnew.n_cell_full[81]
+      ULONG  // Field=s_wk_recnew.n_cell_full[82]
+      ULONG  // Field=s_wk_recnew.n_cell_full[83]
+      ULONG  // Field=s_wk_recnew.n_cell_full[84]
+      ULONG  // Field=s_wk_recnew.n_cell_full[85]
+      ULONG  // Field=s_wk_recnew.n_cell_full[86]
+      ULONG  // Field=s_wk_recnew.n_cell_full[87]
+      ULONG  // Field=s_wk_recnew.n_cell_full[88]
+      ULONG  // Field=s_wk_recnew.n_cell_full[89]
+      ULONG  // Field=s_wk_recnew.n_cell_full[90]
+      ULONG  // Field=s_wk_recnew.n_cell_full[91]
+      ULONG  // Field=s_wk_recnew.n_cell_full[92]
+      ULONG  // Field=s_wk_recnew.n_cell_full[93]
+      ULONG  // Field=s_wk_recnew.n_cell_full[94]
+      ULONG  // Field=s_wk_recnew.n_cell_full[95]
+      ULONG  // Field=s_wk_recnew.n_cell_full[96]
+      ULONG  // Field=s_wk_recnew.n_cell_full[97]
+      ULONG  // Field=s_wk_recnew.n_cell_full[98]
+      ULONG  // Field=s_wk_recnew.n_cell_full[99]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[0]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[1]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[2]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[3]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[4]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[5]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[6]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[7]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[8]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[9]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[10]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[11]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[12]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[13]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[14]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[15]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[16]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[17]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[18]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[19]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[20]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[21]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[22]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[23]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[24]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[25]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[26]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[27]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[28]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[29]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[30]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[31]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[32]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[33]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[34]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[35]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[36]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[37]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[38]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[39]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[40]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[41]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[42]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[43]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[44]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[45]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[46]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[47]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[48]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[49]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[50]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[51]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[52]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[53]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[54]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[55]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[56]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[57]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[58]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[59]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[60]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[61]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[62]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[63]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[64]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[65]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[66]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[67]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[68]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[69]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[70]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[71]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[72]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[73]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[74]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[75]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[76]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[77]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[78]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[79]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[80]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[81]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[82]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[83]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[84]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[85]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[86]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[87]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[88]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[89]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[90]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[91]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[92]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[93]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[94]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[95]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[96]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[97]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[98]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[99]
+      ULONG  // Field=s_wk_recnew.n_cell_full_total
+      ULONG  // Field=s_wk_recnew.n_cell_empty_total
+      USHORT  // Field=s_wk_recnew.percentage_up
+      USHORT  // Field=s_wk_recnew.percentage_dw
+    ENDSTRUCT // End of structure=S_wk_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_recnewstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_status.status
+          ULONG  // Field=s_recnewstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_n_status.status
+          ULONG  // Field=s_recnewstat.s_n_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_x_status.status
+          ULONG  // Field=s_recnewstat.s_x_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_recnewstat
+    //
+ENDSTRUCT // End of structure=S_recnew
+//
+//
+BEGINSTRUCT // Begin of structure=S_recnew
+  USHORT,20  // Field=id
+  STRING12,"RECENT_ST_20"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_recnew
+      USHORT,25  // Field=s_cfg_recnew.offset_ph0
+      USHORT,2  // Field=s_cfg_recnew.n_cell_delay
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+    ENDSTRUCT // End of structure=S_cfg_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_RECPH1_20"  // Field=s_di_phor.name
+      POINTER  // Field=s_di_phor.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[0].name
+      POINTER  // Field=s_di_ph_rec[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[1].name
+      POINTER  // Field=s_di_ph_rec[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[2].name
+      POINTER  // Field=s_di_ph_rec[2].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[3].name
+      POINTER  // Field=s_di_ph_rec[3].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[4].name
+      POINTER  // Field=s_di_ph_rec[4].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[5].name
+      POINTER  // Field=s_di_ph_rec[5].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[6].name
+      POINTER  // Field=s_di_ph_rec[6].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[7].name
+      POINTER  // Field=s_di_ph_rec[7].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[8].name
+      POINTER  // Field=s_di_ph_rec[8].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[9].name
+      POINTER  // Field=s_di_ph_rec[9].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn4.name
+      POINTER  // Field=s_di_phn4.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn5.name
+      POINTER  // Field=s_di_phn5.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn6.name
+      POINTER  // Field=s_di_phn6.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn7.name
+      POINTER  // Field=s_di_phn7.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,20  // Field=s_id_n_recnew.id
+      POINTER  // Field=s_id_n_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,20  // Field=s_id_x_recnew.id
+      POINTER  // Field=s_id_x_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,20  // Field=s_id_ph1_recnew.id
+      POINTER  // Field=s_id_ph1_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_recnew
+      USHORT  // Field=s_wk_recnew.idx
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+      ULONG  // Field=s_wk_recnew.n_cell_full[0]
+      ULONG  // Field=s_wk_recnew.n_cell_full[1]
+      ULONG  // Field=s_wk_recnew.n_cell_full[2]
+      ULONG  // Field=s_wk_recnew.n_cell_full[3]
+      ULONG  // Field=s_wk_recnew.n_cell_full[4]
+      ULONG  // Field=s_wk_recnew.n_cell_full[5]
+      ULONG  // Field=s_wk_recnew.n_cell_full[6]
+      ULONG  // Field=s_wk_recnew.n_cell_full[7]
+      ULONG  // Field=s_wk_recnew.n_cell_full[8]
+      ULONG  // Field=s_wk_recnew.n_cell_full[9]
+      ULONG  // Field=s_wk_recnew.n_cell_full[10]
+      ULONG  // Field=s_wk_recnew.n_cell_full[11]
+      ULONG  // Field=s_wk_recnew.n_cell_full[12]
+      ULONG  // Field=s_wk_recnew.n_cell_full[13]
+      ULONG  // Field=s_wk_recnew.n_cell_full[14]
+      ULONG  // Field=s_wk_recnew.n_cell_full[15]
+      ULONG  // Field=s_wk_recnew.n_cell_full[16]
+      ULONG  // Field=s_wk_recnew.n_cell_full[17]
+      ULONG  // Field=s_wk_recnew.n_cell_full[18]
+      ULONG  // Field=s_wk_recnew.n_cell_full[19]
+      ULONG  // Field=s_wk_recnew.n_cell_full[20]
+      ULONG  // Field=s_wk_recnew.n_cell_full[21]
+      ULONG  // Field=s_wk_recnew.n_cell_full[22]
+      ULONG  // Field=s_wk_recnew.n_cell_full[23]
+      ULONG  // Field=s_wk_recnew.n_cell_full[24]
+      ULONG  // Field=s_wk_recnew.n_cell_full[25]
+      ULONG  // Field=s_wk_recnew.n_cell_full[26]
+      ULONG  // Field=s_wk_recnew.n_cell_full[27]
+      ULONG  // Field=s_wk_recnew.n_cell_full[28]
+      ULONG  // Field=s_wk_recnew.n_cell_full[29]
+      ULONG  // Field=s_wk_recnew.n_cell_full[30]
+      ULONG  // Field=s_wk_recnew.n_cell_full[31]
+      ULONG  // Field=s_wk_recnew.n_cell_full[32]
+      ULONG  // Field=s_wk_recnew.n_cell_full[33]
+      ULONG  // Field=s_wk_recnew.n_cell_full[34]
+      ULONG  // Field=s_wk_recnew.n_cell_full[35]
+      ULONG  // Field=s_wk_recnew.n_cell_full[36]
+      ULONG  // Field=s_wk_recnew.n_cell_full[37]
+      ULONG  // Field=s_wk_recnew.n_cell_full[38]
+      ULONG  // Field=s_wk_recnew.n_cell_full[39]
+      ULONG  // Field=s_wk_recnew.n_cell_full[40]
+      ULONG  // Field=s_wk_recnew.n_cell_full[41]
+      ULONG  // Field=s_wk_recnew.n_cell_full[42]
+      ULONG  // Field=s_wk_recnew.n_cell_full[43]
+      ULONG  // Field=s_wk_recnew.n_cell_full[44]
+      ULONG  // Field=s_wk_recnew.n_cell_full[45]
+      ULONG  // Field=s_wk_recnew.n_cell_full[46]
+      ULONG  // Field=s_wk_recnew.n_cell_full[47]
+      ULONG  // Field=s_wk_recnew.n_cell_full[48]
+      ULONG  // Field=s_wk_recnew.n_cell_full[49]
+      ULONG  // Field=s_wk_recnew.n_cell_full[50]
+      ULONG  // Field=s_wk_recnew.n_cell_full[51]
+      ULONG  // Field=s_wk_recnew.n_cell_full[52]
+      ULONG  // Field=s_wk_recnew.n_cell_full[53]
+      ULONG  // Field=s_wk_recnew.n_cell_full[54]
+      ULONG  // Field=s_wk_recnew.n_cell_full[55]
+      ULONG  // Field=s_wk_recnew.n_cell_full[56]
+      ULONG  // Field=s_wk_recnew.n_cell_full[57]
+      ULONG  // Field=s_wk_recnew.n_cell_full[58]
+      ULONG  // Field=s_wk_recnew.n_cell_full[59]
+      ULONG  // Field=s_wk_recnew.n_cell_full[60]
+      ULONG  // Field=s_wk_recnew.n_cell_full[61]
+      ULONG  // Field=s_wk_recnew.n_cell_full[62]
+      ULONG  // Field=s_wk_recnew.n_cell_full[63]
+      ULONG  // Field=s_wk_recnew.n_cell_full[64]
+      ULONG  // Field=s_wk_recnew.n_cell_full[65]
+      ULONG  // Field=s_wk_recnew.n_cell_full[66]
+      ULONG  // Field=s_wk_recnew.n_cell_full[67]
+      ULONG  // Field=s_wk_recnew.n_cell_full[68]
+      ULONG  // Field=s_wk_recnew.n_cell_full[69]
+      ULONG  // Field=s_wk_recnew.n_cell_full[70]
+      ULONG  // Field=s_wk_recnew.n_cell_full[71]
+      ULONG  // Field=s_wk_recnew.n_cell_full[72]
+      ULONG  // Field=s_wk_recnew.n_cell_full[73]
+      ULONG  // Field=s_wk_recnew.n_cell_full[74]
+      ULONG  // Field=s_wk_recnew.n_cell_full[75]
+      ULONG  // Field=s_wk_recnew.n_cell_full[76]
+      ULONG  // Field=s_wk_recnew.n_cell_full[77]
+      ULONG  // Field=s_wk_recnew.n_cell_full[78]
+      ULONG  // Field=s_wk_recnew.n_cell_full[79]
+      ULONG  // Field=s_wk_recnew.n_cell_full[80]
+      ULONG  // Field=s_wk_recnew.n_cell_full[81]
+      ULONG  // Field=s_wk_recnew.n_cell_full[82]
+      ULONG  // Field=s_wk_recnew.n_cell_full[83]
+      ULONG  // Field=s_wk_recnew.n_cell_full[84]
+      ULONG  // Field=s_wk_recnew.n_cell_full[85]
+      ULONG  // Field=s_wk_recnew.n_cell_full[86]
+      ULONG  // Field=s_wk_recnew.n_cell_full[87]
+      ULONG  // Field=s_wk_recnew.n_cell_full[88]
+      ULONG  // Field=s_wk_recnew.n_cell_full[89]
+      ULONG  // Field=s_wk_recnew.n_cell_full[90]
+      ULONG  // Field=s_wk_recnew.n_cell_full[91]
+      ULONG  // Field=s_wk_recnew.n_cell_full[92]
+      ULONG  // Field=s_wk_recnew.n_cell_full[93]
+      ULONG  // Field=s_wk_recnew.n_cell_full[94]
+      ULONG  // Field=s_wk_recnew.n_cell_full[95]
+      ULONG  // Field=s_wk_recnew.n_cell_full[96]
+      ULONG  // Field=s_wk_recnew.n_cell_full[97]
+      ULONG  // Field=s_wk_recnew.n_cell_full[98]
+      ULONG  // Field=s_wk_recnew.n_cell_full[99]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[0]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[1]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[2]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[3]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[4]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[5]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[6]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[7]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[8]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[9]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[10]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[11]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[12]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[13]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[14]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[15]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[16]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[17]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[18]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[19]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[20]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[21]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[22]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[23]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[24]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[25]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[26]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[27]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[28]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[29]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[30]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[31]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[32]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[33]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[34]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[35]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[36]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[37]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[38]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[39]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[40]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[41]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[42]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[43]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[44]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[45]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[46]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[47]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[48]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[49]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[50]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[51]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[52]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[53]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[54]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[55]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[56]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[57]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[58]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[59]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[60]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[61]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[62]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[63]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[64]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[65]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[66]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[67]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[68]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[69]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[70]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[71]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[72]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[73]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[74]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[75]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[76]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[77]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[78]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[79]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[80]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[81]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[82]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[83]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[84]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[85]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[86]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[87]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[88]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[89]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[90]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[91]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[92]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[93]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[94]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[95]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[96]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[97]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[98]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[99]
+      ULONG  // Field=s_wk_recnew.n_cell_full_total
+      ULONG  // Field=s_wk_recnew.n_cell_empty_total
+      USHORT  // Field=s_wk_recnew.percentage_up
+      USHORT  // Field=s_wk_recnew.percentage_dw
+    ENDSTRUCT // End of structure=S_wk_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_recnewstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_status.status
+          ULONG  // Field=s_recnewstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_n_status.status
+          ULONG  // Field=s_recnewstat.s_n_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_x_status.status
+          ULONG  // Field=s_recnewstat.s_x_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_recnewstat
+    //
+ENDSTRUCT // End of structure=S_recnew
+//
+//
+BEGINSTRUCT // Begin of structure=S_recnew
+  USHORT,30  // Field=id
+  STRING12,"RECENT_ST_30"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_recnew
+      USHORT,5434  // Field=s_cfg_recnew.offset_ph0
+      USHORT,2  // Field=s_cfg_recnew.n_cell_delay
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+    ENDSTRUCT // End of structure=S_cfg_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_RECPH1_30"  // Field=s_di_phor.name
+      POINTER  // Field=s_di_phor.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[0].name
+      POINTER  // Field=s_di_ph_rec[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[1].name
+      POINTER  // Field=s_di_ph_rec[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[2].name
+      POINTER  // Field=s_di_ph_rec[2].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[3].name
+      POINTER  // Field=s_di_ph_rec[3].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[4].name
+      POINTER  // Field=s_di_ph_rec[4].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[5].name
+      POINTER  // Field=s_di_ph_rec[5].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[6].name
+      POINTER  // Field=s_di_ph_rec[6].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[7].name
+      POINTER  // Field=s_di_ph_rec[7].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[8].name
+      POINTER  // Field=s_di_ph_rec[8].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[9].name
+      POINTER  // Field=s_di_ph_rec[9].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn4.name
+      POINTER  // Field=s_di_phn4.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn5.name
+      POINTER  // Field=s_di_phn5.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn6.name
+      POINTER  // Field=s_di_phn6.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn7.name
+      POINTER  // Field=s_di_phn7.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,30  // Field=s_id_n_recnew.id
+      POINTER  // Field=s_id_n_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,30  // Field=s_id_x_recnew.id
+      POINTER  // Field=s_id_x_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,30  // Field=s_id_ph1_recnew.id
+      POINTER  // Field=s_id_ph1_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_recnew
+      USHORT  // Field=s_wk_recnew.idx
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+      ULONG  // Field=s_wk_recnew.n_cell_full[0]
+      ULONG  // Field=s_wk_recnew.n_cell_full[1]
+      ULONG  // Field=s_wk_recnew.n_cell_full[2]
+      ULONG  // Field=s_wk_recnew.n_cell_full[3]
+      ULONG  // Field=s_wk_recnew.n_cell_full[4]
+      ULONG  // Field=s_wk_recnew.n_cell_full[5]
+      ULONG  // Field=s_wk_recnew.n_cell_full[6]
+      ULONG  // Field=s_wk_recnew.n_cell_full[7]
+      ULONG  // Field=s_wk_recnew.n_cell_full[8]
+      ULONG  // Field=s_wk_recnew.n_cell_full[9]
+      ULONG  // Field=s_wk_recnew.n_cell_full[10]
+      ULONG  // Field=s_wk_recnew.n_cell_full[11]
+      ULONG  // Field=s_wk_recnew.n_cell_full[12]
+      ULONG  // Field=s_wk_recnew.n_cell_full[13]
+      ULONG  // Field=s_wk_recnew.n_cell_full[14]
+      ULONG  // Field=s_wk_recnew.n_cell_full[15]
+      ULONG  // Field=s_wk_recnew.n_cell_full[16]
+      ULONG  // Field=s_wk_recnew.n_cell_full[17]
+      ULONG  // Field=s_wk_recnew.n_cell_full[18]
+      ULONG  // Field=s_wk_recnew.n_cell_full[19]
+      ULONG  // Field=s_wk_recnew.n_cell_full[20]
+      ULONG  // Field=s_wk_recnew.n_cell_full[21]
+      ULONG  // Field=s_wk_recnew.n_cell_full[22]
+      ULONG  // Field=s_wk_recnew.n_cell_full[23]
+      ULONG  // Field=s_wk_recnew.n_cell_full[24]
+      ULONG  // Field=s_wk_recnew.n_cell_full[25]
+      ULONG  // Field=s_wk_recnew.n_cell_full[26]
+      ULONG  // Field=s_wk_recnew.n_cell_full[27]
+      ULONG  // Field=s_wk_recnew.n_cell_full[28]
+      ULONG  // Field=s_wk_recnew.n_cell_full[29]
+      ULONG  // Field=s_wk_recnew.n_cell_full[30]
+      ULONG  // Field=s_wk_recnew.n_cell_full[31]
+      ULONG  // Field=s_wk_recnew.n_cell_full[32]
+      ULONG  // Field=s_wk_recnew.n_cell_full[33]
+      ULONG  // Field=s_wk_recnew.n_cell_full[34]
+      ULONG  // Field=s_wk_recnew.n_cell_full[35]
+      ULONG  // Field=s_wk_recnew.n_cell_full[36]
+      ULONG  // Field=s_wk_recnew.n_cell_full[37]
+      ULONG  // Field=s_wk_recnew.n_cell_full[38]
+      ULONG  // Field=s_wk_recnew.n_cell_full[39]
+      ULONG  // Field=s_wk_recnew.n_cell_full[40]
+      ULONG  // Field=s_wk_recnew.n_cell_full[41]
+      ULONG  // Field=s_wk_recnew.n_cell_full[42]
+      ULONG  // Field=s_wk_recnew.n_cell_full[43]
+      ULONG  // Field=s_wk_recnew.n_cell_full[44]
+      ULONG  // Field=s_wk_recnew.n_cell_full[45]
+      ULONG  // Field=s_wk_recnew.n_cell_full[46]
+      ULONG  // Field=s_wk_recnew.n_cell_full[47]
+      ULONG  // Field=s_wk_recnew.n_cell_full[48]
+      ULONG  // Field=s_wk_recnew.n_cell_full[49]
+      ULONG  // Field=s_wk_recnew.n_cell_full[50]
+      ULONG  // Field=s_wk_recnew.n_cell_full[51]
+      ULONG  // Field=s_wk_recnew.n_cell_full[52]
+      ULONG  // Field=s_wk_recnew.n_cell_full[53]
+      ULONG  // Field=s_wk_recnew.n_cell_full[54]
+      ULONG  // Field=s_wk_recnew.n_cell_full[55]
+      ULONG  // Field=s_wk_recnew.n_cell_full[56]
+      ULONG  // Field=s_wk_recnew.n_cell_full[57]
+      ULONG  // Field=s_wk_recnew.n_cell_full[58]
+      ULONG  // Field=s_wk_recnew.n_cell_full[59]
+      ULONG  // Field=s_wk_recnew.n_cell_full[60]
+      ULONG  // Field=s_wk_recnew.n_cell_full[61]
+      ULONG  // Field=s_wk_recnew.n_cell_full[62]
+      ULONG  // Field=s_wk_recnew.n_cell_full[63]
+      ULONG  // Field=s_wk_recnew.n_cell_full[64]
+      ULONG  // Field=s_wk_recnew.n_cell_full[65]
+      ULONG  // Field=s_wk_recnew.n_cell_full[66]
+      ULONG  // Field=s_wk_recnew.n_cell_full[67]
+      ULONG  // Field=s_wk_recnew.n_cell_full[68]
+      ULONG  // Field=s_wk_recnew.n_cell_full[69]
+      ULONG  // Field=s_wk_recnew.n_cell_full[70]
+      ULONG  // Field=s_wk_recnew.n_cell_full[71]
+      ULONG  // Field=s_wk_recnew.n_cell_full[72]
+      ULONG  // Field=s_wk_recnew.n_cell_full[73]
+      ULONG  // Field=s_wk_recnew.n_cell_full[74]
+      ULONG  // Field=s_wk_recnew.n_cell_full[75]
+      ULONG  // Field=s_wk_recnew.n_cell_full[76]
+      ULONG  // Field=s_wk_recnew.n_cell_full[77]
+      ULONG  // Field=s_wk_recnew.n_cell_full[78]
+      ULONG  // Field=s_wk_recnew.n_cell_full[79]
+      ULONG  // Field=s_wk_recnew.n_cell_full[80]
+      ULONG  // Field=s_wk_recnew.n_cell_full[81]
+      ULONG  // Field=s_wk_recnew.n_cell_full[82]
+      ULONG  // Field=s_wk_recnew.n_cell_full[83]
+      ULONG  // Field=s_wk_recnew.n_cell_full[84]
+      ULONG  // Field=s_wk_recnew.n_cell_full[85]
+      ULONG  // Field=s_wk_recnew.n_cell_full[86]
+      ULONG  // Field=s_wk_recnew.n_cell_full[87]
+      ULONG  // Field=s_wk_recnew.n_cell_full[88]
+      ULONG  // Field=s_wk_recnew.n_cell_full[89]
+      ULONG  // Field=s_wk_recnew.n_cell_full[90]
+      ULONG  // Field=s_wk_recnew.n_cell_full[91]
+      ULONG  // Field=s_wk_recnew.n_cell_full[92]
+      ULONG  // Field=s_wk_recnew.n_cell_full[93]
+      ULONG  // Field=s_wk_recnew.n_cell_full[94]
+      ULONG  // Field=s_wk_recnew.n_cell_full[95]
+      ULONG  // Field=s_wk_recnew.n_cell_full[96]
+      ULONG  // Field=s_wk_recnew.n_cell_full[97]
+      ULONG  // Field=s_wk_recnew.n_cell_full[98]
+      ULONG  // Field=s_wk_recnew.n_cell_full[99]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[0]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[1]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[2]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[3]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[4]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[5]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[6]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[7]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[8]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[9]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[10]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[11]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[12]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[13]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[14]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[15]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[16]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[17]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[18]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[19]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[20]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[21]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[22]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[23]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[24]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[25]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[26]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[27]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[28]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[29]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[30]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[31]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[32]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[33]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[34]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[35]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[36]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[37]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[38]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[39]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[40]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[41]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[42]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[43]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[44]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[45]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[46]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[47]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[48]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[49]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[50]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[51]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[52]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[53]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[54]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[55]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[56]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[57]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[58]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[59]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[60]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[61]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[62]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[63]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[64]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[65]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[66]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[67]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[68]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[69]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[70]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[71]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[72]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[73]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[74]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[75]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[76]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[77]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[78]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[79]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[80]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[81]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[82]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[83]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[84]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[85]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[86]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[87]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[88]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[89]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[90]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[91]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[92]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[93]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[94]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[95]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[96]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[97]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[98]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[99]
+      ULONG  // Field=s_wk_recnew.n_cell_full_total
+      ULONG  // Field=s_wk_recnew.n_cell_empty_total
+      USHORT  // Field=s_wk_recnew.percentage_up
+      USHORT  // Field=s_wk_recnew.percentage_dw
+    ENDSTRUCT // End of structure=S_wk_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_recnewstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_status.status
+          ULONG  // Field=s_recnewstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_n_status.status
+          ULONG  // Field=s_recnewstat.s_n_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_x_status.status
+          ULONG  // Field=s_recnewstat.s_x_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_recnewstat
+    //
+ENDSTRUCT // End of structure=S_recnew
+//
+//
+BEGINSTRUCT // Begin of structure=S_recnew
+  USHORT,40  // Field=id
+  STRING12,"RECENT_ST_40"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_recnew
+      USHORT,11521  // Field=s_cfg_recnew.offset_ph0
+      USHORT,2  // Field=s_cfg_recnew.n_cell_delay
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[0].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[1].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_weight_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].starting_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].max_weight
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].starting_correction
+          ULONG,0  // Field=s_cfg_recnew.s_weight_correction[2].max_correction
+        ENDSTRUCT // End of structure=S_weight_correction
+        //
+    ENDSTRUCT // End of structure=S_cfg_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_RECPH1_40"  // Field=s_di_phor.name
+      POINTER  // Field=s_di_phor.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[0].name
+      POINTER  // Field=s_di_ph_rec[0].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[1].name
+      POINTER  // Field=s_di_ph_rec[1].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[2].name
+      POINTER  // Field=s_di_ph_rec[2].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[3].name
+      POINTER  // Field=s_di_ph_rec[3].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[4].name
+      POINTER  // Field=s_di_ph_rec[4].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[5].name
+      POINTER  // Field=s_di_ph_rec[5].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[6].name
+      POINTER  // Field=s_di_ph_rec[6].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[7].name
+      POINTER  // Field=s_di_ph_rec[7].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[8].name
+      POINTER  // Field=s_di_ph_rec[8].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ph_rec[9].name
+      POINTER  // Field=s_di_ph_rec[9].ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn4.name
+      POINTER  // Field=s_di_phn4.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn5.name
+      POINTER  // Field=s_di_phn5.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn6.name
+      POINTER  // Field=s_di_phn6.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_phn7.name
+      POINTER  // Field=s_di_phn7.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,40  // Field=s_id_n_recnew.id
+      POINTER  // Field=s_id_n_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,40  // Field=s_id_x_recnew.id
+      POINTER  // Field=s_id_x_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,40  // Field=s_id_ph1_recnew.id
+      POINTER  // Field=s_id_ph1_recnew.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_recnew
+      USHORT  // Field=s_wk_recnew.idx
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_up.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.preset
+          LONG  // Field=s_wk_recnew.s_cnt_time_dw.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+      ULONG  // Field=s_wk_recnew.n_cell_full[0]
+      ULONG  // Field=s_wk_recnew.n_cell_full[1]
+      ULONG  // Field=s_wk_recnew.n_cell_full[2]
+      ULONG  // Field=s_wk_recnew.n_cell_full[3]
+      ULONG  // Field=s_wk_recnew.n_cell_full[4]
+      ULONG  // Field=s_wk_recnew.n_cell_full[5]
+      ULONG  // Field=s_wk_recnew.n_cell_full[6]
+      ULONG  // Field=s_wk_recnew.n_cell_full[7]
+      ULONG  // Field=s_wk_recnew.n_cell_full[8]
+      ULONG  // Field=s_wk_recnew.n_cell_full[9]
+      ULONG  // Field=s_wk_recnew.n_cell_full[10]
+      ULONG  // Field=s_wk_recnew.n_cell_full[11]
+      ULONG  // Field=s_wk_recnew.n_cell_full[12]
+      ULONG  // Field=s_wk_recnew.n_cell_full[13]
+      ULONG  // Field=s_wk_recnew.n_cell_full[14]
+      ULONG  // Field=s_wk_recnew.n_cell_full[15]
+      ULONG  // Field=s_wk_recnew.n_cell_full[16]
+      ULONG  // Field=s_wk_recnew.n_cell_full[17]
+      ULONG  // Field=s_wk_recnew.n_cell_full[18]
+      ULONG  // Field=s_wk_recnew.n_cell_full[19]
+      ULONG  // Field=s_wk_recnew.n_cell_full[20]
+      ULONG  // Field=s_wk_recnew.n_cell_full[21]
+      ULONG  // Field=s_wk_recnew.n_cell_full[22]
+      ULONG  // Field=s_wk_recnew.n_cell_full[23]
+      ULONG  // Field=s_wk_recnew.n_cell_full[24]
+      ULONG  // Field=s_wk_recnew.n_cell_full[25]
+      ULONG  // Field=s_wk_recnew.n_cell_full[26]
+      ULONG  // Field=s_wk_recnew.n_cell_full[27]
+      ULONG  // Field=s_wk_recnew.n_cell_full[28]
+      ULONG  // Field=s_wk_recnew.n_cell_full[29]
+      ULONG  // Field=s_wk_recnew.n_cell_full[30]
+      ULONG  // Field=s_wk_recnew.n_cell_full[31]
+      ULONG  // Field=s_wk_recnew.n_cell_full[32]
+      ULONG  // Field=s_wk_recnew.n_cell_full[33]
+      ULONG  // Field=s_wk_recnew.n_cell_full[34]
+      ULONG  // Field=s_wk_recnew.n_cell_full[35]
+      ULONG  // Field=s_wk_recnew.n_cell_full[36]
+      ULONG  // Field=s_wk_recnew.n_cell_full[37]
+      ULONG  // Field=s_wk_recnew.n_cell_full[38]
+      ULONG  // Field=s_wk_recnew.n_cell_full[39]
+      ULONG  // Field=s_wk_recnew.n_cell_full[40]
+      ULONG  // Field=s_wk_recnew.n_cell_full[41]
+      ULONG  // Field=s_wk_recnew.n_cell_full[42]
+      ULONG  // Field=s_wk_recnew.n_cell_full[43]
+      ULONG  // Field=s_wk_recnew.n_cell_full[44]
+      ULONG  // Field=s_wk_recnew.n_cell_full[45]
+      ULONG  // Field=s_wk_recnew.n_cell_full[46]
+      ULONG  // Field=s_wk_recnew.n_cell_full[47]
+      ULONG  // Field=s_wk_recnew.n_cell_full[48]
+      ULONG  // Field=s_wk_recnew.n_cell_full[49]
+      ULONG  // Field=s_wk_recnew.n_cell_full[50]
+      ULONG  // Field=s_wk_recnew.n_cell_full[51]
+      ULONG  // Field=s_wk_recnew.n_cell_full[52]
+      ULONG  // Field=s_wk_recnew.n_cell_full[53]
+      ULONG  // Field=s_wk_recnew.n_cell_full[54]
+      ULONG  // Field=s_wk_recnew.n_cell_full[55]
+      ULONG  // Field=s_wk_recnew.n_cell_full[56]
+      ULONG  // Field=s_wk_recnew.n_cell_full[57]
+      ULONG  // Field=s_wk_recnew.n_cell_full[58]
+      ULONG  // Field=s_wk_recnew.n_cell_full[59]
+      ULONG  // Field=s_wk_recnew.n_cell_full[60]
+      ULONG  // Field=s_wk_recnew.n_cell_full[61]
+      ULONG  // Field=s_wk_recnew.n_cell_full[62]
+      ULONG  // Field=s_wk_recnew.n_cell_full[63]
+      ULONG  // Field=s_wk_recnew.n_cell_full[64]
+      ULONG  // Field=s_wk_recnew.n_cell_full[65]
+      ULONG  // Field=s_wk_recnew.n_cell_full[66]
+      ULONG  // Field=s_wk_recnew.n_cell_full[67]
+      ULONG  // Field=s_wk_recnew.n_cell_full[68]
+      ULONG  // Field=s_wk_recnew.n_cell_full[69]
+      ULONG  // Field=s_wk_recnew.n_cell_full[70]
+      ULONG  // Field=s_wk_recnew.n_cell_full[71]
+      ULONG  // Field=s_wk_recnew.n_cell_full[72]
+      ULONG  // Field=s_wk_recnew.n_cell_full[73]
+      ULONG  // Field=s_wk_recnew.n_cell_full[74]
+      ULONG  // Field=s_wk_recnew.n_cell_full[75]
+      ULONG  // Field=s_wk_recnew.n_cell_full[76]
+      ULONG  // Field=s_wk_recnew.n_cell_full[77]
+      ULONG  // Field=s_wk_recnew.n_cell_full[78]
+      ULONG  // Field=s_wk_recnew.n_cell_full[79]
+      ULONG  // Field=s_wk_recnew.n_cell_full[80]
+      ULONG  // Field=s_wk_recnew.n_cell_full[81]
+      ULONG  // Field=s_wk_recnew.n_cell_full[82]
+      ULONG  // Field=s_wk_recnew.n_cell_full[83]
+      ULONG  // Field=s_wk_recnew.n_cell_full[84]
+      ULONG  // Field=s_wk_recnew.n_cell_full[85]
+      ULONG  // Field=s_wk_recnew.n_cell_full[86]
+      ULONG  // Field=s_wk_recnew.n_cell_full[87]
+      ULONG  // Field=s_wk_recnew.n_cell_full[88]
+      ULONG  // Field=s_wk_recnew.n_cell_full[89]
+      ULONG  // Field=s_wk_recnew.n_cell_full[90]
+      ULONG  // Field=s_wk_recnew.n_cell_full[91]
+      ULONG  // Field=s_wk_recnew.n_cell_full[92]
+      ULONG  // Field=s_wk_recnew.n_cell_full[93]
+      ULONG  // Field=s_wk_recnew.n_cell_full[94]
+      ULONG  // Field=s_wk_recnew.n_cell_full[95]
+      ULONG  // Field=s_wk_recnew.n_cell_full[96]
+      ULONG  // Field=s_wk_recnew.n_cell_full[97]
+      ULONG  // Field=s_wk_recnew.n_cell_full[98]
+      ULONG  // Field=s_wk_recnew.n_cell_full[99]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[0]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[1]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[2]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[3]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[4]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[5]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[6]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[7]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[8]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[9]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[10]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[11]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[12]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[13]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[14]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[15]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[16]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[17]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[18]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[19]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[20]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[21]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[22]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[23]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[24]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[25]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[26]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[27]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[28]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[29]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[30]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[31]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[32]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[33]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[34]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[35]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[36]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[37]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[38]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[39]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[40]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[41]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[42]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[43]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[44]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[45]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[46]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[47]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[48]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[49]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[50]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[51]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[52]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[53]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[54]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[55]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[56]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[57]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[58]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[59]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[60]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[61]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[62]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[63]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[64]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[65]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[66]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[67]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[68]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[69]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[70]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[71]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[72]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[73]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[74]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[75]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[76]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[77]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[78]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[79]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[80]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[81]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[82]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[83]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[84]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[85]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[86]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[87]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[88]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[89]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[90]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[91]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[92]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[93]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[94]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[95]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[96]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[97]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[98]
+      ULONG  // Field=s_wk_recnew.n_cell_empty[99]
+      ULONG  // Field=s_wk_recnew.n_cell_full_total
+      ULONG  // Field=s_wk_recnew.n_cell_empty_total
+      USHORT  // Field=s_wk_recnew.percentage_up
+      USHORT  // Field=s_wk_recnew.percentage_dw
+    ENDSTRUCT // End of structure=S_wk_recnew
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_recnewstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_ph1_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_n_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.n_time
+              ULONG  // Field=s_recnewstat.s_x_recstat.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_status.status
+          ULONG  // Field=s_recnewstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_n_status.status
+          ULONG  // Field=s_recnewstat.s_n_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_recnewstat.s_x_status.status
+          ULONG  // Field=s_recnewstat.s_x_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_recnewstat
+    //
+ENDSTRUCT // End of structure=S_recnew
+//

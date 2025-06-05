@@ -1,0 +1,844 @@
+//
+//S_vdt
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:12
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+  USHORT  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT  // Field=s_driver.type
+      USHORT  // Field=s_driver.id_driver
+      USHORT  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT  // Field=psw_num
+  USHORT  // Field=velconv
+  USHORT  // Field=errortype
+  USHORT  // Field=sort_conn_cmd
+  USHORT  // Field=sort_conn_mex
+  USHORT  // Field=is_conn_cmd
+  USHORT  // Field=is_conn_mex[0]
+  USHORT  // Field=is_conn_mex[1]
+  USHORT  // Field=is_conn_mex[2]
+  USHORT  // Field=is_conn_mex[3]
+  USHORT  // Field=is_conn_mex[4]
+  USHORT  // Field=is_conn_mex[5]
+  USHORT  // Field=is_conn_mex[6]
+  USHORT  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_msg.base
+      ULONG  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,1  // Field=id
+  STRING12,"ASUPS_SUPS"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,2  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,1  // Field=s_driver.id_driver
+      USHORT,16  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,2  // Field=id
+  STRING12,"BSC_SC"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,2  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,2  // Field=s_driver.id_driver
+      USHORT,5  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,3  // Field=id
+  STRING12,"DISP_SC"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,2  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,3  // Field=s_driver.id_driver
+      USHORT,16  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,4  // Field=id
+  STRING12,"ID_VDU"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,2  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,4  // Field=s_driver.id_driver
+      USHORT,16  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,5  // Field=id
+  STRING12,"SC_BSC"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,2  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,8  // Field=s_driver.id_driver
+      USHORT,5  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,6  // Field=id
+  STRING12,"SC_DISP"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,6  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,9  // Field=s_driver.id_driver
+      USHORT,16  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,7  // Field=id
+  STRING12,"SC_GSMI"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,4  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,10  // Field=s_driver.id_driver
+      USHORT,8  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,8  // Field=id
+  STRING12,"SC_SUPS"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,4  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,13  // Field=s_driver.id_driver
+      USHORT,9  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,9  // Field=id
+  STRING12,"SC_VDU"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,4  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,16  // Field=s_driver.id_driver
+      USHORT,16  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,10  // Field=id
+  STRING12,"SUPS_ASUPS"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,4  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,22  // Field=s_driver.id_driver
+      USHORT,16  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,11  // Field=id
+  STRING12,"SUPS_SURFER"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,4  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,23  // Field=s_driver.id_driver
+      USHORT,16  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//
+//
+BEGINSTRUCT // Begin of structure=S_vdt
+  USHORT,12  // Field=id
+  STRING12,"SURFER_SUPS"  // Field=name
+  USHORT,1  // Field=enable
+  USHORT,2  // Field=type
+    //
+    BEGINSTRUCT // Begin of structure=S_driver
+      USHORT,2  // Field=s_driver.type
+      USHORT,24  // Field=s_driver.id_driver
+      USHORT,16  // Field=s_driver.id_protocol
+    ENDSTRUCT // End of structure=S_driver
+    //
+  STRING4  // Field=language
+  STRING10  // Field=password[0]
+  STRING10  // Field=password[1]
+  STRING10  // Field=password[2]
+  STRING10  // Field=password[3]
+  STRING10  // Field=password[4]
+  STRING10  // Field=password[5]
+  STRING10  // Field=password[6]
+  STRING10  // Field=password[7]
+  USHORT,0  // Field=psw_num
+  USHORT,0  // Field=velconv
+  USHORT,0  // Field=errortype
+  USHORT,0  // Field=sort_conn_cmd
+  USHORT,0  // Field=sort_conn_mex
+  USHORT,0  // Field=is_conn_cmd
+  USHORT,0  // Field=is_conn_mex[0]
+  USHORT,0  // Field=is_conn_mex[1]
+  USHORT,0  // Field=is_conn_mex[2]
+  USHORT,0  // Field=is_conn_mex[3]
+  USHORT,0  // Field=is_conn_mex[4]
+  USHORT,0  // Field=is_conn_mex[5]
+  USHORT,0  // Field=is_conn_mex[6]
+  USHORT,0  // Field=is_conn_mex[7]
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,0  // Field=s_tm_msg.base
+      ULONG,0  // Field=s_tm_msg.preset
+      POINTER  // Field=s_tm_msg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_await.base
+      ULONG  // Field=s_tm_await.preset
+      POINTER  // Field=s_tm_await.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+  USHORT  // Field=n_msg
+  USHORT  // Field=mbx_keybmgm
+  USHORT  // Field=sem_keyberr
+  POINTER  // Field=ps_vdtin
+  POINTER  // Field=ps_vdtout
+  POINTER  // Field=ps_menutable
+  POINTER  // Field=ps_menufield
+  POINTER  // Field=ps_histerror
+  POINTER  // Field=ps_acterror
+  USHORT  // Field=idx_lang
+  USHORT  // Field=osc_length
+  POINTER  // Field=osc_sequence
+ENDSTRUCT // End of structure=S_vdt
+//

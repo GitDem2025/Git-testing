@@ -1,0 +1,1288 @@
+//
+//S_celcmd_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:1
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd_header
+  USHORT  // Field=n_max_error
+ENDSTRUCT // End of structure=S_celcmd_header
+//
+//
+ENDHEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd_header
+  USHORT,30  // Field=n_max_error
+ENDSTRUCT // End of structure=S_celcmd_header
+//
+//
+//S_celcmd
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:21
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT  // Field=id
+  STRING12  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,1  // Field=id
+  STRING12,"T550_0"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,19005  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,17496  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,2  // Field=id
+  STRING12,"T550_1"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,20575  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,19007  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,3  // Field=id
+  STRING12,"T550_2"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,22125  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,20577  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,4  // Field=id
+  STRING12,"T550_3"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,409  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,22127  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,5  // Field=id
+  STRING12,"T550_4"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,5  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,2138  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,411  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,6  // Field=id
+  STRING12,"T550_5"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,6  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,3195  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,2140  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,7  // Field=id
+  STRING12,"T550_6"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,7  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,5326  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,3197  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,8  // Field=id
+  STRING12,"T550_7"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,8  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,6648  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,5328  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,9  // Field=id
+  STRING12,"T550_8"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,9  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,7749  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,6650  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,10  // Field=id
+  STRING12,"T550_9"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,10  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,8926  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,7751  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,11  // Field=id
+  STRING12,"T550_10"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,11  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,10355  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,8928  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,12  // Field=id
+  STRING12,"T550_11"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,12  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,10929  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,10357  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,13  // Field=id
+  STRING12,"T550_12"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,13  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,12543  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,10931  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,14  // Field=id
+  STRING12,"T550_13"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,14  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,14123  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,12545  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,15  // Field=id
+  STRING12,"T550_14"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,15  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,15652  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,14125  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,16  // Field=id
+  STRING12,"T550_15"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,16  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,17494  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,15654  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,17  // Field=id
+  STRING12,"T550_16"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,17  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,15656  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,35  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,18  // Field=id
+  STRING12,"T550_17"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,18  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,37  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,30  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,19  // Field=id
+  STRING12,"T550_18"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,19  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,50  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,45  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,20  // Field=id
+  STRING12,"T550_19"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,20  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,60  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,44  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//
+//
+BEGINSTRUCT // Begin of structure=S_celcmd
+  USHORT,21  // Field=id
+  STRING12,"T550_20"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,21  // Field=s_id_serial.id
+      POINTER  // Field=s_id_serial.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_celcmd
+      USHORT,46  // Field=s_cfg_celcmd.offset_ph0_begin
+      USHORT,40  // Field=s_cfg_celcmd.offset_ph0_end
+    ENDSTRUCT // End of structure=S_cfg_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_celcmd
+      USHORT  // Field=s_wk_celcmd.n_error
+      USHORT  // Field=s_wk_celcmd.decoder_error_id
+      USHORT  // Field=s_wk_celcmd.mbx_cctx
+    ENDSTRUCT // End of structure=S_wk_celcmd
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_celcmdstat
+        //
+        BEGINSTRUCT // Begin of structure=S_statis
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_failure.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.n_time
+              ULONG  // Field=s_celcmdstat.s_statis.s_counter_disable.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_statis
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_celcmdstat.s_status.status
+          ULONG  // Field=s_celcmdstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_celcmdstat
+    //
+ENDSTRUCT // End of structure=S_celcmd
+//

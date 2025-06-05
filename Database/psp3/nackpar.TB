@@ -1,0 +1,138 @@
+//
+//S_nackpar_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:1
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_nackpar_header
+  USHORT  // Field=ack_timeout
+  USHORT  // Field=max_n_msg
+  USHORT  // Field=n_msg
+ENDSTRUCT // End of structure=S_nackpar_header
+//
+//
+ENDHEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_nackpar_header
+  USHORT,120  // Field=ack_timeout
+  USHORT,9999  // Field=max_n_msg
+  USHORT  // Field=n_msg
+ENDSTRUCT // End of structure=S_nackpar_header
+//
+//
+//S_nackpar
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:14760
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_nackpar
+  ULONG  // Field=time
+  USHORT  // Field=msg
+  USHORT  // Field=subcode
+    //
+    BEGINSTRUCT // Begin of structure=S_parcres
+        //
+        BEGINSTRUCT // Begin of structure=S_parcel
+          USHORT  // Field=s_parcres.s_parcel.is_id
+          USHORT  // Field=s_parcres.s_parcel.scanner_id_sc
+          USHORT  // Field=s_parcres.s_parcel.scanner_id_isc
+          UCHAR  // Field=s_parcres.s_parcel.type
+          ULONG  // Field=s_parcres.s_parcel.parcid
+          USHORT  // Field=s_parcres.s_parcel.chute
+          USHORT  // Field=s_parcres.s_parcel.profile
+          ULONG  // Field=s_parcres.s_parcel.reject_reason
+          USHORT  // Field=s_parcres.s_parcel.width
+          USHORT  // Field=s_parcres.s_parcel.length
+          ULONG  // Field=s_parcres.s_parcel.volume
+          USHORT  // Field=s_parcres.s_parcel.position
+          USHORT  // Field=s_parcres.s_parcel.weight
+          UCHAR  // Field=s_parcres.s_parcel.init
+          USHORT  // Field=s_parcres.s_parcel.l_code_sc
+          STRING128  // Field=s_parcres.s_parcel.code_sc
+          USHORT  // Field=s_parcres.s_parcel.l_code_isc
+          STRING128  // Field=s_parcres.s_parcel.code_isc
+          ULONG  // Field=s_parcres.s_parcel.genpar[0]
+          ULONG  // Field=s_parcres.s_parcel.genpar[1]
+          ULONG  // Field=s_parcres.s_parcel.genpar[2]
+          ULONG  // Field=s_parcres.s_parcel.genpar[3]
+          ULONG  // Field=s_parcres.s_parcel.genpar[4]
+        ENDSTRUCT // End of structure=S_parcel
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_parcel_sc
+          ULONG  // Field=s_parcres.s_parcel_sc.loading_time
+          USHORT  // Field=s_parcres.s_parcel_sc.loadreq_request
+          ULONG  // Field=s_parcres.s_parcel_sc.offloading_time
+          USHORT  // Field=s_parcres.s_parcel_sc.chute
+          ULONG  // Field=s_parcres.s_parcel_sc.reject_reason
+          USHORT  // Field=s_parcres.s_parcel_sc.cell
+        ENDSTRUCT // End of structure=S_parcel_sc
+        //
+    ENDSTRUCT // End of structure=S_parcres
+    //
+ENDSTRUCT // End of structure=S_nackpar
+//
+//
+ENDTABLE
+//
+//
+REPEAT:14760
+//
+BEGINSTRUCT // Begin of structure=S_nackpar
+  ULONG  // Field=time
+  USHORT  // Field=msg
+  USHORT  // Field=subcode
+    //
+    BEGINSTRUCT // Begin of structure=S_parcres
+        //
+        BEGINSTRUCT // Begin of structure=S_parcel
+          USHORT  // Field=s_parcres.s_parcel.is_id
+          USHORT  // Field=s_parcres.s_parcel.scanner_id_sc
+          USHORT  // Field=s_parcres.s_parcel.scanner_id_isc
+          UCHAR  // Field=s_parcres.s_parcel.type
+          ULONG  // Field=s_parcres.s_parcel.parcid
+          USHORT  // Field=s_parcres.s_parcel.chute
+          USHORT  // Field=s_parcres.s_parcel.profile
+          ULONG  // Field=s_parcres.s_parcel.reject_reason
+          USHORT  // Field=s_parcres.s_parcel.width
+          USHORT  // Field=s_parcres.s_parcel.length
+          ULONG  // Field=s_parcres.s_parcel.volume
+          USHORT  // Field=s_parcres.s_parcel.position
+          USHORT  // Field=s_parcres.s_parcel.weight
+          UCHAR  // Field=s_parcres.s_parcel.init
+          USHORT  // Field=s_parcres.s_parcel.l_code_sc
+          STRING128  // Field=s_parcres.s_parcel.code_sc
+          USHORT  // Field=s_parcres.s_parcel.l_code_isc
+          STRING128  // Field=s_parcres.s_parcel.code_isc
+          ULONG  // Field=s_parcres.s_parcel.genpar[0]
+          ULONG  // Field=s_parcres.s_parcel.genpar[1]
+          ULONG  // Field=s_parcres.s_parcel.genpar[2]
+          ULONG  // Field=s_parcres.s_parcel.genpar[3]
+          ULONG  // Field=s_parcres.s_parcel.genpar[4]
+        ENDSTRUCT // End of structure=S_parcel
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_parcel_sc
+          ULONG  // Field=s_parcres.s_parcel_sc.loading_time
+          USHORT  // Field=s_parcres.s_parcel_sc.loadreq_request
+          ULONG  // Field=s_parcres.s_parcel_sc.offloading_time
+          USHORT  // Field=s_parcres.s_parcel_sc.chute
+          ULONG  // Field=s_parcres.s_parcel_sc.reject_reason
+          USHORT  // Field=s_parcres.s_parcel_sc.cell
+        ENDSTRUCT // End of structure=S_parcel_sc
+        //
+    ENDSTRUCT // End of structure=S_parcres
+    //
+ENDSTRUCT // End of structure=S_nackpar
+//
+ENDREPEAT
+//

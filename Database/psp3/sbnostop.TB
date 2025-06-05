@@ -1,0 +1,753 @@
+//
+//S_sbnostop
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT  // Field=id
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT  // Field=s_cfg_sbnostop_bb.enable
+      USHORT  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,11  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,12  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,13  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,14  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,15  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,21  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,22  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,23  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,24  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,31  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,32  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,33  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,34  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,35  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,41  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,42  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,43  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//
+//
+BEGINSTRUCT // Begin of structure=S_sbnostop
+  USHORT,44  // Field=id
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[0]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[1]
+      USHORT,2000  // Field=s_cfg_sbnostop.vloading[2]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[0]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[1]
+      USHORT,580  // Field=s_cfg_sbnostop.tloading[2]
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp1_max
+      USHORT,5000  // Field=s_cfg_sbnostop.ramp2_max
+      USHORT,0  // Field=s_cfg_sbnostop.ramp_distance
+    ENDSTRUCT // End of structure=S_cfg_sbnostop
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_sbnostop_bb
+      USHORT,0  // Field=s_cfg_sbnostop_bb.enable
+      USHORT,350  // Field=s_cfg_sbnostop_bb.PH2_dist
+    ENDSTRUCT // End of structure=S_cfg_sbnostop_bb
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sbnostop
+      USHORT  // Field=s_wk_sbnostop.active
+      USHORT  // Field=s_wk_sbnostop.state
+      USHORT  // Field=s_wk_sbnostop.vloading
+      USHORT  // Field=s_wk_sbnostop.tloading
+      USHORT  // Field=s_wk_sbnostop.ramp1
+      USHORT  // Field=s_wk_sbnostop.ramp2
+      USHORT  // Field=s_wk_sbnostop.vint
+      USHORT  // Field=s_wk_sbnostop.flag_loading
+      USHORT  // Field=s_wk_sbnostop.lb_follow_sb
+      LONG  // Field=s_wk_sbnostop.cnt_ramp
+    ENDSTRUCT // End of structure=S_wk_sbnostop
+    //
+ENDSTRUCT // End of structure=S_sbnostop
+//

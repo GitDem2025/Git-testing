@@ -1,0 +1,280 @@
+//
+// general tables
+//
+TABLE_CATALOG=1    	// Catalog table
+TABLE_IOMODUL=2    	// Digital and analog module configuration
+TABLE_INPUT=3      	// Digital input
+TABLE_OUTPUT=4     	// Digital output
+TABLE_ANALOG=5     	// Analog output
+TABLE_TIMER=6      	// Active timer
+TABLE_VDT=7        	// VDT and related keyboard
+TABLE_PROTOCOL=8   	// Communication protocol
+TABLE_SERIAL=9     	// Serial line parameters
+TABLE_NETWORK=10   	// Network parameters
+TABLE_ERRCFG=11    	// Error table configuration parameters
+TABLE_ERRWK=12     	// List of error during the working
+TABLE_TRACE=13     	// Trace table (for debug only)
+//
+//Table removed in XB6_1
+//
+//TABLE_LANG=14      	// Configured languages
+TABLE_MSGEXT=15    	// External message definition
+TABLE_IOMODULPB=16	// Digital and analog module configuration for profibus
+TABLE_IOSUBMPB=17	// Digital and analog submodule configuration for profibus
+//
+//Table removed in XB6_1
+//
+//TABLE_SDRIVEM=18	// Simodrive Posmo module configuration for profibus
+TABLE_SIGDEV=19 	// Table Signal device table 
+TABLE_AINPUT=20         // Digital input
+TABLE_PB_DIAG=21   	// Table PB_DIAG
+//
+// New table for XB5_2sp2
+//
+TABLE_HRISDRVPB=22 	// Table HRISDVPB
+//
+// New table for XB6_0
+//
+TABLE_PBSCANDRV=23 	// Table profibus scanner driver
+TABLE_MSCMON=24    	// Table MSC current/power monitor
+//
+// New table for XB6_0sp5 
+//
+TABLE_TESTLAMP=25       // Table for lamp testing
+//
+// New table for Profinet XB6_0sp6 
+//
+TABLE_IOMODULPN=30 	// Table IOMODULPN
+TABLE_IOSUBMPN=31 	// Table IOSUBMPN
+TABLE_BOSCHMTR=32 	// Table BOSCHMTR
+TABLE_HMV=33 		// Table HMV
+//
+TABLE_SCADA_PLC=49 	// SCADA PLC device and DB number configuration
+//
+//
+TABLE_CLOCK=500    	//  Clock table
+TABLE_SHUTDW=501   	//  Shutdown table
+TABLE_BMU=502      	//  BMU table
+TABLE_NETUPS=503	// Table Net UPS
+TABLE_IOUPS=504		// Table IO UPS
+//
+// Sorter tables
+//
+TABLE_SCGEN=50     	// Sorter configuration and global parameters
+TABLE_EMERG=51     	// Sorter emergency table
+TABLE_CMD=52       	// Sorter command table
+TABLE_JOG=53       	// Jog command table
+TABLE_WLAMP=54     	// Sorter warning lamps table
+TABLE_STLAMP=55    	// Sorter status lamps table
+TABLE_SCVEL=56     	// Sorter velocity table
+TABLE_SCENC=57     	// Sorter encoder table
+TABLE_SCINV=58     	// Sorter inverter table
+TABLE_RECENT=59    	// General Recentering Station or Footprint
+TABLE_N_REC=60     	// Normal Recentering Station
+TABLE_X_REC=61     	// Cross Recentering Station
+TABLE_PH1_REC=62   	// PH1 Recentering Station
+//
+//Table removed in XB6_1
+//
+//TABLE_TEST=63      	// Carrier Test Station
+TABLE_LOAD=64      	// Loadability Station
+TABLE_OFFLVER=65   	// Offloading Verification Station
+TABLE_SCANLOOP=66  	// Scanner on the Loop
+TABLE_CELCMD=67    	// Cell activation command group
+TABLE_DECODER=68   	// Decoder
+TABLE_VSCAN=69     	// Virtual Scanner
+TABLE_LIM=70       	// Linear motor
+TABLE_PWR=71       	// Remote 65VDC power supply
+TABLE_ISL=72       	// Induction Station Loading
+TABLE_CHUTE=73     	// Chute
+TABLE_CELL=74      	// Cell
+TABLE_PARCRES=75   	// Parcel Result
+TABLE_PROFILE=76   	// Profile
+//
+//Table removed in XB6_0
+//
+//TABLE_DSFORMAT=77  	// Dispatch Data Format
+//
+// New table for XB6_0 SP2
+//
+TABLE_JOGMAN=78		// JOGMAN table
+//
+TABLE_SCWEIGHT=79     	// Weight table used for parcels offloading
+TABLE_NACKPAR=80      	// Parcel ACK table
+TABLE_RECNEW=81       	// General Recentering Station VERSION 2
+TABLE_N_RECNEW=82     	// Normal Recentering Station VERSION 2
+TABLE_X_RECNEW=83     	// Cross Recentering Station VERSION 2
+TABLE_PH1_RECNEW=84   	// PH1 Recentering Station VERSION 2
+TABLE_SCDIM=85        	// Dimension table used for parcels offloading
+//
+//For High Rate Induction Station Unit (seen by Sorter)
+//
+TABLE_ISLHS=86		//  ISLHS table
+//
+// QUAD only tables
+//
+TABLE_SIDE=87		// Side Side managment
+TABLE_PROFOPP=88	// Profile for quad offloading
+//
+// New table for Ertt (all removed in XB6_1)
+//
+//TABLE_LOADCTRL=89  	// Table Load control station
+//TABLE_INFRAST=90  	// Table INFRAST
+//TABLE_ETTCELL=91	//Table ETTCELL
+//
+// New table for XB5_2
+//
+TABLE_LASERREC=92	// Laser recentering station table
+TABLE_PROSPACE=93	// Profile table: profile controlled in space
+//
+// New table for XB6_0
+//
+TABLE_SCANSYNCHRO=94	// Synchro scanner table
+TABLE_SJB=95   		// Table SJB
+TABLE_PBVEL=96   	// Table PBVEL
+//
+//Table removed in XB6_1: substituted by SCINVEXTRA
+//
+TABLE_PBINV=97   	    // Table PBINV
+//
+// New table for XB6_0 SP2
+//
+TABLE_FOOTPREC=98   	// Table FOOTPREC
+//
+//Table removed in XB6_1: included in CDCDIAG
+//
+//TABLE_BMCDIAG=99   	// Table BMCDIAG
+//
+//
+// Induction station tables
+//
+TABLE_ISCGEN=100	//  Induction Station configuration and general parameters
+TABLE_UPSTR=101		//  Upstream interface table
+TABLE_SCANNER=103	//  Induction Station scanner
+TABLE_SCALE=104		//  Induction Station scale
+TABLE_AS=105		//  Area sensor
+//
+//Table removed in XB6_0
+//
+//TABLE_ISCBELT=111	//  IS Belt list
+//TABLE_ISCDEV=112	//  IS Devices list
+//TABLE_ISCUSER=113	//  ISC user table
+//TABLE_SCLBELT=114	//  Scale Belt configuration table
+//TABLE_ISCPARAM=115	//  ISC extra param for AS loading */
+//
+//High Rate Induction Station Unit tables
+//
+TABLE_HSIUGEN=116	//  Induction Station configuration and general parameters
+TABLE_NSBELT=117	//  Induction Station configuration and general parameters
+//
+// New table
+//
+TABLE_SBNOSTOP=118	// Sbnostop table
+TABLE_ISJOG=120		// ISJOG table
+// 
+// New table for XB5_2sp2
+//
+TABLE_JOGPANEL=122	// Jog Panel table 
+TABLE_BELT=123          // Belt table
+TABLE_LBRECOVER=124     // Lbrecover table 
+TABLE_ISMERGE=125       // ISmerge table 
+TABLE_ALLIGATOR=126     // Alligator table 
+TABLE_ISLOAD=127        // ISLOAD table 
+TABLE_BTRACKER=128	// BTRACKER table
+//
+//New table from XB6_1
+//
+TABLE_LOCUPSTR=129	// LOCUPSTR table used for CTRLSTOP management
+//
+//New tables from XB6_2
+//
+TABLE_ISREVERSE=130, //ISREVERSE table for ISREVERSE management
+TABLE_CBJOG=131		 // CBJOG table used for CBMAN for Amazon
+//
+// New SC tables for XB6_2SP2
+//
+TABLE_ISHYBRID=132   	// Table HYBRID
+//
+//New table from XB6_0 SP6
+//
+TABLE_OFFLSCAN=150  	// Table OFFLSCAN
+TABLE_P4DATA=151   	//  Table P4DATA
+TABLE_SCANQUEUE=152	// SCANQUEUE table
+TABLE_SAFEPLC=153    	// SAFEPLC table 
+TABLE_BLOCKCELL=154   	// BLOCKCELL table 
+TABLE_SAFLIM=155   	// Table SAFLIM for LIM/LSM saftey device  
+//
+// New ETH tables for XB6_0sp6 
+//
+TABLE_ETH_AP=156     	// Table ETH_AP for Access Point
+TABLE_ETH_RP=157     	// Table ETH_RP for Ethernet Repeater
+TABLE_ETH_CL=158     	// Table ETH_CL for CLIENT of CDC Master
+//
+// New table for CDC statistic and diagnostic (it includes old BMCDIAG too)
+//
+TABLE_CDCDIAG=159   	// Table CDCDIAG
+//
+// Amazon OEE MP interface tables for XB6_0sp6
+//
+TABLE_MPINT=160   	// Table MPINT
+TABLE_MPCON=161  	// Table MPCON
+//
+//
+// Amazon Mercury interface  tables for XB6_0sp6
+//
+TABLE_MERCINT=162   	// Table MERCINT
+TABLE_MERCCON=163   	// Table MERCCON
+TABLE_MERCDEV=164   	// Table MERCDEV
+//
+// New table for SORTER UTILITY (added for LM): BRINGCELL
+//
+TABLE_BRINGCELL=165   	// Table BRINGCELL
+//
+// New table for XB6_0sp7
+//
+TABLE_CHOKE=166   	// Table CHOKE for choke divert management
+TABLE_SCINVEXTRA=167	// Table SCINVEXTRA that substitute the PBINV stating from xb6_0sp7
+//
+// DCI tables
+//
+TABLE_DCI=170		// Table DCI
+TABLE_DCI_CONN=171	// Table DCI_CONN
+TABLE_DCI_MSG=172	// Table DCI_MSG
+TABLE_DCI_DEV=173	// Table DCI_DEV
+//
+// New table for XB6_1
+//
+TABLE_CTRLSTOP=180      //CTRLSTOP table
+TABLE_CRB=181           // Table CRB
+TABLE_BASELINE=182      // Table BASELINE
+//
+// New SC table for XB6_1SP1
+//
+TABLE_PHSIDE=183  	// Table PHSIDE
+TABLE_LASERSIDE=184  	// Table LASERSIDE
+TABLE_SCANSIDE=185   	// Table SCANSIDE
+//
+// New SC tables for XB6_2
+//
+TABLE_CHEXTRA=186  	// Table CHEXTRA
+TABLE_OFFLSIDE=187   	// Table OFFLSIDE
+//
+// New SC tables for XB6_2SP1
+//
+TABLE_BANNERSIDE=188   	// Table BANNERSIDE
+//
+//
+// New SC tables for XB6_2SP2
+//
+TABLE_CHFLNOT=189   	// Table CHFLNOT
+TABLE_CCURESET=190   	// Table CCURESET
+TABLE_CABINET=191   	// Table CABINET
+//
+//
+// New SC tables for XB6_2SP3
+//
+//
+TABLE_CLEANINGBB=192   	// Table CLEANING BUS BAR mode
+//User Tables
+//
+TABLE_LOCUPSTR_EXTRA=217   // Table LOCUPSTR_EXTRA

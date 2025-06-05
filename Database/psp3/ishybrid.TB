@@ -1,0 +1,1038 @@
+//
+//S_ishybrid
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT  // Field=id
+ STRING12  // Field=name
+ 	USHORT  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT  // Field=flashing_time_lamp
+     USHORT  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,11  // Field=id
+ STRING12,"HYBRID_11"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_11"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_11"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_11"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_11"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,12  // Field=id
+ STRING12,"HYBRID_12"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_12"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_12"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_12"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_12"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,13  // Field=id
+ STRING12,"HYBRID_13"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_13"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_13"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_13"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_13"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,14  // Field=id
+ STRING12,"HYBRID_14"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_14"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_14"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_14"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_14"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,15  // Field=id
+ STRING12,"HYBRID_15"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_15"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_15"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_15"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_15"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,21  // Field=id
+ STRING12,"HYBRID_21"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_21"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_21"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_21"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_21"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,22  // Field=id
+ STRING12,"HYBRID_22"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_22"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_22"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_22"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_22"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,23  // Field=id
+ STRING12,"HYBRID_23"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_23"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_23"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_23"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_23"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,24  // Field=id
+ STRING12,"HYBRID_24"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_24"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_24"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_24"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_24"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,31  // Field=id
+ STRING12,"HYBRID_31"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_31"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_31"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_31"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_31"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,32  // Field=id
+ STRING12,"HYBRID_32"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_32"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_32"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_32"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_32"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,33  // Field=id
+ STRING12,"HYBRID_33"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_33"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_33"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_33"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_33"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,34  // Field=id
+ STRING12,"HYBRID_34"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_34"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_34"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_34"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_34"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,35  // Field=id
+ STRING12,"HYBRID_35"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_35"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_35"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_35"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_35"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,41  // Field=id
+ STRING12,"HYBRID_41"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_41"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_41"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_41"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_41"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,42  // Field=id
+ STRING12,"HYBRID_42"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_42"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_42"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_42"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_42"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,43  // Field=id
+ STRING12,"HYBRID_43"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_43"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_43"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_43"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_43"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//
+//
+BEGINSTRUCT // Begin of structure=S_ishybrid
+ 	USHORT,44  // Field=id
+ STRING12,"HYBRID_44"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_ishybrid
+     USHORT,200  // Field=flashing_time_lamp
+     USHORT,2000  // Field=horn_timer_preset
+    ENDSTRUCT // End of structure=S_cfg_ishybrid
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_STOPUP_44"  // Field=s_di_hybridon.name
+      POINTER  // Field=s_di_hybridon.ps_input
+    ENDSTRUCT // End of structure=S_di
+	//
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HLAMP_44"  // Field=s_do_ishybrid_lamp.name
+      POINTER  // Field=s_do_ishybrid_lamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VHORN2_44"  // Field=s_do_ishybrid_horn.name
+      POINTER  // Field=s_do_ishybrid_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HYBACT_44"  // Field=s_do_ishybrid_active.name
+      POINTER  // Field=s_do_ishybrid_active.ps_output
+    ENDSTRUCT // End of structure=S_do
+	//
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+	//
+    //
+	BEGINSTRUCT // Begin of structure=S_wk_ishybrid
+      USHORT  // Field=status
+    ENDSTRUCT // End of structure=S_wk_ishybrid
+	//
+ENDSTRUCT // End of structure=S_ishybrid
+//

@@ -1,0 +1,1002 @@
+//
+//S_ainput
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:65
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT  // Field=s_aires.volt
+      USHORT  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2580301  // Field=id
+  STRING12,"AI_INVCUR_01"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2580601  // Field=id
+  STRING12,"AI_INVCUR_02"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2580901  // Field=id
+  STRING12,"AI_INVCUR_03"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2600301  // Field=id
+  STRING12,"AI_INVCUR_04"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2600601  // Field=id
+  STRING12,"AI_INVCUR_05"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2600901  // Field=id
+  STRING12,"AI_INVCUR_06"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2620301  // Field=id
+  STRING12,"AI_INVCUR_07"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2620601  // Field=id
+  STRING12,"AI_INVCUR_08"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2620901  // Field=id
+  STRING12,"AI_INVCUR_09"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2640301  // Field=id
+  STRING12,"AI_INVCUR_10"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2640601  // Field=id
+  STRING12,"AI_INVCUR_11"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2640901  // Field=id
+  STRING12,"AI_INVCUR_12"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2660301  // Field=id
+  STRING12,"AI_INVCUR_13"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2660601  // Field=id
+  STRING12,"AI_INVCUR_14"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2680301  // Field=id
+  STRING12,"AI_INVCUR_15"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2680601  // Field=id
+  STRING12,"AI_INVCUR_16"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2680901  // Field=id
+  STRING12,"AI_INVCUR_17"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2700301  // Field=id
+  STRING12,"AI_INVCUR_18"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2700601  // Field=id
+  STRING12,"AI_INVCUR_19"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2700901  // Field=id
+  STRING12,"AI_INVCUR_20"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2720301  // Field=id
+  STRING12,"AI_INVCUR_21"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2720601  // Field=id
+  STRING12,"AI_INVCUR_22"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2720901  // Field=id
+  STRING12,"AI_INVCUR_23"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2740301  // Field=id
+  STRING12,"AI_INVCUR_24"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2740601  // Field=id
+  STRING12,"AI_INVCUR_25"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2740901  // Field=id
+  STRING12,"AI_INVCUR_26"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2760301  // Field=id
+  STRING12,"AI_INVCUR_27"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2760601  // Field=id
+  STRING12,"AI_INVCUR_28"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2760901  // Field=id
+  STRING12,"AI_INVCUR_29"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2780301  // Field=id
+  STRING12,"AI_INVCUR_30"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2780601  // Field=id
+  STRING12,"AI_INVCUR_31"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2780901  // Field=id
+  STRING12,"AI_INVCUR_32"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2800301  // Field=id
+  STRING12,"AI_INVCUR_33"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2800601  // Field=id
+  STRING12,"AI_INVCUR_34"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2800901  // Field=id
+  STRING12,"AI_INVCUR_35"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2820301  // Field=id
+  STRING12,"AI_INVCUR_36"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2820601  // Field=id
+  STRING12,"AI_INVCUR_37"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2820901  // Field=id
+  STRING12,"AI_INVCUR_38"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2840301  // Field=id
+  STRING12,"AI_INVCUR_39"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2840601  // Field=id
+  STRING12,"AI_INVCUR_40"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2840901  // Field=id
+  STRING12,"AI_INVCUR_41"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2860301  // Field=id
+  STRING12,"AI_LASR_10"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2860401  // Field=id
+  STRING12,"AI_LASL_10"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2870301  // Field=id
+  STRING12,"AI_LASR_20"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2870401  // Field=id
+  STRING12,"AI_LASL_20"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2880301  // Field=id
+  STRING12,"AI_LASR_30"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2880401  // Field=id
+  STRING12,"AI_LASL_30"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2890301  // Field=id
+  STRING12,"AI_LASR_40"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,2890401  // Field=id
+  STRING12,"AI_LASL_40"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3850801  // Field=id
+  STRING12,"AI_HUM1_MSC"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3850833  // Field=id
+  STRING12,"AI_TEMP1_MSC"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3850901  // Field=id
+  STRING12,"AI_HUM2_MSC"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3850933  // Field=id
+  STRING12,"AI_TEMP2_MSC"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3860801  // Field=id
+  STRING12,"AI_HUM1_SP1"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3860833  // Field=id
+  STRING12,"AI_TEMP1_SP1"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3860901  // Field=id
+  STRING12,"AI_HUM2_SP1"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3860933  // Field=id
+  STRING12,"AI_TEMP2_SP1"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3870801  // Field=id
+  STRING12,"AI_HUM1_SP2"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3870833  // Field=id
+  STRING12,"AI_TEMP1_SP2"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3870901  // Field=id
+  STRING12,"AI_HUM2_SP2"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3870933  // Field=id
+  STRING12,"AI_TEMP2_SP2"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3880801  // Field=id
+  STRING12,"AI_HUM1_SP3"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3880833  // Field=id
+  STRING12,"AI_TEMP1_SP3"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3880901  // Field=id
+  STRING12,"AI_HUM2_SP3"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//
+//
+BEGINSTRUCT // Begin of structure=S_ainput
+  ULONG,3880933  // Field=id
+  STRING12,"AI_TEMP2_SP3"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_aires
+      USHORT,1  // Field=s_aires.volt
+      USHORT,1  // Field=s_aires.value
+    ENDSTRUCT // End of structure=S_aires
+    //
+  SHORT  // Field=value
+  SHORT  // Field=previous_value
+ENDSTRUCT // End of structure=S_ainput
+//

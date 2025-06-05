@@ -1,0 +1,62 @@
+//
+//S_catalog_header
+//
+TABLE_TYPE: 0
+//
+MAXHEADER:1
+//
+HEADER
+//
+//
+BEGINSTRUCT // Begin of structure=S_catalog_header
+  USHORT  // Field=n_object
+ENDSTRUCT // End of structure=S_catalog_header
+//
+//
+ENDHEADER
+//
+//
+REPEAT:1
+//
+BEGINSTRUCT // Begin of structure=S_catalog_header
+  USHORT  // Field=n_object
+ENDSTRUCT // End of structure=S_catalog_header
+//
+ENDREPEAT
+//
+//
+//S_catalog
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:999
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_catalog
+  STRING16  // Field=name
+  USHORT  // Field=type_code
+  USHORT  // Field=kernel
+  ULONG  // Field=object
+  ULONG  // Field=job
+  USHORT  // Field=level
+ENDSTRUCT // End of structure=S_catalog
+//
+//
+ENDTABLE
+//
+//
+REPEAT:999
+//
+BEGINSTRUCT // Begin of structure=S_catalog
+  STRING16  // Field=name
+  USHORT  // Field=type_code
+  USHORT  // Field=kernel
+  ULONG  // Field=object
+  ULONG  // Field=job
+  USHORT  // Field=level
+ENDSTRUCT // End of structure=S_catalog
+//
+ENDREPEAT
+//

@@ -1,0 +1,348 @@
+//
+//S_prospace
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:55
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT  // Field=space
+  USHORT  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,1  // Field=space
+  USHORT,101  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,2  // Field=space
+  USHORT,102  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,3  // Field=space
+  USHORT,103  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,4  // Field=space
+  USHORT,104  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,5  // Field=space
+  USHORT,105  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,6  // Field=space
+  USHORT,106  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,7  // Field=space
+  USHORT,107  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,8  // Field=space
+  USHORT,108  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,9  // Field=space
+  USHORT,109  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,10  // Field=space
+  USHORT,110  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,11  // Field=space
+  USHORT,111  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,12  // Field=space
+  USHORT,112  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,13  // Field=space
+  USHORT,113  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,14  // Field=space
+  USHORT,114  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,15  // Field=space
+  USHORT,115  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,16  // Field=space
+  USHORT,116  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,17  // Field=space
+  USHORT,117  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,18  // Field=space
+  USHORT,118  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,19  // Field=space
+  USHORT,119  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,20  // Field=space
+  USHORT,120  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,21  // Field=space
+  USHORT,121  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,22  // Field=space
+  USHORT,122  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,23  // Field=space
+  USHORT,123  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,24  // Field=space
+  USHORT,124  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,25  // Field=space
+  USHORT,125  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,26  // Field=space
+  USHORT,126  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,27  // Field=space
+  USHORT,127  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,28  // Field=space
+  USHORT,128  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,29  // Field=space
+  USHORT,129  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,30  // Field=space
+  USHORT,130  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,31  // Field=space
+  USHORT,131  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,32  // Field=space
+  USHORT,132  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,33  // Field=space
+  USHORT,133  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,34  // Field=space
+  USHORT,134  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,35  // Field=space
+  USHORT,135  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,36  // Field=space
+  USHORT,136  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,37  // Field=space
+  USHORT,137  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,38  // Field=space
+  USHORT,138  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,39  // Field=space
+  USHORT,139  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,40  // Field=space
+  USHORT,140  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,41  // Field=space
+  USHORT,141  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,42  // Field=space
+  USHORT,142  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,43  // Field=space
+  USHORT,143  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,44  // Field=space
+  USHORT,144  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,45  // Field=space
+  USHORT,145  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,46  // Field=space
+  USHORT,146  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,47  // Field=space
+  USHORT,147  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,48  // Field=space
+  USHORT,148  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,49  // Field=space
+  USHORT,149  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,50  // Field=space
+  USHORT,150  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,51  // Field=space
+  USHORT,151  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,52  // Field=space
+  USHORT,152  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,53  // Field=space
+  USHORT,153  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,54  // Field=space
+  USHORT,154  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//
+//
+BEGINSTRUCT // Begin of structure=S_prospace
+  USHORT,55  // Field=space
+  USHORT,155  // Field=n_profile
+ENDSTRUCT // End of structure=S_prospace
+//

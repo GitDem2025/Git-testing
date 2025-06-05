@@ -1,0 +1,127 @@
+//
+//S_laserside
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:4
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserside
+ 	USHORT  // Field=id
+ 	USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_phside.id
+   	  POINTER  // Field=s_id_phside.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserside
+      USHORT  // Field=s_cfg_laserside.side_offset
+    ENDSTRUCT // End of structure=S_cfg_laserside
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserside
+      USHORT  // Field=s_wk_laserside.ep_cnt
+    ENDSTRUCT // End of structure=S_wk_laserside
+    //
+	//	
+ENDSTRUCT // End of structure=S_laserside
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserside
+ 	USHORT,10  // Field=id
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,12  // Field=s_id_phside.id
+   	  POINTER  // Field=s_id_phside.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserside
+      USHORT,0  // Field=s_cfg_laserside.side_offset
+    ENDSTRUCT // End of structure=S_cfg_laserside
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserside
+      USHORT  // Field=s_wk_laserside.ep_cnt
+    ENDSTRUCT // End of structure=S_wk_laserside
+    //
+	//	
+ENDSTRUCT // End of structure=S_laserside
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserside
+ 	USHORT,20  // Field=id
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,22  // Field=s_id_phside.id
+   	  POINTER  // Field=s_id_phside.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserside
+      USHORT,0  // Field=s_cfg_laserside.side_offset
+    ENDSTRUCT // End of structure=S_cfg_laserside
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserside
+      USHORT  // Field=s_wk_laserside.ep_cnt
+    ENDSTRUCT // End of structure=S_wk_laserside
+    //
+	//	
+ENDSTRUCT // End of structure=S_laserside
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserside
+ 	USHORT,30  // Field=id
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,32  // Field=s_id_phside.id
+   	  POINTER  // Field=s_id_phside.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserside
+      USHORT,0  // Field=s_cfg_laserside.side_offset
+    ENDSTRUCT // End of structure=S_cfg_laserside
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserside
+      USHORT  // Field=s_wk_laserside.ep_cnt
+    ENDSTRUCT // End of structure=S_wk_laserside
+    //
+	//	
+ENDSTRUCT // End of structure=S_laserside
+//
+//
+BEGINSTRUCT // Begin of structure=S_laserside
+ 	USHORT,40  // Field=id
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,42  // Field=s_id_phside.id
+   	  POINTER  // Field=s_id_phside.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_cfg_laserside
+      USHORT,0  // Field=s_cfg_laserside.side_offset
+    ENDSTRUCT // End of structure=S_cfg_laserside
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_laserside
+      USHORT  // Field=s_wk_laserside.ep_cnt
+    ENDSTRUCT // End of structure=S_wk_laserside
+    //
+	//	
+ENDSTRUCT // End of structure=S_laserside
+//

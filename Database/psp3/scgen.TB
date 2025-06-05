@@ -1,0 +1,1400 @@
+//
+//S_scgen
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scgen
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_physchar
+      USHORT  // Field=s_physchar.n_level
+      USHORT  // Field=s_physchar.cell_width
+      USHORT  // Field=s_physchar.cell_length
+      USHORT  // Field=s_physchar.cell_pitch
+      USHORT  // Field=s_physchar.top_shield_length
+      USHORT  // Field=s_physchar.brush_distance
+      USHORT  // Field=s_physchar.flap_delay
+      USHORT  // Field=s_physchar.full_flashtime
+      USHORT  // Field=s_physchar.halffull_flashtime
+      USHORT  // Field=s_physchar.blocked_flashtime
+      USHORT  // Field=s_physchar.end_of_batch_flashtime
+      USHORT  // Field=s_physchar.blocked_jam_flashtime
+      USHORT  // Field=s_physchar.no_synchro_flashtime
+      USHORT  // Field=s_physchar.pre_alarm_flashtime
+      USHORT  // Field=s_physchar.alarm_flashtime
+      USHORT  // Field=s_physchar.pre_emergency_flashtime
+      USHORT  // Field=s_physchar.emergency_flashtime
+      USHORT  // Field=s_physchar.max_parc_length
+      USHORT  // Field=s_physchar.max_parc_width
+      USHORT  // Field=s_physchar.direction
+      USHORT  // Field=s_physchar.magnets_position
+      USHORT  // Field=s_physchar.parc_nodata_length
+      USHORT  // Field=s_physchar.parc_nodata_width
+    ENDSTRUCT // End of structure=S_physchar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_logchar
+      ULONG  // Field=s_logchar.debug_function
+      USHORT  // Field=s_logchar.sort_function
+      USHORT  // Field=s_logchar.redest_function
+      USHORT  // Field=s_logchar.vel_change
+      USHORT  // Field=s_logchar.no_read_dest
+      USHORT  // Field=s_logchar.no_transl_dest
+      USHORT  // Field=s_logchar.track_err_dest
+      USHORT  // Field=s_logchar.mult_label_dest
+      USHORT  // Field=s_logchar.no_read_dest_2
+      USHORT  // Field=s_logchar.no_transl_dest_2
+      USHORT  // Field=s_logchar.track_err_dest_2
+      USHORT  // Field=s_logchar.mult_label_dest_2
+      USHORT  // Field=s_logchar.action_reject_nok
+      USHORT  // Field=s_logchar.n_parc_before_stop
+      USHORT  // Field=s_logchar.emergency_mgm
+      ULONG  // Field=s_logchar.gen_purpose
+      SHORT  // Field=s_logchar.offl_offset[0]
+      SHORT  // Field=s_logchar.offl_offset[1]
+      SHORT  // Field=s_logchar.offl_offset[2]
+      USHORT  // Field=s_logchar.n_laps_chute_full
+      USHORT  // Field=s_logchar.n_laps_chute_disabled
+      USHORT  // Field=s_logchar.n_laps_no_read
+      USHORT  // Field=s_logchar.n_laps_out_of_batch
+      USHORT  // Field=s_logchar.n_laps_wait_redest
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[0].id
+          USHORT  // Field=s_logchar.s_device[0].table
+          USHORT  // Field=s_logchar.s_device[0].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[0].reset_cfg
+          USHORT  // Field=s_logchar.s_device[0].enable_cfg
+          USHORT  // Field=s_logchar.s_device[0].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[0].o_enable
+          USHORT  // Field=s_logchar.s_device[0].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[1].id
+          USHORT  // Field=s_logchar.s_device[1].table
+          USHORT  // Field=s_logchar.s_device[1].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[1].reset_cfg
+          USHORT  // Field=s_logchar.s_device[1].enable_cfg
+          USHORT  // Field=s_logchar.s_device[1].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[1].o_enable
+          USHORT  // Field=s_logchar.s_device[1].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[2].id
+          USHORT  // Field=s_logchar.s_device[2].table
+          USHORT  // Field=s_logchar.s_device[2].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[2].reset_cfg
+          USHORT  // Field=s_logchar.s_device[2].enable_cfg
+          USHORT  // Field=s_logchar.s_device[2].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[2].o_enable
+          USHORT  // Field=s_logchar.s_device[2].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[3].id
+          USHORT  // Field=s_logchar.s_device[3].table
+          USHORT  // Field=s_logchar.s_device[3].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[3].reset_cfg
+          USHORT  // Field=s_logchar.s_device[3].enable_cfg
+          USHORT  // Field=s_logchar.s_device[3].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[3].o_enable
+          USHORT  // Field=s_logchar.s_device[3].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[4].id
+          USHORT  // Field=s_logchar.s_device[4].table
+          USHORT  // Field=s_logchar.s_device[4].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[4].reset_cfg
+          USHORT  // Field=s_logchar.s_device[4].enable_cfg
+          USHORT  // Field=s_logchar.s_device[4].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[4].o_enable
+          USHORT  // Field=s_logchar.s_device[4].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[5].id
+          USHORT  // Field=s_logchar.s_device[5].table
+          USHORT  // Field=s_logchar.s_device[5].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[5].reset_cfg
+          USHORT  // Field=s_logchar.s_device[5].enable_cfg
+          USHORT  // Field=s_logchar.s_device[5].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[5].o_enable
+          USHORT  // Field=s_logchar.s_device[5].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[6].id
+          USHORT  // Field=s_logchar.s_device[6].table
+          USHORT  // Field=s_logchar.s_device[6].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[6].reset_cfg
+          USHORT  // Field=s_logchar.s_device[6].enable_cfg
+          USHORT  // Field=s_logchar.s_device[6].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[6].o_enable
+          USHORT  // Field=s_logchar.s_device[6].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[7].id
+          USHORT  // Field=s_logchar.s_device[7].table
+          USHORT  // Field=s_logchar.s_device[7].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[7].reset_cfg
+          USHORT  // Field=s_logchar.s_device[7].enable_cfg
+          USHORT  // Field=s_logchar.s_device[7].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[7].o_enable
+          USHORT  // Field=s_logchar.s_device[7].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[8].id
+          USHORT  // Field=s_logchar.s_device[8].table
+          USHORT  // Field=s_logchar.s_device[8].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[8].reset_cfg
+          USHORT  // Field=s_logchar.s_device[8].enable_cfg
+          USHORT  // Field=s_logchar.s_device[8].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[8].o_enable
+          USHORT  // Field=s_logchar.s_device[8].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[9].id
+          USHORT  // Field=s_logchar.s_device[9].table
+          USHORT  // Field=s_logchar.s_device[9].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[9].reset_cfg
+          USHORT  // Field=s_logchar.s_device[9].enable_cfg
+          USHORT  // Field=s_logchar.s_device[9].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[9].o_enable
+          USHORT  // Field=s_logchar.s_device[9].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[10].id
+          USHORT  // Field=s_logchar.s_device[10].table
+          USHORT  // Field=s_logchar.s_device[10].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[10].reset_cfg
+          USHORT  // Field=s_logchar.s_device[10].enable_cfg
+          USHORT  // Field=s_logchar.s_device[10].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[10].o_enable
+          USHORT  // Field=s_logchar.s_device[10].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[11].id
+          USHORT  // Field=s_logchar.s_device[11].table
+          USHORT  // Field=s_logchar.s_device[11].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[11].reset_cfg
+          USHORT  // Field=s_logchar.s_device[11].enable_cfg
+          USHORT  // Field=s_logchar.s_device[11].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[11].o_enable
+          USHORT  // Field=s_logchar.s_device[11].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[12].id
+          USHORT  // Field=s_logchar.s_device[12].table
+          USHORT  // Field=s_logchar.s_device[12].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[12].reset_cfg
+          USHORT  // Field=s_logchar.s_device[12].enable_cfg
+          USHORT  // Field=s_logchar.s_device[12].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[12].o_enable
+          USHORT  // Field=s_logchar.s_device[12].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[13].id
+          USHORT  // Field=s_logchar.s_device[13].table
+          USHORT  // Field=s_logchar.s_device[13].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[13].reset_cfg
+          USHORT  // Field=s_logchar.s_device[13].enable_cfg
+          USHORT  // Field=s_logchar.s_device[13].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[13].o_enable
+          USHORT  // Field=s_logchar.s_device[13].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[14].id
+          USHORT  // Field=s_logchar.s_device[14].table
+          USHORT  // Field=s_logchar.s_device[14].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[14].reset_cfg
+          USHORT  // Field=s_logchar.s_device[14].enable_cfg
+          USHORT  // Field=s_logchar.s_device[14].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[14].o_enable
+          USHORT  // Field=s_logchar.s_device[14].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[15].id
+          USHORT  // Field=s_logchar.s_device[15].table
+          USHORT  // Field=s_logchar.s_device[15].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[15].reset_cfg
+          USHORT  // Field=s_logchar.s_device[15].enable_cfg
+          USHORT  // Field=s_logchar.s_device[15].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[15].o_enable
+          USHORT  // Field=s_logchar.s_device[15].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[16].id
+          USHORT  // Field=s_logchar.s_device[16].table
+          USHORT  // Field=s_logchar.s_device[16].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[16].reset_cfg
+          USHORT  // Field=s_logchar.s_device[16].enable_cfg
+          USHORT  // Field=s_logchar.s_device[16].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[16].o_enable
+          USHORT  // Field=s_logchar.s_device[16].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[17].id
+          USHORT  // Field=s_logchar.s_device[17].table
+          USHORT  // Field=s_logchar.s_device[17].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[17].reset_cfg
+          USHORT  // Field=s_logchar.s_device[17].enable_cfg
+          USHORT  // Field=s_logchar.s_device[17].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[17].o_enable
+          USHORT  // Field=s_logchar.s_device[17].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[18].id
+          USHORT  // Field=s_logchar.s_device[18].table
+          USHORT  // Field=s_logchar.s_device[18].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[18].reset_cfg
+          USHORT  // Field=s_logchar.s_device[18].enable_cfg
+          USHORT  // Field=s_logchar.s_device[18].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[18].o_enable
+          USHORT  // Field=s_logchar.s_device[18].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[19].id
+          USHORT  // Field=s_logchar.s_device[19].table
+          USHORT  // Field=s_logchar.s_device[19].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[19].reset_cfg
+          USHORT  // Field=s_logchar.s_device[19].enable_cfg
+          USHORT  // Field=s_logchar.s_device[19].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[19].o_enable
+          USHORT  // Field=s_logchar.s_device[19].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[20].id
+          USHORT  // Field=s_logchar.s_device[20].table
+          USHORT  // Field=s_logchar.s_device[20].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[20].reset_cfg
+          USHORT  // Field=s_logchar.s_device[20].enable_cfg
+          USHORT  // Field=s_logchar.s_device[20].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[20].o_enable
+          USHORT  // Field=s_logchar.s_device[20].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[21].id
+          USHORT  // Field=s_logchar.s_device[21].table
+          USHORT  // Field=s_logchar.s_device[21].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[21].reset_cfg
+          USHORT  // Field=s_logchar.s_device[21].enable_cfg
+          USHORT  // Field=s_logchar.s_device[21].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[21].o_enable
+          USHORT  // Field=s_logchar.s_device[21].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[22].id
+          USHORT  // Field=s_logchar.s_device[22].table
+          USHORT  // Field=s_logchar.s_device[22].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[22].reset_cfg
+          USHORT  // Field=s_logchar.s_device[22].enable_cfg
+          USHORT  // Field=s_logchar.s_device[22].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[22].o_enable
+          USHORT  // Field=s_logchar.s_device[22].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[23].id
+          USHORT  // Field=s_logchar.s_device[23].table
+          USHORT  // Field=s_logchar.s_device[23].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[23].reset_cfg
+          USHORT  // Field=s_logchar.s_device[23].enable_cfg
+          USHORT  // Field=s_logchar.s_device[23].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[23].o_enable
+          USHORT  // Field=s_logchar.s_device[23].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[24].id
+          USHORT  // Field=s_logchar.s_device[24].table
+          USHORT  // Field=s_logchar.s_device[24].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[24].reset_cfg
+          USHORT  // Field=s_logchar.s_device[24].enable_cfg
+          USHORT  // Field=s_logchar.s_device[24].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[24].o_enable
+          USHORT  // Field=s_logchar.s_device[24].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cmd_enable
+          USHORT  // Field=s_logchar.s_cmd_enable.start
+          USHORT  // Field=s_logchar.s_cmd_enable.stop
+          USHORT  // Field=s_logchar.s_cmd_enable.reset
+          USHORT  // Field=s_logchar.s_cmd_enable.enable
+          USHORT  // Field=s_logchar.s_cmd_enable.maint
+        ENDSTRUCT // End of structure=S_cmd_enable
+        //
+    ENDSTRUCT // End of structure=S_logchar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_vel0.name
+      POINTER  // Field=s_di_vel0.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_vel1.name
+      POINTER  // Field=s_di_vel1.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_vel2.name
+      POINTER  // Field=s_di_vel2.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_vel3.name
+      POINTER  // Field=s_di_vel3.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_velauto.name
+      POINTER  // Field=s_di_velauto.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_run_maint.name
+      POINTER  // Field=s_di_run_maint.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_auto_man.name
+      POINTER  // Field=s_di_auto_man.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_horn.name
+      POINTER  // Field=s_di_horn.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_rdy_to_run.name
+      POINTER  // Field=s_di_rdy_to_run.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_pressure_low.name
+      POINTER  // Field=s_di_pressure_low.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_pressure_fault.name
+      POINTER  // Field=s_di_pressure_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_horn.name
+      POINTER  // Field=s_do_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_xbnoal.name
+      POINTER  // Field=s_do_xbnoal.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_xbrun.name
+      POINTER  // Field=s_do_xbrun.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_rdy_to_run.name
+      POINTER  // Field=s_do_rdy_to_run.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_auto.name
+      POINTER  // Field=s_do_auto.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_man.name
+      POINTER  // Field=s_do_man.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_emlamp.name
+      POINTER  // Field=s_do_emlamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_wlamp.name
+      POINTER  // Field=s_do_wlamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_stlamp.name
+      POINTER  // Field=s_do_stlamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_horn.base
+      ULONG  // Field=s_tm_horn.preset
+      POINTER  // Field=s_tm_horn.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_queue_empty.base
+      ULONG  // Field=s_tm_queue_empty.preset
+      POINTER  // Field=s_tm_queue_empty.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_xbstop.base
+      ULONG  // Field=s_tm_xbstop.preset
+      POINTER  // Field=s_tm_xbstop.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_xbcntrun.base
+      ULONG  // Field=s_tm_xbcntrun.preset
+      POINTER  // Field=s_tm_xbcntrun.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_xbnomove.base
+      ULONG  // Field=s_tm_xbnomove.preset
+      POINTER  // Field=s_tm_xbnomove.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_net.base
+      ULONG  // Field=s_tm_wait_net.preset
+      POINTER  // Field=s_tm_wait_net.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_emerg.base
+      ULONG  // Field=s_tm_wait_emerg.preset
+      POINTER  // Field=s_tm_wait_emerg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sorter
+      ULONG  // Field=s_wk_sorter.parcid
+      USHORT  // Field=s_wk_sorter.status
+      USHORT  // Field=s_wk_sorter.mbx_scmgm
+      USHORT  // Field=s_wk_sorter.n_ep_cell
+      USHORT  // Field=s_wk_sorter.n_ep_belt
+      USHORT  // Field=s_wk_sorter.n_ep_sorter
+      USHORT  // Field=s_wk_sorter.flap_offset_ep
+      USHORT  // Field=s_wk_sorter.tab_min_ep_delay[0]
+      USHORT  // Field=s_wk_sorter.tab_min_ep_delay[1]
+      USHORT  // Field=s_wk_sorter.tab_min_ep_delay[2]
+      USHORT  // Field=s_wk_sorter.tab_max_ep_delay[0]
+      USHORT  // Field=s_wk_sorter.tab_max_ep_delay[1]
+      USHORT  // Field=s_wk_sorter.tab_max_ep_delay[2]
+      USHORT  // Field=s_wk_sorter.min_ep_delay
+      USHORT  // Field=s_wk_sorter.max_ep_delay
+      USHORT  // Field=s_wk_sorter.flag_started
+      ULONG  // Field=s_wk_sorter.stop_time
+      ULONG  // Field=s_wk_sorter.start_time
+      ULONG  // Field=s_wk_sorter.last_update
+      ULONG  // Field=s_wk_sorter.total_time
+      USHORT  // Field=s_wk_sorter.air_status
+    ENDSTRUCT // End of structure=S_wk_sorter
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_request
+      USHORT  // Field=s_request.alarm_reset
+      USHORT  // Field=s_request.start
+      USHORT  // Field=s_request.stop
+      USHORT  // Field=s_request.vel_change
+      USHORT  // Field=s_request.vel_auto
+      USHORT  // Field=s_request.alarm
+      USHORT  // Field=s_request.empty
+      USHORT  // Field=s_request.emergency
+      USHORT  // Field=s_request.jog
+    ENDSTRUCT // End of structure=S_request
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_scgenstat
+      ULONG  // Field=s_scgenstat.auto_time
+      ULONG  // Field=s_scgenstat.maint_time
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_run.n_time
+          ULONG  // Field=s_scgenstat.s_counter_run.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_stop[0].n_time
+          ULONG  // Field=s_scgenstat.s_counter_stop[0].time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_stop[1].n_time
+          ULONG  // Field=s_scgenstat.s_counter_stop[1].time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_stop[2].n_time
+          ULONG  // Field=s_scgenstat.s_counter_stop[2].time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_stop[3].n_time
+          ULONG  // Field=s_scgenstat.s_counter_stop[3].time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ULONG  // Field=s_scgenstat.parcel_rejected[0]
+      ULONG  // Field=s_scgenstat.parcel_rejected[1]
+      ULONG  // Field=s_scgenstat.parcel_rejected[2]
+      ULONG  // Field=s_scgenstat.parcel_rejected[3]
+      ULONG  // Field=s_scgenstat.parcel_rejected[4]
+      ULONG  // Field=s_scgenstat.parcel_rejected[5]
+      ULONG  // Field=s_scgenstat.parcel_rejected[6]
+      ULONG  // Field=s_scgenstat.parcel_rejected[7]
+      ULONG  // Field=s_scgenstat.parcel_rejected[8]
+      ULONG  // Field=s_scgenstat.parcel_rejected[9]
+      ULONG  // Field=s_scgenstat.parcel_rejected[10]
+      ULONG  // Field=s_scgenstat.parcel_rejected[11]
+      ULONG  // Field=s_scgenstat.parcel_rejected[12]
+      ULONG  // Field=s_scgenstat.parcel_rejected[13]
+      ULONG  // Field=s_scgenstat.parcel_rejected[14]
+      ULONG  // Field=s_scgenstat.parcel_rejected[15]
+      ULONG  // Field=s_scgenstat.parcel_rejected[16]
+      ULONG  // Field=s_scgenstat.parcel_rejected[17]
+      ULONG  // Field=s_scgenstat.parcel_rejected[18]
+      ULONG  // Field=s_scgenstat.parcel_rejected[19]
+      ULONG  // Field=s_scgenstat.parcel_rejected[20]
+      ULONG  // Field=s_scgenstat.parcel_rejected[21]
+        //
+        BEGINSTRUCT // Begin of structure=S_sorter_available
+          ULONG  // Field=s_scgenstat.s_sorter_available.loadable
+          ULONG  // Field=s_scgenstat.s_sorter_available.failure
+          ULONG  // Field=s_scgenstat.s_sorter_available.occupied
+          ULONG  // Field=s_scgenstat.s_sorter_available.disabled
+          ULONG  // Field=s_scgenstat.s_sorter_available.not_avail
+        ENDSTRUCT // End of structure=S_sorter_available
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_velocity
+          ULONG  // Field=s_scgenstat.s_velocity.n_start_man
+          ULONG  // Field=s_scgenstat.s_velocity.n_start_auto
+          ULONG  // Field=s_scgenstat.s_velocity.time_for_velok[0]
+          ULONG  // Field=s_scgenstat.s_velocity.time_for_velok[1]
+          ULONG  // Field=s_scgenstat.s_velocity.time_for_velok[2]
+          ULONG  // Field=s_scgenstat.s_velocity.n_stop_vel_notok
+          ULONG  // Field=s_scgenstat.s_velocity.time_velok[0]
+          ULONG  // Field=s_scgenstat.s_velocity.time_velok[1]
+          ULONG  // Field=s_scgenstat.s_velocity.time_velok[2]
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scgenstat.s_velocity.s_counter_velnok.n_time
+              ULONG  // Field=s_scgenstat.s_velocity.s_counter_velnok.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_velocity
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_scgenstat.s_status.status
+          ULONG  // Field=s_scgenstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_scgenstat
+    //
+ENDSTRUCT // End of structure=S_scgen
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_scgen
+  USHORT,1  // Field=id
+  STRING12,"DCS_PSP3"  // Field=name
+  USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_physchar
+      USHORT,1  // Field=s_physchar.n_level
+      USHORT,500  // Field=s_physchar.cell_width
+      USHORT,1100  // Field=s_physchar.cell_length
+      USHORT,700  // Field=s_physchar.cell_pitch
+      USHORT,200  // Field=s_physchar.top_shield_length
+      USHORT,600  // Field=s_physchar.brush_distance
+      USHORT,0  // Field=s_physchar.flap_delay
+      USHORT,100  // Field=s_physchar.full_flashtime
+      USHORT,0  // Field=s_physchar.halffull_flashtime
+      USHORT,0  // Field=s_physchar.blocked_flashtime
+      USHORT,0  // Field=s_physchar.end_of_batch_flashtime
+      USHORT,0  // Field=s_physchar.blocked_jam_flashtime
+      USHORT,0  // Field=s_physchar.no_synchro_flashtime
+      USHORT,0  // Field=s_physchar.pre_alarm_flashtime
+      USHORT,0  // Field=s_physchar.alarm_flashtime
+      USHORT,0  // Field=s_physchar.pre_emergency_flashtime
+      USHORT,0  // Field=s_physchar.emergency_flashtime
+      USHORT,915  // Field=s_physchar.max_parc_length
+      USHORT,450  // Field=s_physchar.max_parc_width
+      USHORT,0  // Field=s_physchar.direction
+      USHORT,0  // Field=s_physchar.magnets_position
+      USHORT,800  // Field=s_physchar.parc_nodata_length
+      USHORT,600  // Field=s_physchar.parc_nodata_width
+    ENDSTRUCT // End of structure=S_physchar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_logchar
+      ULONG,364558  // Field=s_logchar.debug_function
+      USHORT,2  // Field=s_logchar.sort_function
+      USHORT,1  // Field=s_logchar.redest_function
+      USHORT,2  // Field=s_logchar.vel_change
+      USHORT,1136  // Field=s_logchar.no_read_dest
+      USHORT,1136  // Field=s_logchar.no_transl_dest
+      USHORT,1136  // Field=s_logchar.track_err_dest
+      USHORT,1136  // Field=s_logchar.mult_label_dest
+      USHORT,0  // Field=s_logchar.no_read_dest_2
+      USHORT,0  // Field=s_logchar.no_transl_dest_2
+      USHORT,0  // Field=s_logchar.track_err_dest_2
+      USHORT,0  // Field=s_logchar.mult_label_dest_2
+      USHORT,0  // Field=s_logchar.action_reject_nok
+      USHORT,0  // Field=s_logchar.n_parc_before_stop
+      USHORT,1  // Field=s_logchar.emergency_mgm
+      ULONG,99  // Field=s_logchar.gen_purpose
+      SHORT,200  // Field=s_logchar.offl_offset[0]
+      SHORT,800  // Field=s_logchar.offl_offset[1]
+      SHORT,800  // Field=s_logchar.offl_offset[2]
+      USHORT,-1  // Field=s_logchar.n_laps_chute_full
+      USHORT,-1  // Field=s_logchar.n_laps_chute_disabled
+      USHORT,-1  // Field=s_logchar.n_laps_no_read
+      USHORT,-1  // Field=s_logchar.n_laps_out_of_batch
+      USHORT,1  // Field=s_logchar.n_laps_wait_redest
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,1  // Field=s_logchar.s_device[0].id
+          USHORT,50  // Field=s_logchar.s_device[0].table
+          USHORT,5  // Field=s_logchar.s_device[0].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[0].reset_cfg
+          USHORT,0  // Field=s_logchar.s_device[0].enable_cfg
+          USHORT  // Field=s_logchar.s_device[0].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[0].o_enable
+          USHORT  // Field=s_logchar.s_device[0].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,11  // Field=s_logchar.s_device[1].id
+          USHORT,57  // Field=s_logchar.s_device[1].table
+          USHORT,5  // Field=s_logchar.s_device[1].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[1].reset_cfg
+          USHORT,0  // Field=s_logchar.s_device[1].enable_cfg
+          USHORT  // Field=s_logchar.s_device[1].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[1].o_enable
+          USHORT  // Field=s_logchar.s_device[1].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,13  // Field=s_logchar.s_device[2].id
+          USHORT,58  // Field=s_logchar.s_device[2].table
+          USHORT,5  // Field=s_logchar.s_device[2].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[2].reset_cfg
+          USHORT,12  // Field=s_logchar.s_device[2].enable_cfg
+          USHORT  // Field=s_logchar.s_device[2].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[2].o_enable
+          USHORT  // Field=s_logchar.s_device[2].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,203  // Field=s_logchar.s_device[3].id
+          USHORT,56  // Field=s_logchar.s_device[3].table
+          USHORT,5  // Field=s_logchar.s_device[3].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[3].reset_cfg
+          USHORT,0  // Field=s_logchar.s_device[3].enable_cfg
+          USHORT  // Field=s_logchar.s_device[3].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[3].o_enable
+          USHORT  // Field=s_logchar.s_device[3].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,2  // Field=s_logchar.s_device[4].id
+          USHORT,74  // Field=s_logchar.s_device[4].table
+          USHORT,2  // Field=s_logchar.s_device[4].alarm_cfg
+          USHORT,14  // Field=s_logchar.s_device[4].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[4].enable_cfg
+          USHORT  // Field=s_logchar.s_device[4].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[4].o_enable
+          USHORT  // Field=s_logchar.s_device[4].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,3  // Field=s_logchar.s_device[5].id
+          USHORT,73  // Field=s_logchar.s_device[5].table
+          USHORT,5  // Field=s_logchar.s_device[5].alarm_cfg
+          USHORT,14  // Field=s_logchar.s_device[5].reset_cfg
+          USHORT,15  // Field=s_logchar.s_device[5].enable_cfg
+          USHORT  // Field=s_logchar.s_device[5].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[5].o_enable
+          USHORT  // Field=s_logchar.s_device[5].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,4  // Field=s_logchar.s_device[6].id
+          USHORT,81  // Field=s_logchar.s_device[6].table
+          USHORT,5  // Field=s_logchar.s_device[6].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[6].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[6].enable_cfg
+          USHORT  // Field=s_logchar.s_device[6].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[6].o_enable
+          USHORT  // Field=s_logchar.s_device[6].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,6  // Field=s_logchar.s_device[7].id
+          USHORT,67  // Field=s_logchar.s_device[7].table
+          USHORT,5  // Field=s_logchar.s_device[7].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[7].reset_cfg
+          USHORT,0  // Field=s_logchar.s_device[7].enable_cfg
+          USHORT  // Field=s_logchar.s_device[7].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[7].o_enable
+          USHORT  // Field=s_logchar.s_device[7].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,7  // Field=s_logchar.s_device[8].id
+          USHORT,68  // Field=s_logchar.s_device[8].table
+          USHORT,6  // Field=s_logchar.s_device[8].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[8].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[8].enable_cfg
+          USHORT  // Field=s_logchar.s_device[8].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[8].o_enable
+          USHORT  // Field=s_logchar.s_device[8].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,8  // Field=s_logchar.s_device[9].id
+          USHORT,64  // Field=s_logchar.s_device[9].table
+          USHORT,5  // Field=s_logchar.s_device[9].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[9].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[9].enable_cfg
+          USHORT  // Field=s_logchar.s_device[9].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[9].o_enable
+          USHORT  // Field=s_logchar.s_device[9].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,9  // Field=s_logchar.s_device[10].id
+          USHORT,69  // Field=s_logchar.s_device[10].table
+          USHORT,2  // Field=s_logchar.s_device[10].alarm_cfg
+          USHORT,0  // Field=s_logchar.s_device[10].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[10].enable_cfg
+          USHORT  // Field=s_logchar.s_device[10].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[10].o_enable
+          USHORT  // Field=s_logchar.s_device[10].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,10  // Field=s_logchar.s_device[11].id
+          USHORT,65  // Field=s_logchar.s_device[11].table
+          USHORT,5  // Field=s_logchar.s_device[11].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[11].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[11].enable_cfg
+          USHORT  // Field=s_logchar.s_device[11].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[11].o_enable
+          USHORT  // Field=s_logchar.s_device[11].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,12  // Field=s_logchar.s_device[12].id
+          USHORT,71  // Field=s_logchar.s_device[12].table
+          USHORT,5  // Field=s_logchar.s_device[12].alarm_cfg
+          USHORT,0  // Field=s_logchar.s_device[12].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[12].enable_cfg
+          USHORT  // Field=s_logchar.s_device[12].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[12].o_enable
+          USHORT  // Field=s_logchar.s_device[12].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,14  // Field=s_logchar.s_device[13].id
+          USHORT,70  // Field=s_logchar.s_device[13].table
+          USHORT,5  // Field=s_logchar.s_device[13].alarm_cfg
+          USHORT,0  // Field=s_logchar.s_device[13].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[13].enable_cfg
+          USHORT  // Field=s_logchar.s_device[13].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[13].o_enable
+          USHORT  // Field=s_logchar.s_device[13].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,204  // Field=s_logchar.s_device[14].id
+          USHORT,72  // Field=s_logchar.s_device[14].table
+          USHORT,2  // Field=s_logchar.s_device[14].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[14].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[14].enable_cfg
+          USHORT  // Field=s_logchar.s_device[14].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[14].o_enable
+          USHORT  // Field=s_logchar.s_device[14].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,102  // Field=s_logchar.s_device[15].id
+          USHORT,66  // Field=s_logchar.s_device[15].table
+          USHORT,2  // Field=s_logchar.s_device[15].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[15].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[15].enable_cfg
+          USHORT  // Field=s_logchar.s_device[15].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[15].o_enable
+          USHORT  // Field=s_logchar.s_device[15].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,22  // Field=s_logchar.s_device[16].id
+          USHORT,92  // Field=s_logchar.s_device[16].table
+          USHORT,5  // Field=s_logchar.s_device[16].alarm_cfg
+          USHORT,15  // Field=s_logchar.s_device[16].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[16].enable_cfg
+          USHORT  // Field=s_logchar.s_device[16].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[16].o_enable
+          USHORT  // Field=s_logchar.s_device[16].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT,23  // Field=s_logchar.s_device[17].id
+          USHORT,94  // Field=s_logchar.s_device[17].table
+          USHORT,2  // Field=s_logchar.s_device[17].alarm_cfg
+          USHORT,14  // Field=s_logchar.s_device[17].reset_cfg
+          USHORT,6  // Field=s_logchar.s_device[17].enable_cfg
+          USHORT  // Field=s_logchar.s_device[17].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[17].o_enable
+          USHORT  // Field=s_logchar.s_device[17].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[18].id
+          USHORT  // Field=s_logchar.s_device[18].table
+          USHORT  // Field=s_logchar.s_device[18].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[18].reset_cfg
+          USHORT  // Field=s_logchar.s_device[18].enable_cfg
+          USHORT  // Field=s_logchar.s_device[18].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[18].o_enable
+          USHORT  // Field=s_logchar.s_device[18].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[19].id
+          USHORT  // Field=s_logchar.s_device[19].table
+          USHORT  // Field=s_logchar.s_device[19].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[19].reset_cfg
+          USHORT  // Field=s_logchar.s_device[19].enable_cfg
+          USHORT  // Field=s_logchar.s_device[19].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[19].o_enable
+          USHORT  // Field=s_logchar.s_device[19].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[20].id
+          USHORT  // Field=s_logchar.s_device[20].table
+          USHORT  // Field=s_logchar.s_device[20].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[20].reset_cfg
+          USHORT  // Field=s_logchar.s_device[20].enable_cfg
+          USHORT  // Field=s_logchar.s_device[20].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[20].o_enable
+          USHORT  // Field=s_logchar.s_device[20].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[21].id
+          USHORT  // Field=s_logchar.s_device[21].table
+          USHORT  // Field=s_logchar.s_device[21].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[21].reset_cfg
+          USHORT  // Field=s_logchar.s_device[21].enable_cfg
+          USHORT  // Field=s_logchar.s_device[21].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[21].o_enable
+          USHORT  // Field=s_logchar.s_device[21].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[22].id
+          USHORT  // Field=s_logchar.s_device[22].table
+          USHORT  // Field=s_logchar.s_device[22].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[22].reset_cfg
+          USHORT  // Field=s_logchar.s_device[22].enable_cfg
+          USHORT  // Field=s_logchar.s_device[22].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[22].o_enable
+          USHORT  // Field=s_logchar.s_device[22].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[23].id
+          USHORT  // Field=s_logchar.s_device[23].table
+          USHORT  // Field=s_logchar.s_device[23].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[23].reset_cfg
+          USHORT  // Field=s_logchar.s_device[23].enable_cfg
+          USHORT  // Field=s_logchar.s_device[23].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[23].o_enable
+          USHORT  // Field=s_logchar.s_device[23].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_device
+          USHORT  // Field=s_logchar.s_device[24].id
+          USHORT  // Field=s_logchar.s_device[24].table
+          USHORT  // Field=s_logchar.s_device[24].alarm_cfg
+          USHORT  // Field=s_logchar.s_device[24].reset_cfg
+          USHORT  // Field=s_logchar.s_device[24].enable_cfg
+          USHORT  // Field=s_logchar.s_device[24].no_start_alarm
+          USHORT  // Field=s_logchar.s_device[24].o_enable
+          USHORT  // Field=s_logchar.s_device[24].o_failure
+        ENDSTRUCT // End of structure=S_device
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cmd_enable
+          USHORT,15  // Field=s_logchar.s_cmd_enable.start
+          USHORT,15  // Field=s_logchar.s_cmd_enable.stop
+          USHORT,15  // Field=s_logchar.s_cmd_enable.reset
+          USHORT,14  // Field=s_logchar.s_cmd_enable.enable
+          USHORT,14  // Field=s_logchar.s_cmd_enable.maint
+        ENDSTRUCT // End of structure=S_cmd_enable
+        //
+    ENDSTRUCT // End of structure=S_logchar
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_EMGGEN"  // Field=s_di_emerg.name
+      POINTER  // Field=s_di_emerg.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_vel0.name
+      POINTER  // Field=s_di_vel0.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_XBVEL_1"  // Field=s_di_vel1.name
+      POINTER  // Field=s_di_vel1.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_XBVEL_2"  // Field=s_di_vel2.name
+      POINTER  // Field=s_di_vel2.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_XBVEL_3"  // Field=s_di_vel3.name
+      POINTER  // Field=s_di_vel3.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_XBVELAUTO"  // Field=s_di_velauto.name
+      POINTER  // Field=s_di_velauto.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_MSCMAINT"  // Field=s_di_run_maint.name
+      POINTER  // Field=s_di_run_maint.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_auto_man.name
+      POINTER  // Field=s_di_auto_man.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_horn.name
+      POINTER  // Field=s_di_horn.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_rdy_to_run.name
+      POINTER  // Field=s_di_rdy_to_run.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_pressure_low.name
+      POINTER  // Field=s_di_pressure_low.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_pressure_fault.name
+      POINTER  // Field=s_di_pressure_fault.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_XBHORN"  // Field=s_do_horn.name
+      POINTER  // Field=s_do_horn.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_GENALM"  // Field=s_do_xbnoal.name
+      POINTER  // Field=s_do_xbnoal.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_XBPWRRUN"  // Field=s_do_xbrun.name
+      POINTER  // Field=s_do_xbrun.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_rdy_to_run.name
+      POINTER  // Field=s_do_rdy_to_run.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_auto.name
+      POINTER  // Field=s_do_auto.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_VLAMPMAINT"  // Field=s_do_man.name
+      POINTER  // Field=s_do_man.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_XBLMPEMG"  // Field=s_do_emlamp.name
+      POINTER  // Field=s_do_emlamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_XBALARM"  // Field=s_do_wlamp.name
+      POINTER  // Field=s_do_wlamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_stlamp.name
+      POINTER  // Field=s_do_stlamp.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,3  // Field=s_tm_horn.base
+      ULONG,5  // Field=s_tm_horn.preset
+      POINTER  // Field=s_tm_horn.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_queue_empty.base
+      ULONG,15  // Field=s_tm_queue_empty.preset
+      POINTER  // Field=s_tm_queue_empty.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,3  // Field=s_tm_xbstop.base
+      ULONG,0  // Field=s_tm_xbstop.preset
+      POINTER  // Field=s_tm_xbstop.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,4  // Field=s_tm_xbcntrun.base
+      ULONG,5  // Field=s_tm_xbcntrun.preset
+      POINTER  // Field=s_tm_xbcntrun.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,3  // Field=s_tm_xbnomove.base
+      ULONG,10  // Field=s_tm_xbnomove.preset
+      POINTER  // Field=s_tm_xbnomove.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,3  // Field=s_tm_wait_net.base
+      ULONG,60  // Field=s_tm_wait_net.preset
+      POINTER  // Field=s_tm_wait_net.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,3  // Field=s_tm_wait_emerg.base
+      ULONG,5  // Field=s_tm_wait_emerg.preset
+      POINTER  // Field=s_tm_wait_emerg.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_sorter
+      ULONG  // Field=s_wk_sorter.parcid
+      USHORT  // Field=s_wk_sorter.status
+      USHORT  // Field=s_wk_sorter.mbx_scmgm
+      USHORT  // Field=s_wk_sorter.n_ep_cell
+      USHORT  // Field=s_wk_sorter.n_ep_belt
+      USHORT  // Field=s_wk_sorter.n_ep_sorter
+      USHORT  // Field=s_wk_sorter.flap_offset_ep
+      USHORT  // Field=s_wk_sorter.tab_min_ep_delay[0]
+      USHORT  // Field=s_wk_sorter.tab_min_ep_delay[1]
+      USHORT  // Field=s_wk_sorter.tab_min_ep_delay[2]
+      USHORT  // Field=s_wk_sorter.tab_max_ep_delay[0]
+      USHORT  // Field=s_wk_sorter.tab_max_ep_delay[1]
+      USHORT  // Field=s_wk_sorter.tab_max_ep_delay[2]
+      USHORT  // Field=s_wk_sorter.min_ep_delay
+      USHORT  // Field=s_wk_sorter.max_ep_delay
+      USHORT  // Field=s_wk_sorter.flag_started
+      ULONG  // Field=s_wk_sorter.stop_time
+      ULONG  // Field=s_wk_sorter.start_time
+      ULONG  // Field=s_wk_sorter.last_update
+      ULONG  // Field=s_wk_sorter.total_time
+      USHORT  // Field=s_wk_sorter.air_status
+    ENDSTRUCT // End of structure=S_wk_sorter
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_request
+      USHORT  // Field=s_request.alarm_reset
+      USHORT  // Field=s_request.start
+      USHORT  // Field=s_request.stop
+      USHORT  // Field=s_request.vel_change
+      USHORT  // Field=s_request.vel_auto
+      USHORT  // Field=s_request.alarm
+      USHORT  // Field=s_request.empty
+      USHORT  // Field=s_request.emergency
+      USHORT  // Field=s_request.jog
+    ENDSTRUCT // End of structure=S_request
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_scgenstat
+      ULONG  // Field=s_scgenstat.auto_time
+      ULONG  // Field=s_scgenstat.maint_time
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_run.n_time
+          ULONG  // Field=s_scgenstat.s_counter_run.time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_stop[0].n_time
+          ULONG  // Field=s_scgenstat.s_counter_stop[0].time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_stop[1].n_time
+          ULONG  // Field=s_scgenstat.s_counter_stop[1].time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_stop[2].n_time
+          ULONG  // Field=s_scgenstat.s_counter_stop[2].time
+        ENDSTRUCT // End of structure=S_counter
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_counter
+          ULONG  // Field=s_scgenstat.s_counter_stop[3].n_time
+          ULONG  // Field=s_scgenstat.s_counter_stop[3].time
+        ENDSTRUCT // End of structure=S_counter
+        //
+      ULONG  // Field=s_scgenstat.parcel_rejected[0]
+      ULONG  // Field=s_scgenstat.parcel_rejected[1]
+      ULONG  // Field=s_scgenstat.parcel_rejected[2]
+      ULONG  // Field=s_scgenstat.parcel_rejected[3]
+      ULONG  // Field=s_scgenstat.parcel_rejected[4]
+      ULONG  // Field=s_scgenstat.parcel_rejected[5]
+      ULONG  // Field=s_scgenstat.parcel_rejected[6]
+      ULONG  // Field=s_scgenstat.parcel_rejected[7]
+      ULONG  // Field=s_scgenstat.parcel_rejected[8]
+      ULONG  // Field=s_scgenstat.parcel_rejected[9]
+      ULONG  // Field=s_scgenstat.parcel_rejected[10]
+      ULONG  // Field=s_scgenstat.parcel_rejected[11]
+      ULONG  // Field=s_scgenstat.parcel_rejected[12]
+      ULONG  // Field=s_scgenstat.parcel_rejected[13]
+      ULONG  // Field=s_scgenstat.parcel_rejected[14]
+      ULONG  // Field=s_scgenstat.parcel_rejected[15]
+      ULONG  // Field=s_scgenstat.parcel_rejected[16]
+      ULONG  // Field=s_scgenstat.parcel_rejected[17]
+      ULONG  // Field=s_scgenstat.parcel_rejected[18]
+      ULONG  // Field=s_scgenstat.parcel_rejected[19]
+      ULONG  // Field=s_scgenstat.parcel_rejected[20]
+      ULONG  // Field=s_scgenstat.parcel_rejected[21]
+        //
+        BEGINSTRUCT // Begin of structure=S_sorter_available
+          ULONG  // Field=s_scgenstat.s_sorter_available.loadable
+          ULONG  // Field=s_scgenstat.s_sorter_available.failure
+          ULONG  // Field=s_scgenstat.s_sorter_available.occupied
+          ULONG  // Field=s_scgenstat.s_sorter_available.disabled
+          ULONG  // Field=s_scgenstat.s_sorter_available.not_avail
+        ENDSTRUCT // End of structure=S_sorter_available
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_velocity
+          ULONG  // Field=s_scgenstat.s_velocity.n_start_man
+          ULONG  // Field=s_scgenstat.s_velocity.n_start_auto
+          ULONG  // Field=s_scgenstat.s_velocity.time_for_velok[0]
+          ULONG  // Field=s_scgenstat.s_velocity.time_for_velok[1]
+          ULONG  // Field=s_scgenstat.s_velocity.time_for_velok[2]
+          ULONG  // Field=s_scgenstat.s_velocity.n_stop_vel_notok
+          ULONG  // Field=s_scgenstat.s_velocity.time_velok[0]
+          ULONG  // Field=s_scgenstat.s_velocity.time_velok[1]
+          ULONG  // Field=s_scgenstat.s_velocity.time_velok[2]
+            //
+            BEGINSTRUCT // Begin of structure=S_counter
+              ULONG  // Field=s_scgenstat.s_velocity.s_counter_velnok.n_time
+              ULONG  // Field=s_scgenstat.s_velocity.s_counter_velnok.time
+            ENDSTRUCT // End of structure=S_counter
+            //
+        ENDSTRUCT // End of structure=S_velocity
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_status
+          ULONG  // Field=s_scgenstat.s_status.status
+          ULONG  // Field=s_scgenstat.s_status.old_status
+        ENDSTRUCT // End of structure=S_status
+        //
+    ENDSTRUCT // End of structure=S_scgenstat
+    //
+ENDSTRUCT // End of structure=S_scgen
+//

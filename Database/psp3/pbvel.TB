@@ -1,0 +1,117 @@
+//
+//S_pbvel
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:1
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_pbvel
+ 	USHORT  // Field=id
+ STRING12  // Field=name
+ 	USHORT  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_cfg_pbvel
+  		USHORT  // Field=s_cfg_pbvel.motor_type
+  		USHORT  // Field=s_cfg_pbvel.max_ref_vel_max
+  		USHORT  // Field=s_cfg_pbvel.max_vel_for_ref_comp
+  		USHORT  // Field=s_cfg_pbvel.max_ref_vel_min
+  		USHORT  // Field=s_cfg_pbvel.min_vel_for_ref_comp
+  		USHORT  // Field=s_cfg_pbvel.ramp_start_time
+  		USHORT  // Field=s_cfg_pbvel.ramp_emerg_time
+  		USHORT  // Field=s_cfg_pbvel.lower_vel_auto
+  		USHORT  // Field=s_cfg_pbvel.lower_vel_auto_k_ratio
+  		USHORT  // Field=s_cfg_pbvel.lower_vel_auto_gain
+  		USHORT  // Field=s_cfg_pbvel.higher_vel_auto
+  		USHORT  // Field=s_cfg_pbvel.higher_vel_auto_k_ratio
+  		USHORT  // Field=s_cfg_pbvel.higher_vel_auto_gain
+  		USHORT  // Field=s_cfg_pbvel.min_ref_vel_maint
+  		USHORT  // Field=s_cfg_pbvel.tab_maintenance_velocity[0]
+  		USHORT  // Field=s_cfg_pbvel.tab_maintenance_velocity[1]
+  		USHORT  // Field=s_cfg_pbvel.tab_maintenance_velocity[2]
+  		USHORT  // Field=s_cfg_pbvel.lower_vel_maint_k_ratio
+  		USHORT  // Field=s_cfg_pbvel.lower_vel_maint_gain
+  		USHORT  // Field=s_cfg_pbvel.higher_vel_maint_k_ratio
+  		USHORT  // Field=s_cfg_pbvel.higher_vel_maint_gain
+	ENDSTRUCT // End of structure=S_cfg_pbvel
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_cnt
+  		LONG  // Field=s_cnt_ep_before_pi_control.preset
+  		LONG  // Field=s_cnt_ep_before_pi_control.cnt
+	ENDSTRUCT // End of structure=S_cnt
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_pbvel
+   		USHORT  // Field=s_wk_pbvel.phase
+  		USHORT  // Field=s_wk_pbvel.velocity_control_type
+  		USHORT  // Field=s_wk_pbvel.step_up
+  		USHORT  // Field=s_wk_pbvel.step_dw
+  		USHORT  // Field=s_wk_pbvel.step_emg
+  		USHORT  // Field=s_wk_pbvel.k_ratio
+  		USHORT  // Field=s_wk_pbvel.gain
+  		USHORT  // Field=s_wk_pbvel.max_ref_value
+  		SHORT  // Field=s_wk_pbvel.current_ref_value
+	ENDSTRUCT // End of structure=S_wk_pbvel
+	//
+	//
+ENDSTRUCT // End of structure=S_pbvel
+//
+//
+ENDTABLE
+//
+BEGINSTRUCT // Begin of structure=S_pbvel
+ 	USHORT,1  // Field=id
+ STRING12,"PBVEL_01"  // Field=name
+ 	USHORT,1  // Field=enable
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_cfg_pbvel
+  		USHORT,1  // Field=s_cfg_pbvel.motor_type
+  		USHORT,9900  // Field=s_cfg_pbvel.max_ref_vel_max
+  		USHORT,1500  // Field=s_cfg_pbvel.max_vel_for_ref_comp
+  		USHORT,3000  // Field=s_cfg_pbvel.max_ref_vel_min
+  		USHORT,500  // Field=s_cfg_pbvel.min_vel_for_ref_comp
+  		USHORT,3000  // Field=s_cfg_pbvel.ramp_start_time
+  		USHORT,1500  // Field=s_cfg_pbvel.ramp_emerg_time
+  		USHORT,1000  // Field=s_cfg_pbvel.lower_vel_auto
+  		USHORT,8000  // Field=s_cfg_pbvel.lower_vel_auto_k_ratio
+  		USHORT,95  // Field=s_cfg_pbvel.lower_vel_auto_gain
+  		USHORT,2000  // Field=s_cfg_pbvel.higher_vel_auto
+  		USHORT,7000  // Field=s_cfg_pbvel.higher_vel_auto_k_ratio
+  		USHORT,65  // Field=s_cfg_pbvel.higher_vel_auto_gain
+  		USHORT,1000  // Field=s_cfg_pbvel.min_ref_vel_maint
+  		USHORT,700  // Field=s_cfg_pbvel.tab_maintenance_velocity[0]
+  		USHORT,1000  // Field=s_cfg_pbvel.tab_maintenance_velocity[1]
+  		USHORT,1300  // Field=s_cfg_pbvel.tab_maintenance_velocity[2]
+  		USHORT,5000  // Field=s_cfg_pbvel.lower_vel_maint_k_ratio
+  		USHORT,300  // Field=s_cfg_pbvel.lower_vel_maint_gain
+  		USHORT,14000  // Field=s_cfg_pbvel.higher_vel_maint_k_ratio
+  		USHORT,400  // Field=s_cfg_pbvel.higher_vel_maint_gain
+	ENDSTRUCT // End of structure=S_cfg_pbvel
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_cnt
+  		LONG,3  // Field=s_cnt_ep_before_pi_control.preset
+  		LONG  // Field=s_cnt_ep_before_pi_control.cnt
+	ENDSTRUCT // End of structure=S_cnt
+	//
+	//
+	BEGINSTRUCT // Begin of structure=S_wk_pbvel
+   		USHORT  // Field=s_wk_pbvel.phase
+  		USHORT  // Field=s_wk_pbvel.velocity_control_type
+  		USHORT  // Field=s_wk_pbvel.step_up
+  		USHORT  // Field=s_wk_pbvel.step_dw
+  		USHORT  // Field=s_wk_pbvel.step_emg
+  		USHORT  // Field=s_wk_pbvel.k_ratio
+  		USHORT  // Field=s_wk_pbvel.gain
+  		USHORT  // Field=s_wk_pbvel.max_ref_value
+  		SHORT  // Field=s_wk_pbvel.current_ref_value
+	ENDSTRUCT // End of structure=S_wk_pbvel
+	//
+	//
+ENDSTRUCT // End of structure=S_pbvel
+//

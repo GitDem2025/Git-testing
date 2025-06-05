@@ -1,0 +1,1041 @@
+//
+//S_network
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:48
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT  // Field=id
+  STRING12  // Field=name
+  STRING16  // Field=host_ip
+  USHORT  // Field=n_ch_server
+  USHORT  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,1  // Field=id
+  STRING12,"ASUPS_SUPS"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,310  // Field=n_ch_server
+  USHORT,311  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,2  // Field=id
+  STRING12,"BSC_SC"  // Field=name
+  STRING16,"192.168.42.10"  // Field=host_ip
+  USHORT,3112  // Field=n_ch_server
+  USHORT,3111  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,3  // Field=id
+  STRING12,"DISP_SC"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,11  // Field=n_ch_server
+  USHORT,10  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,4  // Field=id
+  STRING12,"ID_VDU"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,100  // Field=n_ch_server
+  USHORT,101  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,5  // Field=id
+  STRING12,"ISC_SC"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,2  // Field=n_ch_server
+  USHORT,1  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,6  // Field=id
+  STRING12,"SC_ASUPS"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,3104  // Field=n_ch_server
+  USHORT,3104  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,7  // Field=id
+  STRING12,"SC_AWCS_01"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,3101  // Field=n_ch_server
+  USHORT,3101  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,8  // Field=id
+  STRING12,"SC_BSC"  // Field=name
+  STRING16,"192.168.42.11"  // Field=host_ip
+  USHORT,3111  // Field=n_ch_server
+  USHORT,3112  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,9  // Field=id
+  STRING12,"SC_DISP"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,10  // Field=n_ch_server
+  USHORT,11  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,10  // Field=id
+  STRING12,"SC_GSMI"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,4102  // Field=n_ch_server
+  USHORT,4101  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,11  // Field=id
+  STRING12,"SC_ISC"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,1  // Field=n_ch_server
+  USHORT,2  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,12  // Field=id
+  STRING12,"SC_OEEMP_01"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,3105  // Field=n_ch_server
+  USHORT,3105  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,13  // Field=id
+  STRING12,"SC_SUPS"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,3102  // Field=n_ch_server
+  USHORT,3102  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,14  // Field=id
+  STRING12,"SC_SURFER"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,9301  // Field=n_ch_server
+  USHORT,9301  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,15  // Field=id
+  STRING12,"SC_UPS"  // Field=name
+  STRING16,"192.168.42.5"  // Field=host_ip
+  USHORT,161  // Field=n_ch_server
+  USHORT,161  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,16  // Field=id
+  STRING12,"SC_VDU"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,101  // Field=n_ch_server
+  USHORT,100  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,17  // Field=id
+  STRING12,"SCAN_M01AA"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20022  // Field=n_ch_server
+  USHORT,10022  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,18  // Field=id
+  STRING12,"SCAN_M01AB"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20023  // Field=n_ch_server
+  USHORT,10023  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,19  // Field=id
+  STRING12,"SCAN_M01AC"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20024  // Field=n_ch_server
+  USHORT,10024  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,20  // Field=id
+  STRING12,"SCAN_M01AD"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20025  // Field=n_ch_server
+  USHORT,10025  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,21  // Field=id
+  STRING12,"SCANSY_01"  // Field=name
+  STRING16,"192.168.42.249"  // Field=host_ip
+  USHORT,30001  // Field=n_ch_server
+  USHORT,30001  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,22  // Field=id
+  STRING12,"SUPS_ASUPS"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,311  // Field=n_ch_server
+  USHORT,310  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,23  // Field=id
+  STRING12,"SUPS_SURFER"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,300  // Field=n_ch_server
+  USHORT,301  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,24  // Field=id
+  STRING12,"SURFER_SUPS"  // Field=name
+  STRING16  // Field=host_ip
+  USHORT,301  // Field=n_ch_server
+  USHORT,300  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,25  // Field=id
+  STRING12,"T550_0"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20001  // Field=n_ch_server
+  USHORT,10001  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,26  // Field=id
+  STRING12,"T550_1"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20002  // Field=n_ch_server
+  USHORT,10002  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,27  // Field=id
+  STRING12,"T550_10"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20011  // Field=n_ch_server
+  USHORT,10011  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,28  // Field=id
+  STRING12,"T550_11"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20012  // Field=n_ch_server
+  USHORT,10012  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,29  // Field=id
+  STRING12,"T550_12"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20013  // Field=n_ch_server
+  USHORT,10013  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,30  // Field=id
+  STRING12,"T550_13"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20014  // Field=n_ch_server
+  USHORT,10014  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,31  // Field=id
+  STRING12,"T550_14"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20015  // Field=n_ch_server
+  USHORT,10015  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,32  // Field=id
+  STRING12,"T550_15"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20016  // Field=n_ch_server
+  USHORT,10016  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,33  // Field=id
+  STRING12,"T550_16"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20017  // Field=n_ch_server
+  USHORT,10017  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,34  // Field=id
+  STRING12,"T550_17"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20018  // Field=n_ch_server
+  USHORT,10018  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,35  // Field=id
+  STRING12,"T550_18"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20019  // Field=n_ch_server
+  USHORT,10019  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,36  // Field=id
+  STRING12,"T550_19"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20020  // Field=n_ch_server
+  USHORT,10020  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,37  // Field=id
+  STRING12,"T550_2"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20003  // Field=n_ch_server
+  USHORT,10003  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,38  // Field=id
+  STRING12,"T550_20"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20021  // Field=n_ch_server
+  USHORT,10021  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,39  // Field=id
+  STRING12,"T550_25"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20026  // Field=n_ch_server
+  USHORT,10026  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,40  // Field=id
+  STRING12,"T550_26"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20027  // Field=n_ch_server
+  USHORT,10027  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,41  // Field=id
+  STRING12,"T550_27"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20028  // Field=n_ch_server
+  USHORT,10028  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,42  // Field=id
+  STRING12,"T550_3"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20004  // Field=n_ch_server
+  USHORT,10004  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,43  // Field=id
+  STRING12,"T550_4"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20005  // Field=n_ch_server
+  USHORT,10005  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,44  // Field=id
+  STRING12,"T550_5"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20006  // Field=n_ch_server
+  USHORT,10006  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,45  // Field=id
+  STRING12,"T550_6"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20007  // Field=n_ch_server
+  USHORT,10007  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,46  // Field=id
+  STRING12,"T550_7"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20008  // Field=n_ch_server
+  USHORT,10008  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,47  // Field=id
+  STRING12,"T550_8"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20009  // Field=n_ch_server
+  USHORT,10009  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//
+//
+BEGINSTRUCT // Begin of structure=S_network
+  USHORT,48  // Field=id
+  STRING12,"T550_9"  // Field=name
+  STRING16,"192.168.42.1"  // Field=host_ip
+  USHORT,20010  // Field=n_ch_server
+  USHORT,10010  // Field=n_ch_client
+  USHORT  // Field=read_state
+  USHORT  // Field=write_state
+  USHORT  // Field=read_error
+  USHORT  // Field=write_error
+  USHORT  // Field=echo_request
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_heartbeat.base
+      ULONG  // Field=s_tm_heartbeat.preset
+      POINTER  // Field=s_tm_heartbeat.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+ENDSTRUCT // End of structure=S_network
+//

@@ -1,0 +1,246 @@
+//
+//S_protocol
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:17
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT  // Field=id
+  STRING12  // Field=name
+  USHORT  // Field=msg_length
+  USHORT  // Field=conversion
+  STRING4  // Field=start
+  STRING4  // Field=end_data
+  STRING4  // Field=end_msg
+  STRING4  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,1  // Field=id
+  STRING12,"BANP4"  // Field=name
+  USHORT,200  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x23\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x26\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,2  // Field=id
+  STRING12,"COGNX"  // Field=name
+  USHORT,18  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x2C\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,3  // Field=id
+  STRING12,"N230"  // Field=name
+  USHORT,6  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,4  // Field=id
+  STRING12,"N230"  // Field=name
+  USHORT,18  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,5  // Field=id
+  STRING12,"NBMU2"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,6  // Field=id
+  STRING12,"NDRV"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,7  // Field=id
+  STRING12,"NDRV1"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,8  // Field=id
+  STRING12,"NDRV2"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,9  // Field=id
+  STRING12,"NDRV3"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,10  // Field=id
+  STRING12,"NDRVD"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,11  // Field=id
+  STRING12,"NDRVS"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,12  // Field=id
+  STRING12,"PBSIC"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,13  // Field=id
+  STRING12,"S7PLC"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,14  // Field=id
+  STRING12,"UDP"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,15  // Field=id
+  STRING12,"UDP2"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x2\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x3\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,16  // Field=id
+  STRING12,"VDRV"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//
+//
+BEGINSTRUCT // Begin of structure=S_protocol
+  USHORT,17  // Field=id
+  STRING12,"VDRVD"  // Field=name
+  USHORT,0  // Field=msg_length
+  USHORT,0  // Field=conversion
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=start
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_data
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=end_msg
+  STRING4,"\0x0\0x0\0x0\0x0"  // Field=trasparence
+  STRING256  // Field=conversion_table
+ENDSTRUCT // End of structure=S_protocol
+//

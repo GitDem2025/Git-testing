@@ -1,0 +1,1570 @@
+//
+//S_upstr
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT  // Field=id
+  STRING12  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_timeout.base
+      ULONG  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,11  // Field=id
+  STRING12,"UPSTR_11"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,11  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,12  // Field=id
+  STRING12,"UPSTR_12"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,12  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,13  // Field=id
+  STRING12,"UPSTR_13"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,13  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,14  // Field=id
+  STRING12,"UPSTR_14"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,14  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,15  // Field=id
+  STRING12,"UPSTR_15"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,15  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,21  // Field=id
+  STRING12,"UPSTR_21"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,21  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,22  // Field=id
+  STRING12,"UPSTR_22"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,22  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,23  // Field=id
+  STRING12,"UPSTR_23"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,23  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,24  // Field=id
+  STRING12,"UPSTR_24"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,24  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,31  // Field=id
+  STRING12,"UPSTR_31"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,31  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,32  // Field=id
+  STRING12,"UPSTR_32"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,32  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,33  // Field=id
+  STRING12,"UPSTR_33"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,33  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,34  // Field=id
+  STRING12,"UPSTR_34"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,34  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,35  // Field=id
+  STRING12,"UPSTR_35"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,35  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,41  // Field=id
+  STRING12,"UPSTR_41"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,41  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,42  // Field=id
+  STRING12,"UPSTR_42"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,42  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,43  // Field=id
+  STRING12,"UPSTR_43"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,43  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//
+//
+BEGINSTRUCT // Begin of structure=S_upstr
+  USHORT,44  // Field=id
+  STRING12,"UPSTR_44"  // Field=name
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,44  // Field=s_id_is.id
+      POINTER  // Field=s_id_is.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+  USHORT,0  // Field=info
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT,2  // Field=s_tm_timeout.base
+      ULONG,50  // Field=s_tm_timeout.preset
+      POINTER  // Field=s_tm_timeout.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,0  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_parcelisc
+      USHORT  // Field=s_parcel.valid
+      USHORT  // Field=s_parcel.req_weight
+      USHORT  // Field=s_parcel.req_code
+      USHORT  // Field=s_parcel.not_in_shape
+      USHORT  // Field=s_parcel.scanner_id
+      USHORT  // Field=s_parcel.type
+      ULONG  // Field=s_parcel.parcid_is
+      ULONG  // Field=s_parcel.parcid_xb
+      USHORT  // Field=s_parcel.chute
+      USHORT  // Field=s_parcel.profile
+      ULONG  // Field=s_parcel.reject_reason
+      ULONG  // Field=s_parcel.width
+      ULONG  // Field=s_parcel.length
+      ULONG  // Field=s_parcel.volume
+      ULONG  // Field=s_parcel.position
+      USHORT  // Field=s_parcel.weight
+      USHORT  // Field=s_parcel.init
+      USHORT  // Field=s_parcel.coding_type
+      USHORT  // Field=s_parcel.flag_weight
+      USHORT  // Field=s_parcel.flag_code
+      USHORT  // Field=s_parcel.l_code
+      STRING128  // Field=s_parcel.code
+      USHORT  // Field=s_parcel.genpar[0]
+      USHORT  // Field=s_parcel.genpar[1]
+      USHORT  // Field=s_parcel.genpar[2]
+      USHORT  // Field=s_parcel.genpar[3]
+      USHORT  // Field=s_parcel.genpar[4]
+        //
+        BEGINSTRUCT // Begin of structure=S_extraiteminfo
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_width
+          ULONG  // Field=s_parcel.s_extraiteminfo.oriented_length
+          ULONG  // Field=s_parcel.s_extraiteminfo.xPos
+          USHORT  // Field=s_parcel.s_extraiteminfo.double_oriented
+          USHORT  // Field=s_parcel.s_extraiteminfo.nDouble
+          USHORT  // Field=s_parcel.s_extraiteminfo.cell
+          USHORT  // Field=s_parcel.s_extraiteminfo.nItem
+          LONG  // Field=s_parcel.s_extraiteminfo.early_disp
+          LONG  // Field=s_parcel.s_extraiteminfo.rot_disp
+        ENDSTRUCT // End of structure=S_extraiteminfo
+        //
+        //
+        BEGINSTRUCT // Begin of structure=S_cnt
+          LONG  // Field=s_parcel.s_cnt_position.preset
+          LONG  // Field=s_parcel.s_cnt_position.cnt
+        ENDSTRUCT // End of structure=S_cnt
+        //
+    ENDSTRUCT // End of structure=S_parcelisc
+    //
+ENDSTRUCT // End of structure=S_upstr
+//

@@ -1,0 +1,4439 @@
+//
+//S_hmv
+//
+TABLE_TYPE: 0
+//
+MAXTABLE:18
+//
+TABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT  // Field=id
+ STRING12  // Field=name
+ 	USHORT  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+ENDTABLE
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,11  // Field=id
+ STRING12,"HMV_11"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_11"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_11"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_11"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_11"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS11_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_11"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1101  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1102  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1103  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1104  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1105  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1106  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1107  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1108  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1109  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,12  // Field=id
+ STRING12,"HMV_12"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_12"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_12"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_12"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_12"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS12_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_12"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1201  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1202  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1203  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1204  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1205  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1206  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1207  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1208  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1209  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,13  // Field=id
+ STRING12,"HMV_13"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_13"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_13"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_13"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_13"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS13_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_13"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1301  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1302  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1303  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1304  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1305  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1306  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1307  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1308  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1309  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,14  // Field=id
+ STRING12,"HMV_14"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_14"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_14"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_14"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_14"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS14_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_14"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1401  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1402  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1403  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1404  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1405  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1406  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1407  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1408  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1409  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,15  // Field=id
+ STRING12,"HMV_15"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_15"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_15"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_15"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_15"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS15_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_15"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1501  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1502  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1503  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1504  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1505  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1506  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1507  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1508  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,1509  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,21  // Field=id
+ STRING12,"HMV_21"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_21"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_21"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_21"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_21"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS21_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_21"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2101  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2102  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2103  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2104  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2105  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2106  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2107  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2108  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2109  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,22  // Field=id
+ STRING12,"HMV_22"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_22"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_22"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_22"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_22"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS22_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_22"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2201  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2202  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2203  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2204  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2205  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2206  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2207  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2208  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2209  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,23  // Field=id
+ STRING12,"HMV_23"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_23"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_23"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_23"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_23"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS23_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_23"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2301  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2302  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2303  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2304  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2305  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2306  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2307  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2308  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2309  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,24  // Field=id
+ STRING12,"HMV_24"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_24"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_24"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_24"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_24"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS24_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_24"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2401  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2402  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2403  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2404  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2405  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2406  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2407  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2408  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,2409  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,31  // Field=id
+ STRING12,"HMV_31"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_31"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_31"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_31"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_31"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS31_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_31"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3101  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3102  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3103  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3104  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3105  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3106  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3107  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3108  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3109  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,32  // Field=id
+ STRING12,"HMV_32"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_32"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_32"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_32"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_32"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS32_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_32"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3201  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3202  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3203  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3204  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3205  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3206  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3207  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3208  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3209  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,33  // Field=id
+ STRING12,"HMV_33"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_33"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_33"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_33"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_33"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS33_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_33"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3301  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3302  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3303  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3304  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3305  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3306  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3307  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3308  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3309  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,34  // Field=id
+ STRING12,"HMV_34"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_34"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_34"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_34"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_34"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS34_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_34"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3401  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3402  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3403  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3404  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3405  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3406  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3407  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3408  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3409  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,35  // Field=id
+ STRING12,"HMV_35"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_35"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_35"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_35"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_35"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS35_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_35"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3501  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3502  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3503  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3504  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3505  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3506  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3507  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3508  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,3509  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,41  // Field=id
+ STRING12,"HMV_41"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_41"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_41"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_41"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_41"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS41_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_41"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4101  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4102  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4103  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4104  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4105  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4106  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4107  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4108  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4109  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,42  // Field=id
+ STRING12,"HMV_42"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_42"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_42"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_42"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_42"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS42_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_42"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4201  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4202  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4203  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4204  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4205  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4206  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4207  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4208  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4209  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,43  // Field=id
+ STRING12,"HMV_43"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_43"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_43"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_43"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_43"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS43_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_43"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4301  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4302  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4303  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4304  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4305  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4306  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4307  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4308  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4309  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//
+//
+BEGINSTRUCT // Begin of structure=S_hmv
+ 	USHORT,44  // Field=id
+ STRING12,"HMV_44"  // Field=name
+ 	USHORT,1  // Field=enable
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISWARN_44"  // Field=s_di_warning.name
+      POINTER  // Field=s_di_warning.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+    //
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISHMV_44"  // Field=s_di_ready.name
+      POINTER  // Field=s_di_ready.ps_input
+    ENDSTRUCT // End of structure=S_di
+    // 
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISDC_44"  // Field=s_di_dc_bus_ok.name
+      POINTER  // Field=s_di_dc_bus_ok.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_di
+      STRING12,"I_ISRST_44"  // Field=s_di_reset.name
+      POINTER  // Field=s_di_reset.ps_input
+    ENDSTRUCT // End of structure=S_di
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_IS44_HMVK"  // Field=s_do_mains_on.name
+      POINTER  // Field=s_do_mains_on.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_do
+      STRING12,"O_HMVOK_44"  // Field=s_do_hmv_ok.name
+      POINTER  // Field=s_do_hmv_ok.ps_output
+    ENDSTRUCT // End of structure=S_do
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_bus_ok.base
+      ULONG,7  // Field=s_tm_wait_bus_ok.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //	
+    //
+    BEGINSTRUCT // Begin of structure=S_tm
+      USHORT  // Field=s_tm_wait_ready.base
+      ULONG,10  // Field=s_tm_wait_ready.preset
+      POINTER  // Field=s_tm_wait_bus_ok.ps_timer
+    ENDSTRUCT // End of structure=S_tm
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT  // Field=s_id_iscgen.id
+      POINTER  // Field=s_id_iscgen.p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4401  // Field=s_id_boschmtr[0].id
+      POINTER  // Field=s_id_boschmtr[0].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4402  // Field=s_id_boschmtr[1].id
+      POINTER  // Field=s_id_boschmtr[1].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4403  // Field=s_id_boschmtr[2].id
+      POINTER  // Field=s_id_boschmtr[2].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4404  // Field=s_id_boschmtr[3].id
+      POINTER  // Field=s_id_boschmtr[3].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4405  // Field=s_id_boschmtr[4].id
+      POINTER  // Field=s_id_boschmtr[4].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4406  // Field=s_id_boschmtr[5].id
+      POINTER  // Field=s_id_boschmtr[5].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4407  // Field=s_id_boschmtr[6].id
+      POINTER  // Field=s_id_boschmtr[6].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4408  // Field=s_id_boschmtr[7].id
+      POINTER  // Field=s_id_boschmtr[7].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,4409  // Field=s_id_boschmtr[8].id
+      POINTER  // Field=s_id_boschmtr[8].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[9].id
+      POINTER  // Field=s_id_boschmtr[9].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //	
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[10].id
+      POINTER  // Field=s_id_boschmtr[10].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[11].id
+      POINTER  // Field=s_id_boschmtr[11].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[12].id
+      POINTER  // Field=s_id_boschmtr[12].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[13].id
+      POINTER  // Field=s_id_boschmtr[13].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[14].id
+      POINTER  // Field=s_id_boschmtr[14].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[15].id
+      POINTER  // Field=s_id_boschmtr[15].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[16].id
+      POINTER  // Field=s_id_boschmtr[16].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[17].id
+      POINTER  // Field=s_id_boschmtr[17].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[18].id
+      POINTER  // Field=s_id_boschmtr[18].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+	//
+    BEGINSTRUCT // Begin of structure=S_id
+      USHORT,0  // Field=s_id_boschmtr[19].id
+      POINTER  // Field=s_id_boschmtr[19].p_idrec
+    ENDSTRUCT // End of structure=S_id
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_state
+      SHORT,1  // Field=s_state.trace
+      SHORT  // Field=s_state.init
+      LONG  // Field=s_state.state
+      LONG  // Field=s_state.previous_state
+      LONG  // Field=s_state.next_state
+      LONG  // Field=s_state.substate
+      STRING40  // Field=s_state.des_state
+      STRING40  // Field=s_state.des_prevstate
+    ENDSTRUCT // End of structure=S_state
+    //
+    //
+    BEGINSTRUCT // Begin of structure=S_wk_hmv
+      USHORT  // Field=s_wk_hmv.motor_number
+      USHORT  // Field=s_wk_hmv.motor_number
+    ENDSTRUCT // End of structure=S_wk_hmv
+    //		
+    //
+    BEGINSTRUCT // Begin of structure=S_failure
+      UCHAR  // Field=s_failure.physical
+      UCHAR  // Field=s_failure.logical
+    ENDSTRUCT // End of structure=S_failure
+    //
+	//
+	BEGINSTRUCT // Begin of structure=S_hvmstat
+		//
+		BEGINSTRUCT // Begin of structure=S_statis
+		  //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_failure.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+          //
+          BEGINSTRUCT // Begin of structure=S_counter
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.n_time
+            ULONG  // Field=s_hvmstat.s_statis.s_counter_disable.time
+          ENDSTRUCT // End of structure=S_counter
+          //
+		ENDSTRUCT // End of structure=S_statis
+		//
+		//
+		BEGINSTRUCT // Begin of structure=S_status
+    		  ULONG  // Field=s_hvmstat.s_status.status
+    		  ULONG  // Field=s_hvmstat.s_status.old_status
+		ENDSTRUCT // End of structure=S_status
+		//
+	ENDSTRUCT // End of structure=S_hvmstat	
+    //
+ENDSTRUCT // End of structure=S_hmv
+//

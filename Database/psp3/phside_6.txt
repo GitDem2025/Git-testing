@@ -1,0 +1,17 @@
+PHSIDE general purpose flags
+Enable correction on local CS
+Spare Flag 2
+Spare Flag 3
+Spare Flag 4
+Spare Flag 5
+Spare Flag 6
+Spare Flag 7
+Spare Flag 8
+Spare Flag 9
+Spare Flag 10
+Spare Flag 11
+Spare Flag 12
+Spare Flag 13
+Spare Flag 14
+Load configuration from file
+Record data and write file 1st lap
